@@ -10,7 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.14.2",
-    "fulldev-ui": "^0.3.32"
+    "astro": "^4.14.2"
   }
 }
