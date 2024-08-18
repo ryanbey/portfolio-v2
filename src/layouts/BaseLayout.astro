@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import { Navigation } from "../components";
+import { Header } from "../components";
 const { pageTitle } = Astro.props;
 ---
 
@@ -15,7 +15,7 @@ const { pageTitle } = Astro.props;
   </head>
 
   <body>
-    <Navigation />
+    <Header />
     <h1>{pageTitle}</h1>
     <slot />
   </body>
