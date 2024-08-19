@@ -2,6 +2,29 @@
 import { Navigation } from ".";
 ---
 
-<p>Ryan Bey</p>
-<Navigation />
-<p>Theme switcher</p>
+<div class="header-container">
+  <p>Ryan Bey</p>
+  <Navigation client:load transition:persist />
+  <div class="social-container">
+    <img transition:persist src="https://via.placeholder.com/24x24" alt="alt" />
+    <img transition:persist src="https://via.placeholder.com/24x24" alt="alt" />
+  </div>
+</div>
+
+<style>
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .social-container {
+    display: flex;
+    gap: 6px;
+  }
+</style>

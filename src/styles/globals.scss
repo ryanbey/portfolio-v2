@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+  // Colors
+  --background: #0D141F; // Radix Sky 1
+  --foreground: #112840; // Radix Sky 3
+  --text-primary: #EDEEF0; // Radix Slate 12
+  --text-secondary: #B0B4BA; // Radix Slate 11
+  --accent: #154467; // Radix Sky 5
+
+  // Radiuseses
+  --border-rad: 4px;
+
+  // Hover durations
+  --button-hover: 250ms
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px;
+  background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: Lato, sans-serif;
+  color: var(--text-primary);
+}

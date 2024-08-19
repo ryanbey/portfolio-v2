@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  gap: 4px;
+  background: var(--foreground);
+  border-radius: var(--border-rad);
+  padding: 4px;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-rad);
+  text-decoration: none;
+  padding: 6px;
+  width: 100px;
+
+  transition: background var(--button-hover) ease;
+
+  &:hover {
+    background: var(--accent)
+  }
+}
