@@ -1,0 +1,19 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "Terminal",
+      "description": "Terminal",
+      "icon": "terminal",
+      "color": "terminal.ansiBlue",
+      "focus": false
+    },
+    {
+      "name": "Astro",
+      "description": "Run Astro app",
+      "icon": "rocket",
+      "color": "terminal.ansiMagenta",
+      "focus": true
+    }
+  ]
+}
