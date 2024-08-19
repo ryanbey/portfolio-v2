@@ -35,8 +35,25 @@ a {
 }
 
 .mouse-glow {
+  opacity: 20%;
   position: absolute;
-  box-shadow: 0 0 1000px 100px var(--foreground);
+  box-shadow:
+    0 100px 1000px 100px var(--foreground),
+    0 -100px 1000px 100px var(--foreground),
+    100px 0 1000px 100px var(--foreground),
+    -100px 0 1000px 100px var(--foreground),
+    70px 70px 1000px 100px var(--foreground),
+    -70px 70px 1000px 100px var(--foreground),
+    70px -70px 1000px 100px var(--foreground),
+    -70px -70px 1000px 100px var(--foreground),
+    50px 87px 1000px 100px var(--foreground),
+    -50px 87px 1000px 100px var(--foreground),
+    50px -87px 1000px 100px var(--foreground),
+    -50px -87px 1000px 100px var(--foreground),
+    87px 50px 1000px 100px var(--foreground),
+    -87px 50px 1000px 100px var(--foreground),
+    87px -50px 1000px 100px var(--foreground),
+    -87px -50px 1000px 100px var(--foreground);
   pointer-events: none;
   z-index: -1;
 }
