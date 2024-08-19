@@ -19,5 +19,16 @@ import "../styles/globals.scss";
     <Header />
     <h1>{pageTitle}</h1>
     <slot />
+    <div transition:persist class="mouse-glow"></div>
   </body>
 </html>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const glow = document.querySelector(".mouse-glow") as HTMLElement;
+    document.addEventListener("mousemove", (e) => {
+      glow.style.left = e.clientX - glow.offsetWidth / 2 + "px";
+      glow.style.top = e.clientY - glow.offsetHeight / 2 + "px";
+    });
+  });
+</script>

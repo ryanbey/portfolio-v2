@@ -1,9 +1,9 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import '../styles/Navigation.module.scss'
 
 function Tab({ selectedTab, setSelectedTab, title, url }) {
-  const style = useMemo(() => title === selectedTab ? { background: 'var(--background)' } : {}, [selectedTab, title])
-  const handleClick = useCallback(() => setSelectedTab(title), [setSelectedTab, title])
+  const style = useMemo(() => url === selectedTab ? { background: 'var(--background)', color: 'var(--text-primary) !important' } : {}, [selectedTab, title])
+  const handleClick = useCallback(() => setSelectedTab(url), [setSelectedTab, title])
 
   return (
     <a href={url} style={style} onClick={handleClick}>{title}</a>
@@ -11,7 +11,11 @@ function Tab({ selectedTab, setSelectedTab, title, url }) {
 }
 
 export default function Navigation() {
-  const [selectedTab, setSelectedTab] = useState('Home')
+  const [selectedTab, setSelectedTab] = useState('/')
+
+  useEffect(() => {
+    setSelectedTab(window.location.pathname)
+  }, [])
 
   return (
     <nav>
