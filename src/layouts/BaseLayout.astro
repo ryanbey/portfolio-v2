@@ -17,18 +17,29 @@ import "../styles/globals.scss";
 
   <body>
     <Header />
-    <h1>{pageTitle}</h1>
     <slot />
     <div transition:persist class="mouse-glow"></div>
   </body>
 </html>
 
 <script>
+  // Thank you Copilot
   document.addEventListener("astro:page-load", () => {
     const glow = document.querySelector(".mouse-glow") as HTMLElement;
+    let mouseX = 0;
+    let mouseY = 0;
+
+    const updateGlowPosition = () => {
+      glow.style.left = mouseX + window.scrollX - glow.offsetWidth / 2 + "px";
+      glow.style.top = mouseY + window.scrollY - glow.offsetHeight / 2 + "px";
+    };
+
     document.addEventListener("mousemove", (e) => {
-      glow.style.left = e.clientX - glow.offsetWidth / 2 + "px";
-      glow.style.top = e.clientY - glow.offsetHeight / 2 + "px";
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      updateGlowPosition();
     });
+
+    window.addEventListener("scroll", updateGlowPosition);
   });
 </script>
