@@ -1,16 +1,11 @@
 ---
 import { BaseLayout } from "../layouts";
+import { Greeting } from "../components";
 ---
 
 <BaseLayout pageTitle="Home">
 	<div class="home-container">
-		<div class="home-left">
-			<h1>Hi, I'm <span>Ryan</span>.</h1>
-			<p>
-				I'm a detail-oriented and UX-driven web developer passionate about
-				creating practical user experiences and writing beautiful code.
-			</p>
-		</div>
+		<Greeting />
 		<div class="home-right"></div>
 	</div>
 </BaseLayout>
@@ -21,52 +16,6 @@ import { BaseLayout } from "../layouts";
 		justify-content: space-between;
 		gap: 100px;
 		padding-top: 60px;
-	}
-
-	.home-left {
-		position: sticky;
-		top: 135px;
-		height: 100%;
-	}
-
-	h1 {
-		font-size: 60px !important;
-		margin-top: 0px;
-		margin-bottom: 4px;
-	}
-
-	p {
-		font-size: 20px;
-		line-height: 150%;
-	}
-
-	span {
-		background-image: linear-gradient(
-			60deg,
-			#23a5d8,
-			#2596af,
-			#2176bb,
-			#16b3a1,
-			#30a7de,
-			#3b82f6,
-			#729be2,
-			#25aac2
-		);
-		color: transparent;
-		-webkit-background-clip: text; // Edge, Chrome
-		background-clip: text; // Safari, Firefox
-		animation: gradientAnimation 5s ease infinite;
-		animation-direction: alternate;
-		background-size: 300% 100%;
-	}
-
-	@keyframes gradientAnimation {
-		0% {
-			background-position: 0;
-		}
-		to {
-			background-position: 100%;
-		}
 	}
 
 	.home-right {

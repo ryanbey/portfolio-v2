@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import { Button } from ".";
+import gitHubIcon from "../assets/icons/github-logo.svg";
+import linkedInIcon from "../assets/icons/linkedin-logo.svg";
+---
+
+<div class="social-container">
+  <Image src={gitHubIcon} alt="GitHub Logo" />
+  <Image src={linkedInIcon} alt="GitHub Logo" />
+  <Button icon={gitHubIcon} emphasis="low">Low</Button>
+  <Button icon={gitHubIcon} emphasis="medium">Medium</Button>
+  <Button icon={gitHubIcon} emphasis="high">High</Button>
+</div>

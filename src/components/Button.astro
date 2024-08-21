@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+const { emphasis, icon, onClick, to } = Astro.props;
+
+let emphasisClassName = "";
+switch (emphasis) {
+  case "low":
+    emphasisClassName = "lowEmphasis";
+    break;
+  case "medium":
+    emphasisClassName = "mediumEmphasis";
+    break;
+  case "high":
+    emphasisClassName = "highEmphasis";
+    break;
+  default:
+    emphasisClassName = "lowEmphasis";
+}
+---
+
+<button class={emphasisClassName}>
+  {icon && <Image src={icon} alt="" aria-hidden />}
+  <slot />
+</button>
+
+<style lang="scss">
+  .button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 150ms ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .lowEmphasis {
+    @extend .button;
+    background: none;
+    color: var(--text-primary);
+
+    &:hover {
+      background: var(--foreground);
+    }
+  }
+
+  .mediumEmphasis {
+    @extend .button;
+    @extend .lowEmphasis;
+    border: 1px solid var(--text-primary);
+
+    &:hover {
+      scale: 1.03;
+    }
+  }
+
+  .highEmphasis {
+    @extend .button;
+    background: var(--accent);
+    color: var(--text-primary);
+
+    &:hover {
+      scale: 1.03;
+      background: var(--accent-hover);
+    }
+  }
+</style>

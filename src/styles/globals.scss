@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 html {
-  // Colors
+  // Colors https://www.radix-ui.com/colors
   --background: #0D141F; // Radix Sky 1
   --foreground: #112840; // Radix Sky 3
   --text-primary: #EDEEF0; // Radix Slate 12
   --text-secondary: #B0B4BA; // Radix Slate 11
-  --accent: #154467; // Radix Sky 5
+  --accent: #1F6692; // Radix Sky 7
+  --accent-hover: #197CAE; // Radix Sky 8
 
   // Radiuseses
   --border-rad: 4px;
+  --border-rad-button: 4px;
 
   // Hover durations
   --button-hover: 250ms;
@@ -32,6 +34,11 @@ p,
 a {
   font-family: Lato, sans-serif;
   color: var(--text-primary);
+}
+
+button {
+  font-family: Lato, sans-serif;
+  border-radius: var(--border-rad-button);
 }
 
 .mouse-glow {
