@@ -1,7 +1,7 @@
 ---
 // @ts-nocheck
 import { BaseLayout } from "../layouts";
-import { Button, Greeting } from "../components";
+import { Button, Greeting, SkillChip } from "../components";
 ---
 
 <BaseLayout pageTitle="Home">
@@ -31,6 +31,13 @@ import { Button, Greeting } from "../components";
 					Hello this is a paragraph all about this experience I have. Hello this
 					is a paragraph all about this experience I have.
 				</p>
+				<div class="skill-chips-container">
+					<SkillChip text="React" />
+					<SkillChip text="JavaScript" />
+					<SkillChip text="CSS" />
+					<SkillChip text="Jest" />
+					<SkillChip text="Storybook" />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -98,5 +105,11 @@ import { Button, Greeting } from "../components";
 		align-self: flex-start;
 		color: var(--text-secondary);
 		margin: 0px;
+	}
+
+	.skill-chips-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
 	}
 </style>
