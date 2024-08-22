@@ -2,12 +2,13 @@
 
 html {
   // Colors https://www.radix-ui.com/colors
-  --background: #0D141F; // Radix Sky 1
-  --foreground: #112840; // Radix Sky 3
-  --text-primary: #EDEEF0; // Radix Slate 12
-  --text-secondary: #B0B4BA; // Radix Slate 11
-  --accent: #1F6692; // Radix Sky 7
-  --accent-hover: #197CAE; // Radix Sky 8
+  --background: #0D141F; // Sky 1
+  --foreground: #112840; // Sky 3
+  --foreground-hover: #113555; // Sky 4
+  --text-primary: #EDEEF0; // Slate 12
+  --text-secondary: #B0B4BA; // Slate 11
+  --accent: #1F6692; // Sky 7
+  --accent-hover: #197CAE; // Sky 8
 
   // Radiuseses
   --border-rad: 4px;
@@ -20,7 +21,7 @@ html {
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 12px;
+  padding: 0 16px;
   background: var(--background);
 }
 

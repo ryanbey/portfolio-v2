@@ -1,5 +1,5 @@
 ---
-import { Social } from '.'
+import { Bleed, Social } from '.'
 ---
 
 <div class="greeting-container">
@@ -8,7 +8,9 @@ import { Social } from '.'
     I'm a detail-oriented and UX-driven web developer passionate about creating
     practical user experiences and writing beautiful code.
   </p>
-  <Social />
+	<Bleed sides={8}>
+		<Social compact />
+	</Bleed>
 </div>
 
 <style>

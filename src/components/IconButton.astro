@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { emphasis, icon, onClick, to } = Astro.props;
+const { icon, title, emphasis } = Astro.props;
 
 let emphasisClassName = "";
 switch (emphasis) {
@@ -18,20 +18,18 @@ switch (emphasis) {
 }
 ---
 
-<button class={emphasisClassName}>
-  {icon && <Image src={icon} alt="" aria-hidden />}
-  <slot />
+<button title={title} class={emphasisClassName}>
+  <Image src={icon} alt="" aria-hidden />
 </button>
 
 <style lang="scss">
   .button {
-    padding: 10px 12px;
-    font-size: 16px;
+    padding: 8px;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    border-radius: 50%;
     transition: 150ms ease;
 
     &:hover {
@@ -42,7 +40,6 @@ switch (emphasis) {
   .lowEmphasis {
     @extend .button;
     background: none;
-    color: var(--text-primary);
 
     &:hover {
       background: var(--foreground);
@@ -51,7 +48,6 @@ switch (emphasis) {
 
   .mediumEmphasis {
     @extend .button;
-    @extend .lowEmphasis;
     background: var(--foreground);
 
     &:hover {
@@ -63,7 +59,6 @@ switch (emphasis) {
   .highEmphasis {
     @extend .button;
     background: var(--accent);
-    color: var(--text-primary);
 
     &:hover {
       scale: 1.03;

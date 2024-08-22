@@ -1,14 +1,13 @@
 ---
-import { Navigation } from ".";
+import { Bleed, Navigation, Social } from ".";
 ---
 
 <header>
   <p>Ryan Bey</p>
   <Navigation client:load transition:persist />
-  <div class="social-container">
-    <img transition:persist src="https://via.placeholder.com/24x24" alt="alt" />
-    <img transition:persist src="https://via.placeholder.com/24x24" alt="alt" />
-  </div>
+  <Bleed sides={8}>
+    <Social compact />
+  </Bleed>
 </header>
 
 <style>
@@ -21,10 +20,5 @@ import { Navigation } from ".";
   p {
     font-size: 20px;
     font-weight: 700;
-  }
-
-  .social-container {
-    display: flex;
-    gap: 6px;
   }
 </style>
