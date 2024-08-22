@@ -1,7 +1,7 @@
 ---
 // @ts-nocheck
 import { BaseLayout } from "../layouts";
-import { Button, Greeting, SkillChip } from "../components";
+import { Bleed, Button, Greeting, SkillChip } from "../components";
 ---
 
 <BaseLayout pageTitle="Home">
@@ -9,36 +9,38 @@ import { Button, Greeting, SkillChip } from "../components";
 		<Greeting />
 		<div class="home-right">
 			<h2>Experience</h2>
-			<div class="experience-container">
-				<div class="company-container">
-					<img
-						class="company-image"
-						src="https://via.placeholder.com/50x50"
-						alt="alt"
-					/>
-					<div class="title">
-						<p class="company">FamilySearch</p>
-						<p class="position">Web Developer II</p>
+			<Bleed sides={16}>
+				<div class="experience-container">
+					<div class="company-container">
+						<img
+							class="company-image"
+							src="https://via.placeholder.com/50x50"
+							alt="alt"
+						/>
+						<div class="title">
+							<p class="company">FamilySearch</p>
+							<p class="position">Web Developer II</p>
+						</div>
+						<p class="tenure">Jan 2021 — Present</p>
 					</div>
-					<p class="tenure">Jan 2021 — Present</p>
+					<p class="description">
+						Hello this is a paragraph all about this experience I have. Hello
+						this is a paragraph all about this experience I have. Hello this is
+						a paragraph all about this experience I have.
+					</p>
+					<p class="description">
+						Hello this is a paragraph all about this experience I have. Hello
+						this is a paragraph all about this experience I have.
+					</p>
+					<div class="skill-chips-container">
+						<SkillChip text="React" />
+						<SkillChip text="JavaScript" />
+						<SkillChip text="CSS" />
+						<SkillChip text="Jest" />
+						<SkillChip text="Storybook" />
+					</div>
 				</div>
-				<p class="description">
-					Hello this is a paragraph all about this experience I have. Hello this
-					is a paragraph all about this experience I have. Hello this is a
-					paragraph all about this experience I have.
-				</p>
-				<p class="description">
-					Hello this is a paragraph all about this experience I have. Hello this
-					is a paragraph all about this experience I have.
-				</p>
-				<div class="skill-chips-container">
-					<SkillChip text="React" />
-					<SkillChip text="JavaScript" />
-					<SkillChip text="CSS" />
-					<SkillChip text="Jest" />
-					<SkillChip text="Storybook" />
-				</div>
-			</div>
+			</Bleed>
 		</div>
 	</div>
 </BaseLayout>
@@ -58,12 +60,10 @@ import { Button, Greeting, SkillChip } from "../components";
 	.experience-container {
 		padding: 16px;
 		border-radius: var(--border-rad);
-		background: var(--foreground-transparent);
-		border: 1px solid var(--foreground);
 		transition: 250ms ease;
 
 		&:hover {
-			background: var(--foreground);
+			background: var(--foreground-transparent);
 		}
 	}
 
