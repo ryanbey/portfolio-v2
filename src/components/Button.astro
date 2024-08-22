@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { emphasis, icon, onClick, to } = Astro.props;
+const { id, emphasis, icon, onClick, to } = Astro.props;
 
 let emphasisClassName = "";
 switch (emphasis) {
@@ -18,10 +18,16 @@ switch (emphasis) {
 }
 ---
 
-<button class={emphasisClassName}>
+<button id={id} class={emphasisClassName}>
   {icon && <Image src={icon} alt="" aria-hidden />}
   <slot />
 </button>
+
+<script is:inline define:vars={{ id, onClick, to }}>
+  document.getElementById(id).addEventListener("click", () => {
+    console.log("hi");
+  });
+</script>
 
 <style lang="scss">
   .button {

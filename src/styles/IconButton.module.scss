@@ -1,0 +1,42 @@
+button {
+  padding: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 150ms ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.low {
+  @extend button;
+  background: none;
+
+  &:hover {
+    background: var(--foreground);
+  }
+}
+
+.medium {
+  @extend button;
+  background: var(--foreground);
+
+  &:hover {
+    background: var(--foreground-hover);
+    scale: 1.03;
+  }
+}
+
+.high {
+  @extend button;
+  background: var(--accent);
+
+  &:hover {
+    scale: 1.03;
+    background: var(--accent-hover);
+  }
+}

@@ -1,4 +1,5 @@
 ---
+// @ts-nocheck
 import { Button, IconButton } from ".";
 import gitHubIcon from "../assets/icons/github-logo.svg";
 import linkedInIcon from "../assets/icons/linkedin-logo.svg";
@@ -8,8 +9,22 @@ const { compact } = Astro.props;
 
 <div class={compact ? 'social-container' : 'social-container gap'}>
   {compact ? (
-    <IconButton icon={gitHubIcon} title="GitHub" emphasis="low"/>
-    <IconButton icon={linkedInIcon} title="LinkedIn" emphasis="low"/>
+    <IconButton 
+      icon={gitHubIcon}
+      title="GitHub"
+      emphasis="low"
+      to="https://github.com/ryanbey"
+      target="_blank"
+      client:load
+    />
+    <IconButton
+      icon={linkedInIcon}
+      title="LinkedIn"
+      emphasis="low"
+      to="https://linkedin.com/in/ryanbey"
+      target="_blank"
+      client:load
+    />
   ) : (
     <Button icon={gitHubIcon} emphasis="medium">GitHub</Button>
     <Button icon={linkedInIcon} emphasis="medium">LinkedIn</Button>
