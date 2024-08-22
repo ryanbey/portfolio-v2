@@ -8,7 +8,7 @@ export default function IconButton({ icon, title, emphasis = 'low', to, target, 
     } else if (onClick) {
       onClick()
     }
-  }, [])
+  }, [onClick, to])
 
   return (
     <button title={title} onClick={handleClick} className={css[emphasis]}>

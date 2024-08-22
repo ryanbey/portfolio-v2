@@ -1,0 +1,46 @@
+button {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 150ms ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.low {
+  @extend button;
+  background: none;
+  color: var(--text-primary);
+
+  &:hover {
+    background: var(--foreground);
+  }
+}
+
+.medium {
+  @extend button;
+  @extend .low;
+  background: var(--foreground);
+
+  &:hover {
+    background: var(--foreground-hover);
+    scale: 1.03;
+  }
+}
+
+.high {
+  @extend button;
+  background: var(--accent);
+  color: var(--text-primary);
+
+  &:hover {
+    scale: 1.03;
+    background: var(--accent-hover);
+  }
+}

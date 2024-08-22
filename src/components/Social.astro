@@ -26,8 +26,24 @@ const { compact } = Astro.props;
       client:load
     />
   ) : (
-    <Button icon={gitHubIcon} emphasis="medium">GitHub</Button>
-    <Button icon={linkedInIcon} emphasis="medium">LinkedIn</Button>
+    <Button
+      icon={gitHubIcon}
+      emphasis="low"
+      to="https://github.com/ryanbey"
+      target="_blank"
+      client:load
+    >
+      GitHub
+    </Button>
+    <Button
+      icon={linkedInIcon}
+      emphasis="low"
+      to="https://linkedin.com/in/ryanbey"
+      target="_blank"
+      client:load
+    >
+      LinkedIn
+    </Button>
   )}
 </div>
 
