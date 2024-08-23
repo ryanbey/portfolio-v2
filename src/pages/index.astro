@@ -2,6 +2,7 @@
 // @ts-nocheck
 import { BaseLayout } from "../layouts";
 import { Bleed, Button, Greeting, SkillChip } from "../components";
+import fsLogo from "../assets/images/familysearch-logo.png";
 ---
 
 <BaseLayout pageTitle="Home">
@@ -12,13 +13,9 @@ import { Bleed, Button, Greeting, SkillChip } from "../components";
 			<Bleed sides={16}>
 				<div class="experience-container">
 					<div class="company-container">
-						<img
-							class="company-image"
-							src="https://via.placeholder.com/50x50"
-							alt="alt"
-						/>
+						<img class="company-image" src={fsLogo.src} alt="alt" />
 						<div class="title">
-							<p class="company">FamilySearch</p>
+							<h3 class="company">FamilySearch</h3>
 							<p class="position">Web Developer II</p>
 						</div>
 						<p class="tenure">Jan 2021 — Present</p>
@@ -78,6 +75,12 @@ import { Bleed, Button, Greeting, SkillChip } from "../components";
 		}
 	}
 
+	.company-image {
+		height: 50px;
+		width: 50px;
+		background: var(--text-primary);
+	}
+
 	.title {
 		flex-grow: 1;
 	}
@@ -85,7 +88,8 @@ import { Bleed, Button, Greeting, SkillChip } from "../components";
 	.company {
 		font-size: 20px;
 		font-weight: 700;
-		margin-bottom: 4px !important;
+		margin: 0;
+		margin-bottom: 4px;
 
 		&-image {
 			border-radius: 6px;

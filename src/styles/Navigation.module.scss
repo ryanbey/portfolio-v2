@@ -13,13 +13,13 @@ a {
   align-items: center;
   border-radius: var(--border-rad);
   text-decoration: none;
-  padding: 6px;
+  padding: 8px;
   width: 100px;
   color: var(--text-secondary) !important;
   transition: var(--button-hover) ease;
 
   &:hover {
-    background: var(--accent);
+    background: var(--foreground-hover);
     color: var(--text-primary) !important;
   }
 }
