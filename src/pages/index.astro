@@ -7,6 +7,7 @@ import {
 	Greeting,
 	HomeSection,
 	SkillChip,
+	Spacer,
 } from "../components";
 import fsLogo from "../assets/images/familysearch-logo.png";
 ---
@@ -24,7 +25,20 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 					description="This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. "
 					skills={["React", "JavaScript", "CSS", "Jest", "Storybook"]}
 				/>
+				<Spacer size="xxs" />
+				<Experience
+					image={fsLogo.src}
+					company="FamilySearch"
+					position="Web Developer Intern"
+					tenure="Aug — Dec 2022"
+					description="This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. "
+					skills={["React", "JavaScript", "CSS", "Jest", "Storybook"]}
+				/>
 			</HomeSection>
+			<Spacer size="xs" />
+			<HomeSection title="Projects" />
+			<Spacer size="xs" />
+			<HomeSection title="Education" />
 		</div>
 	</div>
 </BaseLayout>
