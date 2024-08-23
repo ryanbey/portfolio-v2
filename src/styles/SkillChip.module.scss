@@ -1,9 +1,10 @@
-button {
+.skillChip {
   justify-content: center;
   align-items: center;
   background: var(--accent-transparent);
   color: var(--text-secondary);
-  border-radius: 20px !important;
+  border: none;
+  border-radius: 20px;
   font-size: 13px;
   padding: 6px 14px;
   transition: 150ms ease;

@@ -1,0 +1,87 @@
+---
+// @ts-nocheck
+const { image, company, position, tenure, description, skills } = Astro.props;
+import { Bleed, SkillChip } from ".";
+import fsLogo from "../assets/images/familysearch-logo.png";
+---
+
+<Bleed sides={16}>
+  <div class="experience-container">
+    <div class="company-container">
+      <img class="company-image" src={image} alt="alt" />
+      <div class="title">
+        <h3 class="company">{company}</h3>
+        <p class="position">{position}</p>
+      </div>
+      <p class="tenure">{tenure}</p>
+    </div>
+    <p class="description">
+      {description}
+    </p>
+    <div class="skill-chips-container">
+      {skills.map((skill) => <SkillChip text={skill} />)}
+    </div>
+  </div>
+</Bleed>
+
+<style lang="scss">
+  .experience-container {
+    padding: 16px;
+    border-radius: var(--border-rad);
+    transition: 250ms ease;
+
+    &:hover {
+      background: var(--foreground-transparent);
+    }
+  }
+
+  .company-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    & > * p {
+      margin: 0px;
+    }
+  }
+
+  .title {
+    flex-grow: 1;
+  }
+
+  .company {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 4px;
+
+    &-image {
+      border-radius: 6px;
+      height: 50px;
+      width: 50px;
+      background: var(--text-primary);
+    }
+  }
+
+  .position {
+    font-size: 16px;
+  }
+
+  .description {
+    line-height: 150%;
+  }
+
+  .tenure {
+    font-size: 14px;
+    align-self: flex-start;
+    color: var(--text-secondary);
+    margin: 0px;
+  }
+
+  .skill-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+</style>

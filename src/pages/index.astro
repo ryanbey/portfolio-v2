@@ -1,7 +1,13 @@
 ---
 // @ts-nocheck
 import { BaseLayout } from "../layouts";
-import { Bleed, Button, Greeting, SkillChip } from "../components";
+import {
+	Button,
+	Experience,
+	Greeting,
+	HomeSection,
+	SkillChip,
+} from "../components";
 import fsLogo from "../assets/images/familysearch-logo.png";
 ---
 
@@ -9,35 +15,16 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 	<div class="home-container">
 		<Greeting />
 		<div class="home-right">
-			<h2>Experience</h2>
-			<Bleed sides={16}>
-				<div class="experience-container">
-					<div class="company-container">
-						<img class="company-image" src={fsLogo.src} alt="alt" />
-						<div class="title">
-							<h3 class="company">FamilySearch</h3>
-							<p class="position">Web Developer II</p>
-						</div>
-						<p class="tenure">Jan 2021 — Present</p>
-					</div>
-					<p class="description">
-						Hello this is a paragraph all about this experience I have. Hello
-						this is a paragraph all about this experience I have. Hello this is
-						a paragraph all about this experience I have.
-					</p>
-					<p class="description">
-						Hello this is a paragraph all about this experience I have. Hello
-						this is a paragraph all about this experience I have.
-					</p>
-					<div class="skill-chips-container">
-						<SkillChip text="React" />
-						<SkillChip text="JavaScript" />
-						<SkillChip text="CSS" />
-						<SkillChip text="Jest" />
-						<SkillChip text="Storybook" />
-					</div>
-				</div>
-			</Bleed>
+			<HomeSection title="Experience">
+				<Experience
+					image={fsLogo.src}
+					company="FamilySearch"
+					position="Web Developer II"
+					tenure="Jan 2023 — Present"
+					description="This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. "
+					skills={["React", "JavaScript", "CSS", "Jest", "Storybook"]}
+				/>
+			</HomeSection>
 		</div>
 	</div>
 </BaseLayout>
@@ -52,68 +39,5 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 
 	.home-right {
 		width: 100%;
-	}
-
-	.experience-container {
-		padding: 16px;
-		border-radius: var(--border-rad);
-		transition: 250ms ease;
-
-		&:hover {
-			background: var(--foreground-transparent);
-		}
-	}
-
-	.company-container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 16px;
-
-		& > * p {
-			margin: 0px;
-		}
-	}
-
-	.company-image {
-		height: 50px;
-		width: 50px;
-		background: var(--text-primary);
-	}
-
-	.title {
-		flex-grow: 1;
-	}
-
-	.company {
-		font-size: 20px;
-		font-weight: 700;
-		margin: 0;
-		margin-bottom: 4px;
-
-		&-image {
-			border-radius: 6px;
-		}
-	}
-
-	.position {
-		font-size: 16px;
-	}
-
-	.description {
-		line-height: 140%;
-	}
-
-	.tenure {
-		font-size: 14px;
-		align-self: flex-start;
-		color: var(--text-secondary);
-		margin: 0px;
-	}
-
-	.skill-chips-container {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 6px;
 	}
 </style>

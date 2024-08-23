@@ -1,4 +1,4 @@
-button {
+.button {
   padding: 10px 12px;
   font-size: 16px;
   border: none;
@@ -7,14 +7,10 @@ button {
   align-items: center;
   gap: 8px;
   transition: 150ms ease;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .low {
-  @extend button;
+  @extend .button;
   background: none;
   color: var(--text-primary);
 
@@ -24,7 +20,7 @@ button {
 }
 
 .medium {
-  @extend button;
+  @extend .button;
   @extend .low;
   background: var(--foreground);
 
@@ -35,7 +31,7 @@ button {
 }
 
 .high {
-  @extend button;
+  @extend .button;
   background: var(--accent);
   color: var(--text-primary);
 

@@ -5,7 +5,7 @@ export default function SkillChip({ icon = null, text, to }) {
   const handleClick = useCallback(() => window.open(to), [to])
 
   return (
-    <button onClick={handleClick}>
+    <button className={css.skillChip} onClick={handleClick}>
       {icon?.src && <img src={icon.src} alt='' aria-hidden />}
       {text}
     </button>
