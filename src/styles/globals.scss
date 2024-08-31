@@ -37,6 +37,16 @@ p,
 a {
   font-family: Lato, sans-serif;
   color: var(--text-primary);
+
+}
+
+a {
+  text-decoration: none;
+  transition: 100ms ease;
+
+  &:hover {
+    color: var(--accent);
+  }
 }
 
 button {

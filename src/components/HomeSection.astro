@@ -1,11 +1,14 @@
 ---
-// @ts-nocheck
 const { title } = Astro.props;
-import { Button } from ".";
 ---
 
 <section>
   <h2>{title}</h2>
   <slot />
-  <!-- <Button emphasis="medium">See all {title}</Button> -->
 </section>
+
+<style>
+  h2 {
+    margin-bottom: 16px;
+  }
+</style>

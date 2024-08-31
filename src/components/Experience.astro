@@ -1,6 +1,6 @@
 ---
 // @ts-nocheck
-const { image, company, position, tenure, description, skills } = Astro.props;
+const { image, company, tenure, skills } = Astro.props;
 import { Bleed, SkillChip } from ".";
 import fsLogo from "../assets/images/familysearch-logo.png";
 ---
@@ -8,16 +8,27 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 <Bleed sides={16}>
   <div class="experience-container">
     <div class="company-container">
-      <img class="company-image" src={image} alt="alt" />
-      <div class="title">
-        <h3 class="company">{position}</h3>
-        <p class="position">{company}</p>
+      <img class="company-image" src={fsLogo.src} alt="FamilySearch logo" />
+      <div>
+        <h3 class="company">{company}</h3>
+        <p class="tenure">{tenure}</p>
       </div>
-      <p class="tenure">{tenure}</p>
     </div>
+    <h4 class="position">Web Developer II</h4>
     <p class="description">
-      {description}
+      Building and maintaining robust React components and pages across the
+      <a href="https://familysearch.org/memories" target="_blank">Memories</a> product.
+      Frequent contributor to our internal design system, building reusable components
+      used across the site. Closely mentored a web developer intern including onboarding,
+      regular guidance, and fostering independent problem-solving skills.
     </p>
+    <h4 class="position">Web Developer Intern</h4>
+    <p class="description">
+      Converted the site's international home page from Polymer to React with
+      support for 40 languages. Discovered and improved accessibility issues
+      across our team's product. Contributed to our internal design system.
+    </p>
+    <!-- TODO: Have the skills chips in an expander when there are too many of them. -->
     <div class="skill-chips-container">
       {skills.map((skill) => <SkillChip text={skill} />)}
     </div>
@@ -37,17 +48,12 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 
   .company-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 
     & > * p {
       margin: 0px;
     }
-  }
-
-  .title {
-    flex-grow: 1;
   }
 
   .company {
@@ -66,15 +72,17 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 
   .position {
     font-size: 16px;
+    margin-bottom: 8px;
   }
 
   .description {
     line-height: 150%;
+    margin-top: 0px;
+    color: var(--text-secondary);
   }
 
   .tenure {
     font-size: 14px;
-    align-self: flex-start;
     color: var(--text-secondary);
     margin: 0px;
   }

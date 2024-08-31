@@ -20,25 +20,44 @@ import fsLogo from "../assets/images/familysearch-logo.png";
 				<Experience
 					image={fsLogo.src}
 					company="FamilySearch"
-					position="Web Developer II"
-					tenure="Jan 2023 — Present"
-					description="This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. "
-					skills={["React", "JavaScript", "CSS", "Jest", "Storybook"]}
-				/>
-				<Spacer size="xxs" />
-				<Experience
-					image={fsLogo.src}
-					company="FamilySearch"
-					position="Web Developer Intern"
-					tenure="Aug — Dec 2022"
-					description="This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. This is a description about how crazy experienced I am. "
-					skills={["React", "JavaScript", "CSS", "Jest", "Storybook"]}
+					tenure="Aug 2022 - Present"
+					skills={[
+						"React",
+						"JavaScript",
+						"SCSS",
+						"Jest",
+						"Storybook",
+						"GitHub",
+						"Jira",
+						"Heroku",
+						"Split",
+						"Figma",
+					]}
 				/>
 			</HomeSection>
 			<Spacer size="xs" />
-			<HomeSection title="Projects" />
+			<HomeSection title="Projects">
+				<Experience
+					image={fsLogo.src}
+					company="Nyoom"
+					skills={["React", "Next.js", "SCSS", "Cypress", "Photoshop", "XD"]}
+				/>
+				<Experience
+					image={fsLogo.src}
+					company="Just Pick Something"
+					skills={["HTML", "CSS", "JavaScript", "XD"]}
+				/>
+				<Experience
+					image={fsLogo.src}
+					company="Circle Tracks"
+					skills={["Angular", "SCSS", "JavaScript", "Photoshop", "XD"]}
+				/>
+			</HomeSection>
 			<Spacer size="xs" />
-			<HomeSection title="Education" />
+			<HomeSection title="Education">
+				<Experience image={fsLogo.src} company="BYU-Idaho" skills={[]} />
+			</HomeSection>
+			<Spacer size="xxl" />
 		</div>
 	</div>
 </BaseLayout>
