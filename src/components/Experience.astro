@@ -1,7 +1,7 @@
 ---
 // @ts-nocheck
 const { image, company, tenure, skills } = Astro.props;
-import { Bleed, SkillChip } from ".";
+import { Bleed, SkillChip, Spacer } from ".";
 import fsLogo from "../assets/images/familysearch-logo.png";
 ---
 
@@ -35,6 +35,7 @@ import fsLogo from "../assets/images/familysearch-logo.png";
       {skills.map((skill) => <SkillChip text={skill} />)}
     </div>
   </div>
+  <Spacer size="nano" />
 </Bleed>
 
 <style lang="scss">
