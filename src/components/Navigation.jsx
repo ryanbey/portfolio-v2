@@ -6,7 +6,7 @@ function Tab({ selectedTab, setSelectedTab, title, url }) {
   const handleClick = useCallback(() => setSelectedTab(url), [setSelectedTab, title])
 
   return (
-    <a class={css.navLink} href={url} style={style} onClick={handleClick}>{title}</a>
+    <a className={css.navLink} href={url} style={style} onClick={handleClick}>{title}</a>
   )
 }
 

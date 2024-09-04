@@ -1,41 +1,44 @@
 ---
 // @ts-nocheck
-const { image, company, tenure, skills } = Astro.props;
 import { Bleed, SkillChip, Spacer } from ".";
+import experience from "../data/experience";
 import fsLogo from "../assets/images/familysearch-logo.png";
 ---
 
 <Bleed sides={16}>
-  <div class="experience-container">
-    <div class="company-container">
-      <img class="company-image" src={fsLogo.src} alt="FamilySearch logo" />
-      <div>
-        <h3 class="company">{company}</h3>
-        <p class="tenure">{tenure}</p>
+  {
+    experience.map((item) => (
+      <div class="experience-container">
+        <div class="company-container">
+          <img
+            class="company-image"
+            src={item.image}
+            alt={`${item.company} logo`}
+          />
+
+          <div>
+            <h3 class="company">{item.company}</h3>
+            <p class="tenure">{item.tenure}</p>
+          </div>
+        </div>
+
+        {item.positions.map((position) => (
+          <div>
+            <h4 class="position">{position.title}</h4>
+            <p class="description">{position.description}</p>
+          </div>
+        ))}
+
+        {/* TODO: Have the skills chips in an expander when there are too many of them. */}
+        <div class="skill-chips-container">
+          {item.skills.map((skill) => (
+            <SkillChip text={skill} />
+          ))}
+        </div>
       </div>
-    </div>
-    <h4 class="position">Web Developer II</h4>
-    <p class="description">
-      Building and maintaining robust React components and pages across the
-      <a href="https://familysearch.org/memories" target="_blank">Memories</a> product.
-      Frequent contributor to our internal design system, building reusable components
-      used across the site. Closely mentored a web developer intern including onboarding,
-      regular guidance, and fostering independent problem-solving skills.
-    </p>
-    <h4 class="position">Web Developer Intern</h4>
-    <p class="description">
-      Converted the site's <a href="https://familysearch.org/es" target="_blank"
-        >international home page</a
-      > from Polymer to React with support for 40 languages. Discovered and improved
-      accessibility issues across our team's product. Contributed to our internal
-      design system.
-    </p>
-    <!-- TODO: Have the skills chips in an expander when there are too many of them. -->
-    <div class="skill-chips-container">
-      {skills.map((skill) => <SkillChip text={skill} />)}
-    </div>
-  </div>
-  <Spacer size="nano" />
+      <Spacer size="nano" />
+    ))
+  }
 </Bleed>
 
 <style lang="scss">

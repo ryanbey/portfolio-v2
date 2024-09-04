@@ -9,6 +9,7 @@ html {
   --text-primary: #EDEEF0; // Slate 12
   --text-secondary: #B0B4BA; // Slate 11
   --accent: #1F6692; // Sky 7
+  --accent-bright: #197CAE; // Sky 8
   --accent-transparent: #1f669275; // Sky 7 w/ alpha
   --accent-hover: #197CAE; // Sky 8
 
@@ -42,10 +43,10 @@ a {
 
 a {
   text-decoration: none;
-  transition: 100ms ease;
+  transition: 150ms ease;
 
   &:hover {
-    color: var(--accent);
+    color: var(--accent-bright);
   }
 }
 
