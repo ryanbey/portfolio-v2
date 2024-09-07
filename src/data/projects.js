@@ -17,7 +17,7 @@ const projects = [
     description: 'Jun — Aug 2022',
     positions: [{ description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series race at.' }],
     image: circletracksLogo.src,
-    skills: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'MongoDB', 'Node.js', 'Photoshop', 'XD'],
+    skills: ['Angular', 'TypeScript', 'SCSS', 'MongoDB', 'Node.js', 'Photoshop', 'XD'],
     githubRepoUrl: 'https://github.com/ryanbey/circle-tracks',
   },
   {
