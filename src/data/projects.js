@@ -9,7 +9,7 @@ const projects = [
     positions: [
       { description: 'A super fast driver stats website for iRacing members meant to offer a more performant and user-friendly alternative to the outdated profile pages on the old iRacing member site. Built using the official iRacing API.' }],
     image: nyoomLogo.src,
-    skills: ['React', 'Next.js', 'SCSS', 'Cypress', 'Photoshop', 'XD'],
+    skills: ['React', 'Next.js', 'JavaScript', 'SCSS', 'Cypress', 'Photoshop', 'XD'],
     url: 'https://nyoom.app',
   },
   {
