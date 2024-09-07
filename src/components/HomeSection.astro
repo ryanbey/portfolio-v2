@@ -1,6 +1,6 @@
 ---
 const { title, data } = Astro.props;
-import { Bleed, ListItem, SkillChipList, Spacer, TextBlock} from ".";
+import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
 ---
 
 <section>
@@ -9,10 +9,11 @@ import { Bleed, ListItem, SkillChipList, Spacer, TextBlock} from ".";
     {data.map((item) => (
       <div class="experience-container">
         <ListItem imageUrl={item.image} title={item.company || item.title} description={item.tenure || item.description} />
+        <Spacer size="xs" />
+        <SkillChipList skills={item.skills} />
         {item.positions.map((position) => (
           <TextBlock heading={position.title} text={position.description} />
         ))}
-        <SkillChipList skills={item.skills} />
       </div>
       <Spacer size="nano" />
     ))}
@@ -22,7 +23,8 @@ import { Bleed, ListItem, SkillChipList, Spacer, TextBlock} from ".";
 <style lang="scss">
   .home-section-title {
     font-size: 28px;
-    margin-bottom: 16px;
+    margin-top: 12px;
+    margin-bottom: 8px;
   }
 
   .experience-container {

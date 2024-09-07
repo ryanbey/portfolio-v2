@@ -5,7 +5,9 @@ const { description, imageUrl, title } = Astro.props;
 <div class="list-item-container">
   {
     imageUrl && (
-      <img class="list-item-image" src={imageUrl} alt={`${title} logo`} />
+      <div class="list-item-image-container">
+        <img class="list-item-image" src={imageUrl} alt={`${title} logo`} />
+      </div>
     )
   }
   <div>
@@ -25,12 +27,19 @@ const { description, imageUrl, title } = Astro.props;
     }
   }
 
-  .list-item-image {
+  .list-item-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 6px;
     height: 38px;
     width: 38px;
     padding: 6px;
     background: var(--foreground);
+  }
+
+  .list-item-image {
+    width: 100%;
   }
 
   .list-item-title {

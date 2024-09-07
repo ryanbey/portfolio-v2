@@ -17,7 +17,7 @@ const experience = [
         description: "Converted the site's worldwide home page from Polymer to React with support for 40 languages. Discovered and improved accessibility issues across our team's product. Contributed to our internal design system.",
       }
     ],
-    skills: ["React", "JavaScript", "SCSS", "Jest", "Storybook", "GitHub", "Jira", "Heroku", "Split", "Figma"]
+    skills: ['React', 'JavaScript', 'SCSS', 'Jest', 'Storybook', 'GitHub', 'Jira', 'Heroku', 'Split', 'Figma']
   },
 ]
 

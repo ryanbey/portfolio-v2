@@ -1,11 +1,12 @@
 ---
+import { Spacer } from ".";
 const { heading, text } = Astro.props;
 ---
 
-<h4 class="text-block-heading">{heading}</h4>
+{heading ? <h4 class="text-block-heading">{heading}</h4> : <Spacer size="xs" />}
 <p class="text-block-text">{text}</p>
 
-<style>
+<style lang="scss">
   .text-block-heading {
     font-size: 16px;
     margin-bottom: 8px;
@@ -15,5 +16,9 @@ const { heading, text } = Astro.props;
     line-height: 150%;
     margin-top: 0px;
     color: var(--text-secondary);
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
   }
 </style>
