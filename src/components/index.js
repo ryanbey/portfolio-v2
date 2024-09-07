@@ -1,6 +1,5 @@
 export { default as Button } from './Button'
 export { default as Bleed } from './Bleed.astro'
-export { default as Experience } from './Experience.astro'
 export { default as Greeting } from './Greeting.astro'
 export { default as Header } from './Header.astro'
 export { default as HomeSection } from './HomeSection.astro'

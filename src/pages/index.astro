@@ -3,37 +3,23 @@
 import { BaseLayout } from "../layouts";
 import {
 	Button,
-	Experience,
 	Greeting,
 	HomeSection,
 	SkillChip,
 	Spacer,
 } from "../components";
-import fsLogo from "../assets/images/familysearch-logo.png";
+import { experience, projects } from "../data";
 ---
 
 <BaseLayout pageTitle="Home">
 	<div class="home-container">
 		<Greeting />
 		<div class="home-right">
-			<HomeSection title="Experience">
-				<Experience />
-			</HomeSection>
-			<HomeSection title="Projects">
-				<Experience
-					image={fsLogo.src}
-					company="Nyoom"
-					skills={["React", "Next.js", "SCSS", "Cypress", "Photoshop", "XD"]}
-				/>
-				<Experience
-					image={fsLogo.src}
-					company="Just Pick Something"
-					skills={["HTML", "CSS", "JavaScript", "XD"]}
-				/>
-			</HomeSection>
-			<HomeSection title="Education">
+			<HomeSection title="Experience" data={experience} />
+			<HomeSection title="Projects" data={projects} />
+			<!-- <HomeSection title="Education">
 				<Experience image={fsLogo.src} company="BYU-Idaho" skills={[]} />
-			</HomeSection>
+			</HomeSection> -->
 			<Spacer size="xxl" />
 		</div>
 	</div>
