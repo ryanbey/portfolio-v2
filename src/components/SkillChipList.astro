@@ -1,0 +1,18 @@
+---
+// @ts-nocheck
+import { SkillChip } from ".";
+const { skills } = Astro.props;
+---
+
+<!-- TODO: Have the skills chips in an expander when there are too many of them. -->
+<div class="skill-chips-container">
+  {skills.map((skill) => <SkillChip text={skill} />)}
+</div>
+
+<style>
+  .skill-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+</style>

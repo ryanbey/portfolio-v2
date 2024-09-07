@@ -1,45 +1,20 @@
 ---
 // @ts-nocheck
-import { Bleed, SkillChip, Spacer } from ".";
+import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
 import experience from "../data/experience";
 import fsLogo from "../assets/images/familysearch-logo.png";
 ---
 
-<Bleed sides={16}>
-  {
-    experience.map((item) => (
-      <div class="experience-container">
-        <div class="company-container">
-          <img
-            class="company-image"
-            src={item.image}
-            alt={`${item.company} logo`}
-          />
-
-          <div>
-            <h3 class="company">{item.company}</h3>
-            <p class="tenure">{item.tenure}</p>
-          </div>
-        </div>
-
-        {item.positions.map((position) => (
-          <div>
-            <h4 class="position">{position.title}</h4>
-            <p class="description">{position.description}</p>
-          </div>
-        ))}
-
-        {/* TODO: Have the skills chips in an expander when there are too many of them. */}
-        <div class="skill-chips-container">
-          {item.skills.map((skill) => (
-            <SkillChip text={skill} />
-          ))}
-        </div>
-      </div>
-      <Spacer size="nano" />
-    ))
-  }
-</Bleed>
+{experience.map((item) => (
+  <div class="experience-container">
+    <ListItem imageUrl={item.image} title={item.company} description={item.tenure} />
+    {item.positions.map((position) => (
+      <TextBlock text={position.description} />
+    ))}
+    <SkillChipList skills={item.skills} />
+  </div>
+  <Spacer size="nano" />
+))}
 
 <style lang="scss">
   .experience-container {
@@ -50,52 +25,5 @@ import fsLogo from "../assets/images/familysearch-logo.png";
     &:hover {
       background: var(--foreground-transparent);
     }
-  }
-
-  .company-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    & > * p {
-      margin: 0px;
-    }
-  }
-
-  .company {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 4px;
-
-    &-image {
-      border-radius: 6px;
-      height: 44px;
-      width: 44px;
-      background: var(--text-primary);
-    }
-  }
-
-  .position {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-
-  .description {
-    line-height: 150%;
-    margin-top: 0px;
-    color: var(--text-secondary);
-  }
-
-  .tenure {
-    font-size: 14px;
-    color: var(--text-secondary);
-    margin: 0px;
-  }
-
-  .skill-chips-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
   }
 </style>
