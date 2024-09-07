@@ -9,7 +9,7 @@ import fsLogo from "../assets/images/familysearch-logo.png";
   <div class="experience-container">
     <ListItem imageUrl={item.image} title={item.company} description={item.tenure} />
     {item.positions.map((position) => (
-      <TextBlock text={position.description} />
+      <TextBlock heading={position.title} text={position.description} />
     ))}
     <SkillChipList skills={item.skills} />
   </div>
