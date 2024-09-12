@@ -5,8 +5,9 @@ import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
 
 <section>
   <h2 class="home-section-title">{title}</h2>
+  <slot />
   <Bleed sides={16}>
-    {data.map((item) => (
+    {data?.map((item) => (
       <div class="experience-container">
         <ListItem imageUrl={item.image} title={item.company || item.title} description={item.tenure || item.description} />
         <Spacer size="xs" />
@@ -18,6 +19,7 @@ import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
       <Spacer size="nano" />
     ))}
   </Bleed>
+  <Spacer size="sm" />
 </section>
 
 <style lang="scss">
