@@ -27,11 +27,24 @@ import { experience, projects, education } from "../data";
 	.home-container {
 		display: flex;
 		justify-content: space-between;
-		gap: 150px;
-		padding-top: 60px;
+		flex-direction: column;
 	}
 
 	.home-right {
 		width: 100%;
+	}
+
+	@media (min-width: 850px) {
+		.home-container {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			gap: 150px;
+			padding-top: 60px;
+		}
+
+		.home-right {
+			width: 100%;
+		}
 	}
 </style>
