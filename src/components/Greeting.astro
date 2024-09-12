@@ -1,8 +1,6 @@
 ---
 import { Bleed, HomeSection, SkillChipList, Social, Spacer } from ".";
 import { allSkills } from "../data";
-// Change this later once SkillsChipsList and SkillChips supports counts
-const allSkillsOnlyNames = allSkills.map((skillObj) => skillObj.skillName);
 ---
 
 <div class="greeting-container">
@@ -19,7 +17,7 @@ const allSkillsOnlyNames = allSkills.map((skillObj) => skillObj.skillName);
 
 	<HomeSection title="Skills">
 		<Spacer size="xxs" />
-		<SkillChipList skills={allSkillsOnlyNames} />
+		<SkillChipList skills={allSkills} />
 	</HomeSection>
 
 	<style lang="scss">
