@@ -3,7 +3,7 @@ import { Bleed, Navigation, Social } from ".";
 ---
 
 <header>
-  <p>ryanbey.dev</p>
+  <a href="/"><p>ryanbey.dev</p></a>
   <Navigation client:load transition:persist />
   <Bleed sides={8}>
     <Social compact />
@@ -17,7 +17,9 @@ import { Bleed, Navigation, Social } from ".";
     align-items: center;
     position: sticky;
     top: 0;
-    /* backdrop-filter: blur(4px); */
+    background: linear-gradient(to bottom, var(--background) 70%, #ffffff00);
+    z-index: 10;
+    padding-bottom: 20px;
   }
 
   p {
