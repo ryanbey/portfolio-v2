@@ -22,10 +22,11 @@
 .medium {
   @extend .button;
   @extend .low;
-  background: var(--foreground);
+  background: transparent;
+  border: 1px solid var(--foreground-hover);
 
   &:hover {
-    background: var(--foreground-hover);
+    background: var(--foreground-transparent);
     scale: 1.03;
   }
 }
