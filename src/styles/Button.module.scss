@@ -13,6 +13,7 @@
   @extend .button;
   background: none;
   color: var(--text-primary);
+  margin: 0 -4px;
 
   &:hover {
     background: var(--foreground);
