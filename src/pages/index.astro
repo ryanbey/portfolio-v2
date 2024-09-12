@@ -15,9 +15,9 @@ import { experience, projects, education } from "../data";
 	<div class="home-container">
 		<Greeting />
 		<div class="home-right">
-			<HomeSection title="Experience" data={experience} />
-			<HomeSection title="Projects" data={projects} />
-			<HomeSection title="Education" data={education} />
+			<HomeSection title="Experience" data={experience} url="/experience" />
+			<HomeSection title="Projects" data={projects} url="/projects" />
+			<HomeSection title="Education" data={education} url="/education" />
 			<Spacer size="xxl" />
 		</div>
 	</div>

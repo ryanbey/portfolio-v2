@@ -1,11 +1,11 @@
 ---
-const { title, data } = Astro.props;
+const { title, data, url } = Astro.props;
 import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
 import arrowRight from '../assets/icons/arrow-right.png'
 ---
 
 <section>
-  <a class="home-section-title-container" href="#">
+  <a class="home-section-title-container" href={url}>
     <h2 class="home-section-title">{title}</h2>
     <img class="home-section-arrow" src={arrowRight.src} height={26} width={26} />
   </a>
