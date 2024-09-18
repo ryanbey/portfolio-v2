@@ -3,23 +3,30 @@ import { Bleed, Navigation, Social } from ".";
 ---
 
 <header>
-  <a href="/"><p>ryanbey.dev</p></a>
-  <Navigation client:load transition:persist />
-  <Bleed sides={8}>
-    <Social compact />
-  </Bleed>
+  <div class="header-content">
+    <a href="/"><p>ryanbey.dev</p></a>
+    <Navigation client:load transition:persist />
+    <Bleed sides={8}>
+      <Social compact />
+    </Bleed>
+  </div>
 </header>
 
 <style>
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     background: linear-gradient(to bottom, var(--background) 70%, #ffffff00);
-    z-index: 10;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    z-index: 1;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--content-max-width);
+    margin: 0 auto;
   }
 
   p {

@@ -19,13 +19,20 @@ html {
 
   // Hover durations
   --button-hover: 250ms;
+
+  // Other
+  --content-max-width: 1200px; 
 }
 
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 36px;
+  margin: 0;
   background: var(--background);
+}
+
+main {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  padding: 0 36px;
 }
 
 h1,
