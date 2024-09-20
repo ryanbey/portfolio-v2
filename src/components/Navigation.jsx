@@ -10,12 +10,12 @@ function Tab({ selectedTab, setSelectedTab, title, url }) {
   )
 }
 
-export default function Navigation() {
+export default function Navigation({ pathname }) {
   const [selectedTab, setSelectedTab] = useState('/')
 
   useEffect(() => {
-    setSelectedTab(window.location.pathname)
-  }, [])
+    setSelectedTab(pathname)
+  }, [pathname])
 
   return (
     <nav>

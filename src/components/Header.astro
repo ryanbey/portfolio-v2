@@ -1,11 +1,12 @@
 ---
 import { Bleed, Navigation, Social } from ".";
+const { pathname } = Astro.url
 ---
 
 <header>
   <div class="header-content">
     <a href="/"><p>ryanbey.dev</p></a>
-    <Navigation client:load transition:persist />
+    <Navigation pathname={pathname} client:load transition:persist />
     <Bleed sides={8}>
       <Social compact />
     </Bleed>
