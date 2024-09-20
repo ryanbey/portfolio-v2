@@ -5,15 +5,21 @@ import {
 	Button,
 	Greeting,
 	HomeSection,
-	SkillChip,
+	SkillChipList,
 	Spacer,
 } from "../components";
-import { experience, projects, education } from "../data";
+import { allSkills, experience, projects, education } from "../data";
 ---
 
 <BaseLayout pageTitle="Home">
 	<div class="home-container">
-		<Greeting />
+		<div class="home-left">
+			<Greeting />
+			<Spacer size="lg"/>
+			<HomeSection title="Skills" url="/skills">
+				<SkillChipList skills={allSkills} />
+			</HomeSection>
+		</div>
 		<div class="home-right">
 			<HomeSection title="Experience" data={experience} url="/experience" />
 			<HomeSection title="Projects" data={projects} url="/projects" />
@@ -41,6 +47,15 @@ import { experience, projects, education } from "../data";
 			flex-direction: row;
 			gap: 150px;
 			padding-top: 51px;
+		}
+
+		@media (min-width: 850px) {
+			.home-left {
+				position: sticky;
+				top: 129px; // Keeps home-left in place when scrolling
+				width: 100%;
+				height: 100%;
+			}
 		}
 
 		.home-right {
