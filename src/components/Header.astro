@@ -1,11 +1,14 @@
 ---
-import { Bleed, Navigation, Social } from ".";
+import { Bleed, MobileNavigation, Navigation, Social } from ".";
 const { pathname } = Astro.url
 ---
 
 <header>
   <div class="header-content">
-    <a href="/"><p>ryanbey.dev</p></a>
+    <div class="left-nav">
+      <MobileNavigation pathname={pathname} client:load />
+      <a href="/"><p>ryanbey.dev</p></a>
+    </div>
     <Navigation pathname={pathname} client:load transition:persist />
     <Bleed sides={8}>
       <Social compact />
@@ -29,6 +32,12 @@ const { pathname } = Astro.url
     max-width: var(--content-max-width);
     margin: 0 auto;
     padding: var(--content-padding)
+  }
+
+  .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
   p {
