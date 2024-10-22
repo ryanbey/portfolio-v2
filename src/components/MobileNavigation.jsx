@@ -16,19 +16,12 @@ export default function MobileNavigation({ pathname }) {
     toggled: showNavDrawer,
   }
 
-
   return (
     <>
       <Bleed sides={11} className={css.container}>
         <Hamburger {...buttonProps}/>
       </Bleed>
-
-      <MobileNavigationDrawer
-        pathname={pathname}
-        showNavDrawer={showNavDrawer}
-        setShowNavDrawer={setShowNavDrawer}
-        buttonProps={buttonProps}
-      />
+      <MobileNavigationDrawer pathname={pathname} buttonProps={buttonProps} />
     </>
   )
 }

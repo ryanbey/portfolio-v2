@@ -1,11 +1,17 @@
 .mobileNavContainer {
-  background: black;
-  padding: 12px;
+  background: var(--background);
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, .5));
+  padding: 16px;
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
+  z-index: 999;
+
+  @media (min-width: 851px) {
+    left: -500px !important;
+  }
 }
 
 .mobileNavContent {
