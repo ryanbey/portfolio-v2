@@ -29,33 +29,34 @@ const projects = [
     description: 'Mar — Jun 2022',
     positions: [{ description: 'A fun web app to help your friends and family make decisions on activites using a tournament style bracket system. Start with a list of choices for fast food, movies, or date night ideas and see which one ends up on top.' }],
     image: justpicksomethingLogo.src,
-    skills: ['HTML', 'CSS', 'JavaScript', 'XD'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'Photoshop', 'XD'],
     url: 'https://ryanbey.github.io/just-pick-something/',
     githubRepoUrl: 'https://github.com/ryanbey/just-pick-something',
     category: categories.web,
   },
   {
     title: 'Morssenger',
+    skills: ['Android Studio', 'Photoshop', 'XD', 'Java'],
     category: categories.mobile,
   },
   {
     title: 'Simple Trails',
+    skills: ['Photoshop', 'XD'],
     category: categories.mobile,
   },
   {
-    title: 'R3mix 20xx',
+    title: 'Branding',
+    skills: ['Photoshop'],
     category: categories.artwork,
   },
   {
-    title: 'R3mix 20xx',
-    category: categories.artwork,
-  },
-  {
-    title: 'Aakara',
+    title: 'iRacing',
+    skills: ['Photoshop'],
     category: categories.artwork,
   },
   {
     title: 'Polyscapes',
+    skills: ['Photoshop'],
     category: categories.artwork,
   },
 ]
