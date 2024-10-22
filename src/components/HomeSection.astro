@@ -1,4 +1,5 @@
 ---
+// @ts-nocheck
 const { title, data, url } = Astro.props;
 import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
 import arrowRight from '../assets/icons/arrow-right.png'
@@ -17,7 +18,7 @@ import arrowRight from '../assets/icons/arrow-right.png'
         <ListItem imageUrl={item.image} title={item.company || item.title} description={item.tenure || item.description} />
         <Spacer size="xs" />
         <SkillChipList skills={item.skills} />
-        {item.positions.map((position) => (
+        {item.positions?.map((position) => (
           <TextBlock heading={position.title} text={position.description} />
         ))}
       </div>

@@ -2,6 +2,8 @@ import nyoomLogo from '../assets/images/nyoom-logo.webp'
 import justpicksomethingLogo from '../assets/images/justpicksomething-logo.png'
 import circletracksLogo from '../assets/images/circletracks-logo.png'
 
+export const categories = { web: 'web', mobile: 'mobile', artwork: 'artwork' }
+
 const projects = [
   {
     title: 'Nyoom',
@@ -11,6 +13,7 @@ const projects = [
     image: nyoomLogo.src,
     skills: ['React', 'Next.js', 'JavaScript', 'SCSS', 'Cypress', 'Photoshop', 'XD'],
     url: 'https://nyoom.app',
+    category: categories.web,
   },
   {
     title: 'Circle Tracks',
@@ -19,6 +22,7 @@ const projects = [
     image: circletracksLogo.src,
     skills: ['Angular', 'TypeScript', 'SCSS', 'MongoDB', 'Node.js', 'Photoshop', 'XD'],
     githubRepoUrl: 'https://github.com/ryanbey/circle-tracks',
+    category: categories.web,
   },
   {
     title: 'Just Pick Something',
@@ -28,6 +32,31 @@ const projects = [
     skills: ['HTML', 'CSS', 'JavaScript', 'XD'],
     url: 'https://ryanbey.github.io/just-pick-something/',
     githubRepoUrl: 'https://github.com/ryanbey/just-pick-something',
+    category: categories.web,
+  },
+  {
+    title: 'Morssenger',
+    category: categories.mobile,
+  },
+  {
+    title: 'Simple Trails',
+    category: categories.mobile,
+  },
+  {
+    title: 'R3mix 20xx',
+    category: categories.artwork,
+  },
+  {
+    title: 'R3mix 20xx',
+    category: categories.artwork,
+  },
+  {
+    title: 'Aakara',
+    category: categories.artwork,
+  },
+  {
+    title: 'Polyscapes',
+    category: categories.artwork,
   },
 ]
 

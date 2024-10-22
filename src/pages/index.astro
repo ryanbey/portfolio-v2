@@ -24,7 +24,7 @@ import { allSkills, experience, projects, education } from "../data";
 		</div>
 		<div class="home-right">
 			<HomeSection title="Experience" data={experience} url="/experience" />
-			<HomeSection title="Projects" data={projects} url="/projects" />
+			<HomeSection title="Projects" data={projects.slice(0, 3)} url="/projects" />
 			<HomeSection title="Education" data={education} url="/education" />
 			<div class="skills-container-mobile">
 				<HomeSection title="Skills" url="/skills">

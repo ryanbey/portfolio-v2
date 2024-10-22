@@ -22,7 +22,7 @@ export default function MobileNavigationDrawer({ pathname, buttonProps }) {
 
   return (
     <div className={css.mobileNavContainer} style={{ left: toggled ? '0px' : '-500px', transition: '300ms ease' }}>
-      <div className={css.mobileNavContent}>
+      <div className={css.mobileNavHeader}>
         <SiteName />
         <Bleed sides={11}>
           <Hamburger {...buttonProps}/>
@@ -31,9 +31,9 @@ export default function MobileNavigationDrawer({ pathname, buttonProps }) {
 
       <nav className={css.mobileNavList}>
         <MobileTab title="Home" url="/" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+        <MobileTab title="Experience" url="/experience" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="Projects" url="/projects" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="Skills" url="/skills" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        <MobileTab title="Artwork" url="/artwork" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="About" url="/about" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </nav>
     </div>

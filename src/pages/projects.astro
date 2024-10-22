@@ -1,11 +1,27 @@
 ---
 import { BaseLayout } from "../layouts";
+import { projects, categories } from "../data";
 ---
 
 <BaseLayout pageTitle="Projects">
-  <p>This is the projects page</p>
-  <p>
-    It will have projects like Nyoom and Just Pick Something, with tags for
-    skills and technologies used to make them.
-  </p>
+  <h2 class="category-heading">Web</h2>
+  {projects.map((project) => project.category === categories.web && <p>{project.title}</p>)}
+
+  <h2 class="category-heading">Mobile</h2>
+  {projects.map((project) => project.category === categories.mobile && <p>{project.title}</p>)}
+
+  <h2 class="category-heading">Artwork</h2>
+  {projects.map((project) => project.category === categories.artwork && <p>{project.title}</p>)}
+
+  <p class="temp"><i>Don't forget to add tags for tech used like the home page and link to sites/repos</i></p>
 </BaseLayout>
+
+<style>
+  .temp {
+    color: var(--text-secondary)
+  }
+
+  .category-heading {
+    font-size: 36px;
+  }
+</style>
