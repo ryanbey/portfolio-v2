@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import css from'../styles/Navigation.module.scss'
+import css from '../styles/Navigation.module.scss'
 
 function Tab({ selectedTab, setSelectedTab, title, url }) {
   const style = useMemo(() => url === selectedTab ? { background: 'var(--background)', color: 'var(--text-primary) !important' } : {}, [selectedTab, title])
