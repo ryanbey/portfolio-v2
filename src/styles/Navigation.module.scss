@@ -1,4 +1,4 @@
-nav {
+.navigation {
   display: flex;
   gap: 4px;
   background: var(--foreground);
@@ -30,7 +30,7 @@ nav {
 }
 
 @media (max-width: 850px) {
-  nav {
+  .navigation {
     display: none;
   }
 }

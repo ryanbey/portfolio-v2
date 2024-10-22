@@ -2,10 +2,12 @@
   background: var(--background);
   filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, .5));
   padding: 16px;
+  padding-top: 0px;
   position: absolute;
   top: 0;
   height: 100vh;
   width: 280px;
+  max-width: 80%;
   z-index: 999;
 
   @media (min-width: 851px) {
@@ -17,4 +19,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mobileNavLink {
+  font-size: 20px;
+  padding: 16px 8px;
+  border-radius: var(--border-rad);
+  transition: 300ms;
+  margin: 0 -8px;
+
+  &:hover {
+    background: var(--foreground-transparent)
+  }
 }

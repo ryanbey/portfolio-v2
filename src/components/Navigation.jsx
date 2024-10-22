@@ -18,7 +18,7 @@ export default function Navigation({ pathname }) {
   }, [pathname])
 
   return (
-    <nav>
+    <nav className={css.navigation}>
       <Tab title="Home" url="/" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       <Tab title="Projects" url="/projects" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       <Tab title="Skills" url="/skills" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
