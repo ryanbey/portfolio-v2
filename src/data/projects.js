@@ -35,6 +35,21 @@ const projects = [
     category: categories.web,
   },
   {
+    title: 'Memory Viewer',
+    skills: ['React', 'JavaScript', 'SCSS', 'Storybook', 'Jest',],
+    category: categories.web,
+  },
+  {
+    title: 'Memory Card',
+    skills: ['React', 'JavaScript', 'SCSS', 'Storybook', 'Jest',],
+    category: categories.web,
+  },
+  {
+    title: 'Interational Home Page',
+    skills: ['React', 'JavaScript', 'SCSS', 'Jest',],
+    category: categories.web,
+  },
+  {
     title: 'Morssenger',
     skills: ['Android Studio', 'Photoshop', 'XD', 'Java'],
     category: categories.mobile,
