@@ -1,0 +1,59 @@
+---
+import {SiteName, Social, Spacer } from '.'
+---
+
+<footer class="footer-container">
+  <div class="divider" />
+  <Spacer size="sm" />
+  <div class="footer-content">
+    <div class="footer-left">
+      <SiteName dense />
+    </div>
+    <div class="footer-links">
+      <a class="footer-link" href="/">Home</a>
+      <a class="footer-link" href="/experience">Experience</a>
+      <a class="footer-link" href="/projects">Projects</a>
+      <a class="footer-link" href="/skills">Skills</a>
+      <a class="footer-link" href="/about">About</a>
+    </div>
+    <Social compact />
+  </div>
+  <Spacer size="xs" />
+  <p class="copyright">&copy; 2024 Ryan Bey</p>
+  <Spacer size="sm" />
+</footer>
+
+<style lang="scss">
+  .footer-container {
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+    padding: var(--content-padding);
+  }
+
+  .footer-left {
+    flex-grow: 1;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 32px;
+    margin-right: 32px;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+</style>

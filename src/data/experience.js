@@ -3,7 +3,7 @@ import fsLogo from '../assets/images/familysearch-logo.png'
 const experience = [
   {
     company: 'FamilySearch',
-    tenure: 'Aug 2022 — Present',
+    tenure: 'Aug 2022 - Present',
     image: fsLogo.src,
     positions: [
       {

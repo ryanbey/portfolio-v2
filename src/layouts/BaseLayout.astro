@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import { Header } from "../components";
+import { Footer, Header, Spacer } from "../components";
 const { pageTitle } = Astro.props;
 import "../styles/globals.scss";
 ---
@@ -21,6 +21,8 @@ import "../styles/globals.scss";
       <slot />
       <div class="mouse-glow" transition:persist></div>
     </main>
+    <Spacer size="lg" />
+    <Footer />
   </body>
 </html>
 
