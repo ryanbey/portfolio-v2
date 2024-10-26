@@ -5,7 +5,7 @@ import { Bleed, ListItem, SkillChipList, Spacer, TextBlock } from ".";
 import arrowRight from '../assets/icons/arrow-right.png'
 ---
 
-<section>
+<section class="home-section-container">
   <a class="home-section-title-container" href={url}>
     <h2 class="home-section-title">{title}</h2>
     <img class="home-section-arrow" src={arrowRight.src} height={26} width={26} />
@@ -14,7 +14,7 @@ import arrowRight from '../assets/icons/arrow-right.png'
   <slot />
   <Bleed sides={16}>
     {data?.map((item) => (
-      <div class="experience-container">
+      <div class="experience-container" id={title}>
         <ListItem imageUrl={item.image} title={item.company || item.title} description={item.tenure || item.description} />
         <Spacer size="xs" />
         <SkillChipList skills={item.skills} />
@@ -27,6 +27,27 @@ import arrowRight from '../assets/icons/arrow-right.png'
   </Bleed>
   <Spacer size="sm" />
 </section>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const container = document.querySelector(".experience-container");
+    let isDragging = false;
+
+    container && container.addEventListener('mousedown', () => {
+      isDragging = false;
+    });
+
+    container && container.addEventListener('mousemove', () => {
+      isDragging = true;
+    });
+
+    container && container.addEventListener('mouseup', () => {
+      if (!isDragging) {
+        window.location.href = '/projects';
+      }
+    });
+  });
+</script>
 
 <style lang="scss">
   .home-section-title {
@@ -60,6 +81,7 @@ import arrowRight from '../assets/icons/arrow-right.png'
 
     &:hover {
       background: var(--foreground-transparent);
+      cursor: pointer;
     }
   }
 </style>

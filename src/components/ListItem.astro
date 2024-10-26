@@ -21,10 +21,6 @@ const { description, imageUrl, title } = Astro.props;
     display: flex;
     align-items: center;
     gap: 12px;
-
-    & > * p {
-      margin: 0px;
-    }
   }
 
   .list-item-image-container {
@@ -53,5 +49,13 @@ const { description, imageUrl, title } = Astro.props;
     font-size: 14px;
     color: var(--text-secondary);
     margin: 0px;
+  }
+
+  .list-item-text-container {
+    flex-grow: 1;
+  }
+
+  .list-item-right {
+    margin-right: 8px;
   }
 </style>
