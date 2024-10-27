@@ -14,7 +14,7 @@ import arrowRight from '../assets/icons/arrow-right.png'
   <slot />
   <Bleed sides={16}>
     {data?.map((item) => (
-      <div class="experience-container" id={title}>
+      <div class="experience-container" id={item.company || item.title}>
         <ListItem imageUrl={item.image} title={item.company || item.title} description={item.tenure || item.description} />
         <Spacer size="xs" />
         <SkillChipList skills={item.skills} />
@@ -27,27 +27,6 @@ import arrowRight from '../assets/icons/arrow-right.png'
   </Bleed>
   <Spacer size="sm" />
 </section>
-
-<script>
-  document.addEventListener("astro:page-load", () => {
-    const container = document.querySelector(".experience-container");
-    let isDragging = false;
-
-    container && container.addEventListener('mousedown', () => {
-      isDragging = false;
-    });
-
-    container && container.addEventListener('mousemove', () => {
-      isDragging = true;
-    });
-
-    container && container.addEventListener('mouseup', () => {
-      if (!isDragging) {
-        window.location.href = '/projects';
-      }
-    });
-  });
-</script>
 
 <style lang="scss">
   .home-section-title {
@@ -87,6 +66,7 @@ import arrowRight from '../assets/icons/arrow-right.png'
 </style>
 
 <script>
+  // Animate arrows in headings on hover
   document.addEventListener("astro:page-load", () => {
     const containers = document.querySelectorAll('.home-section-title-container');
     const arrows = document.querySelectorAll('.home-section-arrow');
@@ -95,6 +75,18 @@ import arrowRight from '../assets/icons/arrow-right.png'
       const arrow = arrows[index];
       container.addEventListener('mouseenter', () => arrow.classList.add('home-section-arrow-hover'));
       container.addEventListener('mouseleave', () => arrow.classList.remove('home-section-arrow-hover'));
+    });
+  });
+
+  // Navigate to projects or experience page on when clicking on a hovered item
+  document.addEventListener("astro:page-load", () => {
+    const containers = document.querySelectorAll(".experience-container");
+
+    containers.forEach((container) => {
+      const containerId = container.getAttribute('id').toLowerCase().replace(/ /g, '-');
+      container.addEventListener('click', () => {
+        window.location.href = `/projects#${containerId}`;
+      });
     });
   })
 </script>
