@@ -1,4 +1,5 @@
 import fsLogo from '../assets/images/familysearch-logo.png'
+import { skills } from './projects'
 
 const experience = [
   {
@@ -17,7 +18,7 @@ const experience = [
         description: "Converted the site's worldwide home page from Polymer to React with support for 40 languages. Discovered and improved accessibility issues across our team's product. Contributed to our internal design system.",
       }
     ],
-    skills: ['React', 'JavaScript', 'SCSS', 'Jest', 'Storybook', 'GitHub', 'Jira', 'Heroku', 'Split.io']
+    skills: [skills.react, skills.javascript, skills.css, skills.jest, skills.storybook, skills.jira, skills.heroku, skills.split]
   },
 ]
 
