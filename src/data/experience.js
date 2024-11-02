@@ -14,7 +14,7 @@ const experience = [
       },
       {
         title: 'Web Developer Intern',
-        tenure: 'Aug 2022 - Dec 2022',
+        tenure: 'Aug - Dec 2022',
         description: "Converted the site's worldwide home page from Polymer to React with support for 40 languages. Discovered and improved accessibility issues across our team's product. Contributed to our internal design system.",
       }
     ],

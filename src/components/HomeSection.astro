@@ -19,7 +19,7 @@ import arrowRight from '../assets/icons/arrow-right.png'
         <Spacer size="xs" />
         <SkillChipList skills={item.skills} />
         {item.positions?.map((position) => (
-          <TextBlock heading={position.title} text={position.description} />
+          <TextBlock heading={position.title} text={position.description} secondary={position.tenure} />
         ))}
       </div>
       <Spacer size="nano" />
