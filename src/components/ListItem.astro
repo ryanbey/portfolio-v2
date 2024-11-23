@@ -1,5 +1,7 @@
 ---
-const { description, imageUrl, title } = Astro.props;
+// @ts-nocheck
+const { actions, description, imageUrl, title } = Astro.props;
+import { Button } from '.' 
 ---
 
 <div class="list-item-container">
@@ -10,9 +12,16 @@ const { description, imageUrl, title } = Astro.props;
       </div>
     )
   }
-  <div>
+
+  <div class="list-item-text-container">
     <h3 class="list-item-title">{title}</h3>
     <p class="list-item-description">{description}</p>
+  </div>
+
+  <div class="list-item-right">
+    {actions && (
+      actions.map((action) => <Button emphasis="medium" to={Object.values(action)} target="_blank" client:load>{Object.keys(action)}</Button>)
+    )}
   </div>
 </div>
 
@@ -21,6 +30,10 @@ const { description, imageUrl, title } = Astro.props;
     display: flex;
     align-items: center;
     gap: 12px;
+  }
+
+  .list-item-text-container {
+    flex-grow: 1;
   }
 
   .list-item-image-container {
@@ -56,6 +69,8 @@ const { description, imageUrl, title } = Astro.props;
   }
 
   .list-item-right {
-    margin-right: 8px;
+    display: flex;
+    gap: 16px;
+    margin-right: 6px;
   }
 </style>

@@ -23,13 +23,14 @@ html {
   // Other
   --content-max-width: 1200px; 
   --content-padding: 0 16px;
+  
+  // Added this specifically to add animation when navigating to a specific heading on another page
+  scroll-behavior: smooth;
 
   @media (min-width: 850px) {
     --content-padding: 0 28px;
   }
 
-  // Added this specifically to add animation when navigating to a specific heading on another page
-  scroll-behavior: smooth;
 }
 
 body {

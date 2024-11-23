@@ -1,0 +1,54 @@
+---
+// @ts-nocheck
+const { id, project } = Astro.props
+import { Button, ListItem, Spacer, SkillChipList } from '.'
+---
+
+<section class="project-container">
+  <ListItem title={project.title} description={project.description} imageUrl={project.image} actions={project.links} />
+  <Spacer size="xs" />
+  <SkillChipList skills={project.skills} />
+  <Spacer size="sm" />
+  {project?.positions?.map((position, index) => {
+    return (
+      <>
+        <p class="project-description">{position.description}</p>
+        {index !== project.positions.length - 1 && <Spacer size="xxs" />} 
+      </>
+    )
+  })}
+  <Spacer size="sm" />
+  <div class="images-container">
+    <img class="project-image" src="https://dummyimage.com/150x80" alt="alt" />
+    <img class="project-image" src="https://dummyimage.com/150x80" alt="alt" />
+    <img class="project-image" src="https://dummyimage.com/150x80" alt="alt" />
+  </div>
+</section>
+
+<style>
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--foreground-transparent);
+    padding: 16px;
+    border-radius: var(--border-rad);
+  }
+
+  .project-description {
+    font-size: 16px;
+    line-height: 150%;
+    flex-grow: 1;
+    margin: 0
+  }
+
+  .images-container {
+    display: flex;
+    gap: 8px;
+    max-width: 100%;
+  }
+  
+  .project-image {
+    border-radius: var(--border-rad);
+    width: 100%;
+  }
+</style>

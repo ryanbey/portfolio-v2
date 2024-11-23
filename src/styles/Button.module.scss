@@ -24,7 +24,7 @@
   @extend .button;
   @extend .low;
   background: transparent;
-  border: 1px solid var(--foreground-hover);
+  border: 2px solid var(--foreground-hover);
 
   &:hover {
     background: var(--foreground-transparent);
