@@ -2,6 +2,9 @@ import nyoomLogo from '../assets/images/nyoom-logo.webp'
 import justpicksomethingLogo from '../assets/images/justpicksomething-logo.png'
 import circletracksLogo from '../assets/images/circletracks-logo.png'
 import fsLogo from '../assets/images/familysearch-logo.png'
+import morssengerLogo from '../assets/images/morssenger-logo.png'
+import nastracksLogo from '../assets/images/nastracks-logo.png'
+import chamberLogo from '../assets/images/chamber-logo.png'
 
 export const categories = { web: 'web', mobile: 'mobile', artwork: 'artwork' }
 export const skills = {
@@ -40,7 +43,7 @@ const projects = [
     skills: [skills.react, skills.nextjs, skills.javascript, skills.css, skills.cypress, skills.photoshop, skills.xd],
     category: categories.web,
     links: [
-      { visit: 'https://nyoom.app' },
+      { Visit: 'https://nyoom.app' },
     ]
   },
   {
@@ -51,19 +54,22 @@ const projects = [
     skills: [skills.html, skills.css, skills.javascript, skills.photoshop, skills.xd],
     category: categories.web,
     links: [
-      { gitHub: 'https://github.com/ryanbey/just-pick-something' },
-      { visit: 'https://ryanbey.github.io/just-pick-something/' },
+      { GitHub: 'https://github.com/ryanbey/just-pick-something' },
+      { Visit: 'https://ryanbey.github.io/just-pick-something/' },
     ]
   },
   {
     title: 'Circle Tracks',
     description: 'Jun - Aug 2022',
-    positions: [{ description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series race at. This was my first time using a JavaScript framework and luckily my last time using Angular.' }],
+    positions: [
+      { description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series race at. This was my first time using a JavaScript framework and luckily my last time using Angular.' },
+      { description: "Unfortunately, this site has been taken down as the database it was using was no longer free." },
+    ],
     image: circletracksLogo.src,
     skills: [skills.angular, skills.typescript, skills.css, skills.mongodb, skills.nodejs, skills.photoshop, skills.xd],
     category: categories.web,
     links: [
-      { gitHub: 'https://github.com/ryanbey/circle-tracks' },
+      { GitHub: 'https://github.com/ryanbey/circle-tracks' },
     ]
   },
   {
@@ -77,7 +83,7 @@ const projects = [
     category: categories.web,
     image: fsLogo.src,
     links: [
-      { visit: 'https://www.familysearch.org/memories/memory/172126330?a=1349257' }
+      { Visit: 'https://www.familysearch.org/memories/memory/172126330?a=1349257' }
     ]
   },
   {
@@ -91,7 +97,7 @@ const projects = [
     category: categories.web,
     image: fsLogo.src,
     links: [
-      { visit: 'https://www.familysearch.org/tree/person/memories/KNDX-MKG' }
+      { Visit: 'https://www.familysearch.org/tree/person/memories/KNDX-MKG' }
     ]
   },
   {
@@ -104,7 +110,7 @@ const projects = [
     category: categories.web,
     image: fsLogo.src,
     links: [
-      { visit: 'https://www.familysearch.org/es' },
+      { Visit: 'https://www.familysearch.org/es' },
     ]
   },
   {
@@ -116,20 +122,20 @@ const projects = [
     skills: [skills.html, skills.css, skills.javascript],
     category: categories.web,
     links: [
-      { gitHub: 'https://github.com/ryanbey/portfolio' },
-      { visit: 'https://ryanbey.github.io/portfolio' },
+      { GitHub: 'https://github.com/ryanbey/portfolio' },
+      { Visit: 'https://ryanbey.github.io/portfolio' },
     ],
   },
   {
     title: 'Portfolio v2',
     description: '??? - ???',
     positions: [
-      { description: "You are here! My second, much more modern and cooler, portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
+      { description: "You are here! My second, much more modern and nicer, portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
     ],
     skills: [skills.astro, skills.react, skills.javascript, skills.css],
     category: categories.web,
     links: [
-      { gitHub: 'https://github.com/ryanbey/portfolio-v2' },
+      { GitHub: 'https://github.com/ryanbey/portfolio-v2' },
     ],
   },
   {
@@ -141,8 +147,9 @@ const projects = [
     skills: [skills.html, skills.css, skills.xd],
     category: categories.web,
     links: [
-      { visit: 'https://nastracks.glitch.me/index.html' },
+      { Visit: 'https://nastracks.glitch.me/index.html' },
     ],
+    image: nastracksLogo.src,
   },
   {
     title: 'Chamber of Commerce',
@@ -150,37 +157,36 @@ const projects = [
     positions: [
       { description: "A fun project to remake my hometown's Chamber of Commerce site to show them how bad they were at web design. I'm kidding, it was a school project. But can you imagine?" },
     ],
-    skills: [skills.astro, skills.react, skills.javascript, skills.css, skills.xd],
+    skills: [skills.html, skills.css, skills.xd],
     category: categories.web,
     links: [
-      { visit: 'https://ryanbey.github.io/wdd-230/bakersfield-chamber' },
+      { Visit: 'https://ryanbey.github.io/wdd-230/bakersfield-chamber' },
     ],
+    image: chamberLogo.src,
   },
   {
     title: 'Morssenger',
+    description: 'Nov - Dec 2019',
+    positions: [
+      { description: 'A team-built Android app that allows messaging with live input translation to and from Morse code with options for audio or haptic message playback.' },
+      { description: "Funny story, the logo is insanely similar to monday.com. I designed it with zero knowledge that company even existed, and basically made exact the same logo. Please don't sue me." },
+    ],
     skills: [skills.java, skills.androidstudio, skills.photoshop, skills.xd],
     category: categories.mobile,
+    links: [
+      { GitHub: 'https://github.com/ryanbey/Morssenger' }
+    ],
+    image: morssengerLogo.src,
   },
   {
     title: 'Simple Trails',
+    description: '??? - ???',
     skills: [skills.photoshop, skills.xd],
     category: categories.mobile,
+    links: [
+      { Prototype: 'https://xd.adobe.com/view/396bbf71-8c28-4f8e-9ea8-7902173c9cfb-6c38/?fullscreen&hints=off' }
+    ],
   },
-  // {
-  //   title: 'Branding',
-  //   skills: [skills.photoshop],
-  //   category: categories.artwork,
-  // },
-  // {
-  //   title: 'iRacing',
-  //   skills: [skills.photoshop],
-  //   category: categories.artwork,
-  // },
-  // {
-  //   title: 'Polyscapes',
-  //   skills: [skills.photoshop],
-  //   category: categories.artwork,
-  // },
 ]
 
 export default projects

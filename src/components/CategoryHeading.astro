@@ -1,0 +1,30 @@
+---
+const { title } = Astro.props
+---
+
+<div class="category-heading-container">
+  <div class="category-heading-line" />
+  <h2 class="category-heading">{title}</h2>
+  <div class="category-heading-line" />
+</div>
+
+<style>
+  .category-heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .category-heading-line {
+    height: 2px;
+    border-radius: 1px;
+    width: 100%;
+    background: var(--accent);
+  }
+
+  .category-heading {
+    font-size: 28px;
+    font-weight: 600;
+  }
+</style>

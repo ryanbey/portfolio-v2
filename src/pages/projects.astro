@@ -1,19 +1,19 @@
 ---
 // @ts-nocheck
 import { BaseLayout } from "../layouts";
-import { Button, ProjectsSection, Spacer } from "../components";
+import { Button, CategoryHeading, ProjectsSection, Spacer } from "../components";
 import { projects, categories } from "../data";
 ---
 
 <BaseLayout pageTitle="Projects">
-  <div class="heading-container">
+  <div class="page-heading-container">
     <h1 class="page-heading">Projects</h1>
     <div class="filters-container">
       <Button emphasis="medium">Filter</Button>
       <Button emphasis="medium">Sort</Button>
     </div>
   </div>
-  <h2 class="category-heading">Web</h2>
+  <CategoryHeading title="Web" />
   <div class="projects-container">
     {projects.map((project) =>
       project.category === categories.web && (
@@ -25,30 +25,27 @@ import { projects, categories } from "../data";
     )}
   </div>
 
-  <h2 class="category-heading">Mobile</h2>
-  {projects.map((project) =>
-    project.category === categories.mobile && <h3>{project.title}</h3>,
-  )}
+  <Spacer size="lg" />
 
-  <h2 class="category-heading">Artwork</h2>
-  {projects.map((project) =>
-    project.category === categories.artwork && <h3>{project.title}</h3>,
-  )}
+  <CategoryHeading title="Mobile" />
+  <div class="projects-container">
+    {projects.map((project) =>
+      project.category === categories.mobile && (
+        <ProjectsSection
+          id={project.title.toLowerCase().replace(/ /g, "-")}
+          project={project}
+        />
+      )
+    )}
+  </div>
 
-  <p class="temp">
-    <i>
-      Don't forget to add tags for tech used like the home page and link to sites/repos.
-      <br />
-      Also probably show a tag to FamilySearch for projects completed there.
-    </i>
-  </p>
+  <Spacer size="lg" />
 
-  <Spacer size="xxl" />
-  <Spacer size="xxl" />
+  <CategoryHeading title="Artwork" />
 </BaseLayout>
 
 <style lang="scss">
-  .heading-container {
+  .page-heading-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +60,7 @@ import { projects, categories } from "../data";
   .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 16px;
   }
 
   .temp {
@@ -76,11 +73,6 @@ import { projects, categories } from "../data";
 
   .page-heading {
     font-size: 36px;
-  }
-
-  .category-heading {
-    font-size: 28px;
-    font-weight: 600;
   }
 
   @media (max-width: 850px) {
