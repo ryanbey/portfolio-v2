@@ -27,7 +27,7 @@
   border: 2px solid var(--foreground-hover);
 
   &:hover {
-    background: var(--foreground-transparent);
+    background: var(--foreground-hover);
     scale: 1.03;
   }
 }
