@@ -54,6 +54,10 @@ p,
 a {
   font-family: Figtree, sans-serif;
   color: var(--text-primary);
+
+  &::selection {
+    background: var(--accent);
+  }
 }
 
 a {

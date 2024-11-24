@@ -20,7 +20,11 @@ import { Button } from '.'
 
   <div class="list-item-right">
     {actions && (
-      actions.map((action) => <Button emphasis="medium" to={Object.values(action)} target="_blank" client:load>{Object.keys(action)}</Button>)
+      actions.map((action) => (
+        <Button emphasis="medium" to={Object.values(action)} target="_blank" client:load>
+          {Object.keys(action)}
+        </Button>)
+      )
     )}
   </div>
 </div>

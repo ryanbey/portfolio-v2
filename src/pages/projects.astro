@@ -3,14 +3,17 @@
 import { BaseLayout } from "../layouts";
 import { Button, CategoryHeading, ProjectsSection, Spacer } from "../components";
 import { projects, categories } from "../data";
+import filterIcon from '../assets/icons/filter.png'
+import sortIcon from '../assets/icons/sort.png'
 ---
 
 <BaseLayout pageTitle="Projects">
+  <Spacer size="xs" />
   <div class="page-heading-container">
     <h1 class="page-heading">Projects</h1>
     <div class="filters-container">
-      <Button emphasis="medium">Filter</Button>
-      <Button emphasis="medium">Sort</Button>
+      <Button icon={filterIcon} iconSize="sm">Filter</Button>
+      <Button icon={sortIcon} iconSize="sm">Sort</Button>
     </div>
   </div>
   <CategoryHeading title="Web" />
@@ -25,7 +28,7 @@ import { projects, categories } from "../data";
     )}
   </div>
 
-  <Spacer size="lg" />
+  <Spacer size="xl" />
 
   <CategoryHeading title="Mobile" />
   <div class="projects-container">
@@ -39,7 +42,7 @@ import { projects, categories } from "../data";
     )}
   </div>
 
-  <Spacer size="lg" />
+  <Spacer size="xl" />
 
   <CategoryHeading title="Artwork" />
 </BaseLayout>
@@ -54,7 +57,7 @@ import { projects, categories } from "../data";
   .filters-container {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
   }
 
   .projects-container {
@@ -73,6 +76,7 @@ import { projects, categories } from "../data";
 
   .page-heading {
     font-size: 36px;
+    margin: 0px;
   }
 
   @media (max-width: 850px) {

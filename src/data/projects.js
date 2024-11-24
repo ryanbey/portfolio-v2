@@ -5,6 +5,7 @@ import fsLogo from '../assets/images/familysearch-logo.png'
 import morssengerLogo from '../assets/images/morssenger-logo.png'
 import nastracksLogo from '../assets/images/nastracks-logo.png'
 import chamberLogo from '../assets/images/chamber-logo.png'
+import portfolioV1Logo from '../assets/images/portfolio-v1-logo.png'
 
 export const categories = { web: 'web', mobile: 'mobile', artwork: 'artwork' }
 export const skills = {
@@ -59,17 +60,17 @@ const projects = [
     ]
   },
   {
-    title: 'Circle Tracks',
-    description: 'Jun - Aug 2022',
+    title: 'Memory Card',
+    description: 'Jul - Aug 2024',
     positions: [
-      { description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series race at. This was my first time using a JavaScript framework and luckily my last time using Angular.' },
-      { description: "Unfortunately, this site has been taken down as the database it was using was no longer free." },
+      { description: 'A flexible and responsive card for displaying six variants of user-uploaded content (memories), with each variant having varying amounts of metadata including titles, descriptions, images, comments, and more.' },
+      { description: "I rewrote this component from the ground up introducing new features and better responsiveness with less than half the amount code. This vastly lessened the component's cognitive complexity and made it much easier for developers to work with." },
     ],
-    image: circletracksLogo.src,
-    skills: [skills.angular, skills.typescript, skills.css, skills.mongodb, skills.nodejs, skills.photoshop, skills.xd],
+    skills: [skills.react, skills.javascript, skills.css, skills.storybook, skills.jest,],
     category: categories.web,
+    image: fsLogo.src,
     links: [
-      { GitHub: 'https://github.com/ryanbey/circle-tracks' },
+      { Visit: 'https://www.familysearch.org/tree/person/memories/KNDX-MKG' }
     ]
   },
   {
@@ -87,20 +88,6 @@ const projects = [
     ]
   },
   {
-    title: 'Memory Card',
-    description: 'Jul - Aug 2024',
-    positions: [
-      { description: 'A flexible and responsive card for displaying six variants of user-uploaded content (memories), with each variant having varying amounts of metadata including titles, descriptions, images, comments, and more.' },
-      { description: "I rewrote this component from the ground up introducing new features and better responsiveness with less than half the amount code. This vastly lessened the component's cognitive complexity and made it much easier for developers to work with." },
-    ],
-    skills: [skills.react, skills.javascript, skills.css, skills.storybook, skills.jest,],
-    category: categories.web,
-    image: fsLogo.src,
-    links: [
-      { Visit: 'https://www.familysearch.org/tree/person/memories/KNDX-MKG' }
-    ]
-  },
-  {
     title: 'International Home Page',
     description: 'Aug - Nov 2022 (?)',
     positions: [
@@ -111,6 +98,20 @@ const projects = [
     image: fsLogo.src,
     links: [
       { Visit: 'https://www.familysearch.org/es' },
+    ]
+  },
+  {
+    title: 'Circle Tracks',
+    description: 'Jun - Aug 2022',
+    positions: [
+      { description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series race at. This was my first time using a JavaScript framework and luckily my last time using Angular.' },
+      { description: "Unfortunately, this site has been taken down as the database it was using was no longer free." },
+    ],
+    image: circletracksLogo.src,
+    skills: [skills.angular, skills.typescript, skills.css, skills.mongodb, skills.nodejs, skills.photoshop, skills.xd],
+    category: categories.web,
+    links: [
+      { GitHub: 'https://github.com/ryanbey/circle-tracks' },
     ]
   },
   {
@@ -125,6 +126,7 @@ const projects = [
       { GitHub: 'https://github.com/ryanbey/portfolio' },
       { Visit: 'https://ryanbey.github.io/portfolio' },
     ],
+    image: portfolioV1Logo.src,
   },
   {
     title: 'Portfolio v2',
