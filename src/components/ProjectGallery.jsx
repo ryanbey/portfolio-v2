@@ -5,7 +5,8 @@ export default function ProjectGallery({ images }) {
   return (
     <PhotoProvider
       maskOpacity={0.5}
-      photoClassName={css.test}
+      photoWrapClassName={css.photoWrap}
+      photoClassName={css.photo}
     >
       <div>
         {images?.map((item, index) => (
