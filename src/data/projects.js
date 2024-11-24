@@ -64,7 +64,7 @@ const projects = [
     description: 'Jul - Aug 2024',
     positions: [
       { description: 'A flexible and responsive card for displaying six variants of user-uploaded content (memories), with each variant having varying amounts of metadata including titles, descriptions, images, comments, and more.' },
-      { description: "I rewrote this component from the ground up introducing new features and better responsiveness with less than half the amount code. This vastly lessened the component's cognitive complexity and made it much easier for developers to work with." },
+      { description: "I rewrote this component from the ground up introducing new features and better responsiveness with less than half the amount code. This vastly simplified the component's cognitive complexity and made it much easier for developers to work with." },
     ],
     skills: [skills.react, skills.javascript, skills.css, skills.storybook, skills.jest,],
     category: categories.web,

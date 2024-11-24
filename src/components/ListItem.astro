@@ -2,6 +2,8 @@
 // @ts-nocheck
 const { actions, description, imageUrl, title } = Astro.props;
 import { Button } from '.' 
+import visitIcon from '../assets/icons/visit.png'
+import gitHubIcon from '../assets/icons/github-logo.svg'
 ---
 
 <div class="list-item-container">
@@ -21,7 +23,16 @@ import { Button } from '.'
   <div class="list-item-right">
     {actions && (
       actions.map((action) => (
-        <Button emphasis="medium" to={Object.values(action)} target="_blank" client:load>
+        <Button
+          emphasis="medium"
+          icon={
+            Object.keys(action) == 'Visit' || Object.keys(action) == 'Prototype' ? visitIcon : gitHubIcon
+          }
+          iconSize="sm"
+          to={Object.values(action)}
+          target="_blank"
+          client:load
+        >
           {Object.keys(action)}
         </Button>)
       )
@@ -49,6 +60,7 @@ import { Button } from '.'
     width: 38px;
     padding: 6px;
     background: var(--foreground);
+    flex-shrink: 0;
   }
 
   .list-item-image {
