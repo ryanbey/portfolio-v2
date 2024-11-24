@@ -10,7 +10,7 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
   {
     imageUrl && (
       <div class="list-item-image-container">
-        <img class="list-item-image" src={imageUrl} alt={`${title} logo`} />
+        <img class="list-item-image" src={imageUrl} alt={`${title} logo`} draggable="false" />
       </div>
     )
   }
@@ -88,5 +88,6 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
     display: flex;
     gap: 12px;
     margin-right: 6px;
+    align-self: flex-start;
   }
 </style>

@@ -1,7 +1,24 @@
-.photoWrap {
-  border: 5px dashed red;
+.galleryContainer {
+  font-family: Figtree, sans-serif;
+  font-weight: 600;
+  width: 100%;
 }
 
-.photo {
-  border: 5px dashed blue;
+.galleryLayout {
+  display: flex;
+  gap: 8px;
+}
+
+.imageElement {
+  object-fit: cover;
+  border-radius: var(--border-rad);
+  max-width: 120px;
+  aspect-ratio: 2/1;
+  border: 2px solid var(--foreground-hover);
+  transition: 110ms ease;
+
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
 }

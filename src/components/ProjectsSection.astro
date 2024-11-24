@@ -18,7 +18,7 @@ import { Button, ListItem, ProjectGallery, Spacer, SkillChipList } from '.'
     )
   })}
   <div style={{ flexGrow: 1 }} />
-  <Spacer size="sm" />
+  <Spacer size="xs" />
   <ProjectGallery images={project.gallery} client:load />
 </section>
 
@@ -35,16 +35,5 @@ import { Button, ListItem, ProjectGallery, Spacer, SkillChipList } from '.'
     font-size: 16px;
     line-height: 150%;
     margin: 0
-  }
-
-  .images-container {
-    display: flex;
-    gap: 8px;
-    max-width: 100%;
-  }
-  
-  .project-image {
-    border-radius: var(--border-rad);
-    width: 100%;
   }
 </style>
