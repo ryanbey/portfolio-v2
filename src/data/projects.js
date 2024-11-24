@@ -76,7 +76,7 @@ const projects = [
   },
   {
     title: 'Memory Viewer',
-    description: 'Jun 2023 - Mar 2024 (?)',
+    description: 'Aug 2023 - May 2024',
     positions: [
       { description: 'A complex file viewer, metadata editor, and person tagger for user-uploaded photos, stories, documents, and recordings of their ancestors. Built to give users more power and control over the memories they share with the world.' },
       { description: 'The main things I worked on were the side menu layout and navigation, tagging logic, next/previous functionality, and substantial performance optimizations.' }
@@ -90,7 +90,7 @@ const projects = [
   },
   {
     title: 'International Home Page',
-    description: 'Aug - Nov 2022 (?)',
+    description: 'Aug - Nov 2022',
     positions: [
       { description: 'A brand new home page ported from Polymer to React to introduce new users to our site in over 40 languages. This included making smart layout and design decisions to accomodate for verbose languages and conditionally displaying certain parts of the page for specific areas of the world.' },
     ],
@@ -117,7 +117,7 @@ const projects = [
   },
   {
     title: 'Portfolio v1',
-    description: '??? - ???',
+    description: 'Oct - Nov 2021',
     positions: [
       { description: 'My first portfolio site I made from scratch using plain old HTML, CSS, and JavaScript. Made during college to showcase my favorite projects, classes, and skills to recruiters and friends.' },
     ],
@@ -131,9 +131,9 @@ const projects = [
   },
   {
     title: 'Portfolio v2',
-    description: '??? - ???',
+    description: 'Aug 2024 - Present',
     positions: [
-      { description: "You are here! My second, much more modern and nicer, portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
+      { description: "You are here! My second, updated portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
     ],
     skills: [skills.astro, skills.react, skills.javascript, skills.css],
     category: categories.web,
@@ -143,7 +143,7 @@ const projects = [
   },
   {
     title: 'NASTRACKS',
-    description: '??? - ???',
+    description: 'May - Jul 2021',
     positions: [
       { description: "My first website! It simply displays information about all of the tracks that the top 3 NASCAR series visit every year." },
       { description: "Later, I rewrote this site in Angular as a full-stack, CRUD app called Circle Tracks." },
@@ -157,7 +157,7 @@ const projects = [
   },
   {
     title: 'Chamber of Commerce',
-    description: '??? - ???',
+    description: 'Nov - Dec 2021',
     positions: [
       { description: "A fun project to remake my hometown's Chamber of Commerce site to show them how bad they were at web design. I'm kidding, it was a school project. But can you imagine?" },
     ],
@@ -184,7 +184,7 @@ const projects = [
   },
   {
     title: 'Simple Trails',
-    description: '??? - ???',
+    description: 'May - Jul 2021',
     positions: [{ description: 'As the design lead for this college UX design project, I conducted user studies and designed a trail hiking app, which involved creating detailed personas, scenarios, storyboards, usability studies, and prototypes.' }],
     skills: [skills.photoshop, skills.xd],
     category: categories.mobile,

@@ -3,7 +3,7 @@ const { title, dense } = Astro.props
 ---
 
 <div class="category-heading-container">
-  <!-- <div class="category-heading-line" /> -->
+  {!dense && <div class="category-heading-line" />}
   <h2 class="category-heading">{title}</h2>
   <div class="category-heading-line" />
 </div>

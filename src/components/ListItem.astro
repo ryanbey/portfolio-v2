@@ -24,7 +24,7 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
     {actions && (
       actions.map((action) => (
         <Button
-          emphasis="medium"
+          emphasis="low"
           icon={
             Object.keys(action) == 'Visit' || Object.keys(action) == 'Prototype' ? visitIcon : gitHubIcon
           }
@@ -86,7 +86,7 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
 
   .list-item-right {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     margin-right: 6px;
   }
 </style>
