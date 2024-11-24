@@ -6,6 +6,7 @@ import morssengerLogo from '../assets/images/morssenger-logo.png'
 import nastracksLogo from '../assets/images/nastracks-logo.png'
 import chamberLogo from '../assets/images/chamber-logo.png'
 import portfolioV1Logo from '../assets/images/portfolio-v1-logo.png'
+import simpleTrailsLogo from '../assets/images/simple-trails-logo.png'
 
 export const categories = { web: 'web', mobile: 'mobile', artwork: 'artwork' }
 export const skills = {
@@ -145,6 +146,7 @@ const projects = [
     description: '??? - ???',
     positions: [
       { description: "My first website! It simply displays information about all of the tracks that the top 3 NASCAR series visit every year." },
+      { description: "Later, I rewrote this site in Angular as a full-stack, CRUD app called Circle Tracks." },
     ],
     skills: [skills.html, skills.css, skills.xd],
     category: categories.web,
@@ -183,11 +185,13 @@ const projects = [
   {
     title: 'Simple Trails',
     description: '??? - ???',
+    positions: [{ description: 'As the design lead for this college UX design project, I conducted user studies and designed a trail hiking app, which involved creating detailed personas, scenarios, storyboards, usability studies, and prototypes.' }],
     skills: [skills.photoshop, skills.xd],
     category: categories.mobile,
     links: [
       { Prototype: 'https://xd.adobe.com/view/396bbf71-8c28-4f8e-9ea8-7902173c9cfb-6c38/?fullscreen&hints=off' }
     ],
+    image: simpleTrailsLogo.src,
   },
 ]
 
