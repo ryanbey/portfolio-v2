@@ -7,6 +7,10 @@ import nastracksLogo from '../assets/images/nastracks-logo.png'
 import chamberLogo from '../assets/images/chamber-logo.png'
 import portfolioV1Logo from '../assets/images/portfolio-v1-logo.png'
 import simpleTrailsLogo from '../assets/images/simple-trails-logo.png'
+import nyoom1 from '../assets/images/projects/nyoom/nyoom-1.png'
+import nyoom2 from '../assets/images/projects/nyoom/nyoom-2.png'
+import nyoom3 from '../assets/images/projects/nyoom/nyoom-3.png'
+import nyoom4 from '../assets/images/projects/nyoom/nyoom-4.png'
 
 export const categories = { web: 'web', mobile: 'mobile', artwork: 'artwork' }
 export const skills = {
@@ -46,7 +50,8 @@ const projects = [
     category: categories.web,
     links: [
       { Visit: 'https://nyoom.app' },
-    ]
+    ],
+    gallery: [nyoom1.src, nyoom2.src, nyoom3.src, nyoom4.src],
   },
   {
     title: 'Just Pick Something',

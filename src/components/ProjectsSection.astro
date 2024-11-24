@@ -1,7 +1,7 @@
 ---
 // @ts-nocheck
 const { id, project } = Astro.props
-import { Button, ListItem, Spacer, SkillChipList } from '.'
+import { Button, ListItem, ProjectGallery, Spacer, SkillChipList } from '.'
 ---
 
 <section class="project-container">
@@ -19,11 +19,7 @@ import { Button, ListItem, Spacer, SkillChipList } from '.'
   })}
   <div style={{ flexGrow: 1 }} />
   <Spacer size="sm" />
-  <div class="images-container">
-    <img class="project-image" src="https://dummyimage.com/150x60/112840/1F6692" alt="placeholder image" />
-    <img class="project-image" src="https://dummyimage.com/150x60/112840/1F6692" alt="placeholder image" />
-    <img class="project-image" src="https://dummyimage.com/150x60/112840/1F6692" alt="placeholder image" />
-  </div>
+  <ProjectGallery images={project.gallery} client:load />
 </section>
 
 <style>
