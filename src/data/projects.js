@@ -63,7 +63,8 @@ const projects = [
     links: [
       { GitHub: 'https://github.com/ryanbey/just-pick-something' },
       { Visit: 'https://ryanbey.github.io/just-pick-something/' },
-    ]
+    ],
+    gallery: [nyoom1.src, nyoom2.src, nyoom3.src, nyoom4.src],
   },
   {
     title: 'Memory Card',

@@ -1,7 +1,6 @@
 .galleryContainer {
   font-family: Figtree, sans-serif;
   font-weight: 600;
-  width: 100%;
 }
 
 .galleryLayout {
@@ -12,8 +11,9 @@
 .imageElement {
   object-fit: cover;
   border-radius: var(--border-rad);
-  max-width: 120px;
-  aspect-ratio: 2/1;
+  height: 64px;
+  width: 100%;
+  min-width: 0px;
   border: 2px solid var(--foreground-hover);
   transition: 110ms ease;
 

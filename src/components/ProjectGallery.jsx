@@ -7,7 +7,6 @@ export default function ProjectGallery({ images }) {
       <div className={css.galleryLayout}>
         {images?.map((item, index) => (
           <PhotoView key={index} src={item}>
-            {/* Only renders first 4 images */}
             {index < 4 && <img src={item} alt="" className={css.imageElement} draggable="false" />}
           </PhotoView>
         ))}
