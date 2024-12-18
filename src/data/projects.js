@@ -1,5 +1,13 @@
 import nyoomLogo from '../assets/images/nyoom-logo.webp'
+import nyoom1 from '../assets/images/projects/nyoom/nyoom-1.jpg'
+import nyoom2 from '../assets/images/projects/nyoom/nyoom-2.jpg'
+import nyoom3 from '../assets/images/projects/nyoom/nyoom-3.jpg'
+import nyoom4 from '../assets/images/projects/nyoom/nyoom-4.jpg'
 import justpicksomethingLogo from '../assets/images/justpicksomething-logo.png'
+import justPickSomething1 from '../assets/images/projects/just-pick-something/just-pick-something-1.jpg'
+import justPickSomething2 from '../assets/images/projects/just-pick-something/just-pick-something-2.jpg'
+import justPickSomething3 from '../assets/images/projects/just-pick-something/just-pick-something-3.jpg'
+import justPickSomething4 from '../assets/images/projects/just-pick-something/just-pick-something-4.jpg'
 import circletracksLogo from '../assets/images/circletracks-logo.png'
 import fsLogo from '../assets/images/familysearch-logo.png'
 import morssengerLogo from '../assets/images/morssenger-logo.png'
@@ -7,10 +15,6 @@ import nastracksLogo from '../assets/images/nastracks-logo.png'
 import chamberLogo from '../assets/images/chamber-logo.png'
 import portfolioV1Logo from '../assets/images/portfolio-v1-logo.png'
 import simpleTrailsLogo from '../assets/images/simple-trails-logo.png'
-import nyoom1 from '../assets/images/projects/nyoom/nyoom-1.png'
-import nyoom2 from '../assets/images/projects/nyoom/nyoom-2.png'
-import nyoom3 from '../assets/images/projects/nyoom/nyoom-3.png'
-import nyoom4 from '../assets/images/projects/nyoom/nyoom-4.png'
 
 export const categories = { web: 'web', mobile: 'mobile', artwork: 'artwork' }
 export const skills = {
@@ -64,7 +68,7 @@ const projects = [
       { GitHub: 'https://github.com/ryanbey/just-pick-something' },
       { Visit: 'https://ryanbey.github.io/just-pick-something/' },
     ],
-    gallery: [nyoom1.src, nyoom2.src, nyoom3.src, nyoom4.src],
+    gallery: [justPickSomething1.src, justPickSomething2.src, justPickSomething3.src, justPickSomething4.src],
   },
   {
     title: 'Memory Card',
