@@ -8,6 +8,33 @@ import justPickSomething1 from '../assets/images/projects/just-pick-something/ju
 import justPickSomething2 from '../assets/images/projects/just-pick-something/just-pick-something-2.jpg'
 import justPickSomething3 from '../assets/images/projects/just-pick-something/just-pick-something-3.jpg'
 import justPickSomething4 from '../assets/images/projects/just-pick-something/just-pick-something-4.jpg'
+import memoryCard1 from '../assets/images/projects/memory-card/memory-card-1.jpg'
+import memoryCard2 from '../assets/images/projects/memory-card/memory-card-2.jpg'
+import memoryCard3 from '../assets/images/projects/memory-card/memory-card-3.jpg'
+import memoryCard4 from '../assets/images/projects/memory-card/memory-card-4.jpg'
+import memoryViewer1 from '../assets/images/projects/memory-viewer/memory-viewer-1.jpg'
+import memoryViewer2 from '../assets/images/projects/memory-viewer/memory-viewer-2.jpg'
+import memoryViewer3 from '../assets/images/projects/memory-viewer/memory-viewer-3.jpg'
+import memoryViewer4 from '../assets/images/projects/memory-viewer/memory-viewer-4.jpg'
+import internationalHomePage1 from '../assets/images/projects/international-home-page/international-home-page-1.jpg'
+import internationalHomePage2 from '../assets/images/projects/international-home-page/international-home-page-2.jpg'
+import circleTracks1 from '../assets/images/projects/circle-tracks/circle-tracks-1.jpg'
+import circleTracks2 from '../assets/images/projects/circle-tracks/circle-tracks-2.jpg'
+import circleTracks3 from '../assets/images/projects/circle-tracks/circle-tracks-3.jpg'
+import circleTracks4 from '../assets/images/projects/circle-tracks/circle-tracks-4.jpg'
+import circleTracks5 from '../assets/images/projects/circle-tracks/circle-tracks-5.jpg'
+import portfolioV11 from '../assets/images/projects/portfolio-v1/portfolio-v1-1.jpg'
+import portfolioV12 from '../assets/images/projects/portfolio-v1/portfolio-v1-2.jpg'
+import portfolioV13 from '../assets/images/projects/portfolio-v1/portfolio-v1-3.jpg'
+import portfolioV14 from '../assets/images/projects/portfolio-v1/portfolio-v1-4.jpg'
+import nastracks1 from '../assets/images/projects/nastracks/nastracks-1.jpg'
+import nastracks2 from '../assets/images/projects/nastracks/nastracks-2.jpg'
+import nastracks3 from '../assets/images/projects/nastracks/nastracks-3.jpg'
+import nastracks4 from '../assets/images/projects/nastracks/nastracks-4.jpg'
+import nastracks5 from '../assets/images/projects/circle-tracks/circle-tracks-5.jpg'
+import chamber1 from '../assets/images/projects/chamber/chamber-1.jpg'
+import chamber2 from '../assets/images/projects/chamber/chamber-2.jpg'
+import chamber3 from '../assets/images/projects/chamber/chamber-3.jpg'
 import circletracksLogo from '../assets/images/circletracks-logo.png'
 import fsLogo from '../assets/images/familysearch-logo.png'
 import morssengerLogo from '../assets/images/morssenger-logo.png'
@@ -82,7 +109,8 @@ const projects = [
     image: fsLogo.src,
     links: [
       { Visit: 'https://www.familysearch.org/tree/person/memories/KNDX-MKG' }
-    ]
+    ],
+    gallery: [memoryCard1.src, memoryCard2.src, memoryCard3.src, memoryCard4.src],
   },
   {
     title: 'Memory Viewer',
@@ -96,7 +124,8 @@ const projects = [
     image: fsLogo.src,
     links: [
       { Visit: 'https://www.familysearch.org/memories/memory/172126330?a=1349257' }
-    ]
+    ],
+    gallery: [memoryViewer1.src, memoryViewer2.src, memoryViewer3.src, memoryViewer4.src],
   },
   {
     title: 'International Home Page',
@@ -109,7 +138,8 @@ const projects = [
     image: fsLogo.src,
     links: [
       { Visit: 'https://www.familysearch.org/es' },
-    ]
+    ],
+    gallery: [internationalHomePage1.src, internationalHomePage2.src]
   },
   {
     title: 'Circle Tracks',
@@ -123,7 +153,8 @@ const projects = [
     category: categories.web,
     links: [
       { GitHub: 'https://github.com/ryanbey/circle-tracks' },
-    ]
+    ],
+    gallery: [circleTracks1.src, circleTracks2.src, circleTracks3.src, circleTracks4.src, circleTracks5.src],
   },
   {
     title: 'Portfolio v1',
@@ -138,6 +169,7 @@ const projects = [
       { Visit: 'https://ryanbey.github.io/portfolio' },
     ],
     image: portfolioV1Logo.src,
+    gallery: [portfolioV11.src, portfolioV12.src, portfolioV13.src, portfolioV14.src],
   },
   {
     title: 'Portfolio v2',
@@ -164,6 +196,7 @@ const projects = [
       { Visit: 'https://nastracks.glitch.me/index.html' },
     ],
     image: nastracksLogo.src,
+    gallery: [nastracks1.src, nastracks2.src, nastracks3.src, nastracks4.src, nastracks5.src],
   },
   {
     title: 'Chamber of Commerce',
@@ -177,6 +210,7 @@ const projects = [
       { Visit: 'https://ryanbey.github.io/wdd-230/bakersfield-chamber' },
     ],
     image: chamberLogo.src,
+    gallery: [chamber1.src, chamber2.src, chamber3.src],
   },
   {
     title: 'Morssenger',
