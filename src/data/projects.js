@@ -75,7 +75,7 @@ const projects = [
     title: 'Nyoom',
     description: 'Jan 2023 - Present',
     positions: [
-      { description: 'A super fast driver stats website for iRacing members meant to offer a more performant and user-friendly alternative to the outdated profile pages on the old iRacing member site. Built using the official iRacing API.' }],
+      { description: 'A driver stats website for iRacing members offering a more performant and user-friendly alternative to the outdated profile pages of the old iRacing member site.' }],
     image: nyoomLogo.src,
     skills: [skills.react, skills.nextjs, skills.javascript, skills.css, skills.cypress, skills.photoshop, skills.xd],
     category: categories.web,
@@ -87,13 +87,13 @@ const projects = [
   {
     title: 'Just Pick Something',
     description: 'Mar - Jun 2022',
-    positions: [{ description: 'A fun web app to help your friends and family make decisions on activites using a tournament style bracket system. Start with a list of choices for fast food, movies, or date night ideas and see which one ends up on top.' }],
+    positions: [{ description: 'A fun web app to help your friends and family make decisions on activites using a tournament style bracket system.' }],
     image: justpicksomethingLogo.src,
     skills: [skills.html, skills.css, skills.javascript, skills.photoshop, skills.xd],
     category: categories.web,
     links: [
-      { GitHub: 'https://github.com/ryanbey/just-pick-something' },
       { Visit: 'https://ryanbey.github.io/just-pick-something/' },
+      { GitHub: 'https://github.com/ryanbey/just-pick-something' },
     ],
     gallery: [justPickSomething1.src, justPickSomething2.src, justPickSomething3.src, justPickSomething4.src],
   },
@@ -101,8 +101,7 @@ const projects = [
     title: 'Memory Card',
     description: 'Jul - Aug 2024',
     positions: [
-      { description: 'A flexible and responsive card for displaying six variants of user-uploaded content (memories), with each variant having varying amounts of metadata including titles, descriptions, images, comments, and more.' },
-      { description: "I rewrote this component from the ground up introducing new features and better responsiveness with less than half the amount code. This vastly simplified the component's cognitive complexity and made it much easier for developers to work with." },
+      { description: 'A flexible and responsive card for displaying six variants of user-uploaded files handling titles, descriptions, images, comments, and more.' },
     ],
     skills: [skills.react, skills.javascript, skills.css, skills.storybook, skills.jest,],
     category: categories.web,
@@ -116,8 +115,7 @@ const projects = [
     title: 'Memory Viewer',
     description: 'Aug 2023 - May 2024',
     positions: [
-      { description: 'A complex file viewer, metadata editor, and person tagger for user-uploaded photos, stories, documents, and recordings of their ancestors. Built to give users more power and control over the memories they share with the world.' },
-      { description: 'The main things I worked on were the side menu layout and navigation, tagging logic, next/previous functionality, and substantial performance optimizations.' }
+      { description: 'A complex file viewer, metadata editor, and person tagger for user-uploaded photos, stories, documents, and recordings of their ancestors.' },
     ],
     skills: [skills.react, skills.javascript, skills.css, skills.storybook, skills.jest,],
     category: categories.web,
@@ -131,7 +129,7 @@ const projects = [
     title: 'International Home Page',
     description: 'Aug - Nov 2022',
     positions: [
-      { description: 'A brand new home page ported from Polymer to React to introduce new users to our site in over 40 languages. This included making smart layout and design decisions to accomodate for verbose languages and conditionally displaying certain parts of the page for specific areas of the world.' },
+      { description: 'A brand new home page ported from Polymer to React to introduce millions of new users to FamilySearch in over 40 languages.' },
     ],
     skills: [skills.react, skills.javascript, skills.css, skills.jest,],
     category: categories.web,
@@ -145,8 +143,7 @@ const projects = [
     title: 'Circle Tracks',
     description: 'Jun - Aug 2022',
     positions: [
-      { description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series race at. This was my first time using a JavaScript framework and luckily my last time using Angular.' },
-      { description: "Unfortunately, this site has been taken down as the database it was using was no longer free." },
+      { description: 'Full-stack single page app for learning about all of the tracks that the top 3 NASCAR national series visit every year.' },
     ],
     image: circletracksLogo.src,
     skills: [skills.angular, skills.typescript, skills.css, skills.mongodb, skills.nodejs, skills.photoshop, skills.xd],
@@ -165,8 +162,8 @@ const projects = [
     skills: [skills.html, skills.css, skills.javascript],
     category: categories.web,
     links: [
-      { GitHub: 'https://github.com/ryanbey/portfolio' },
       { Visit: 'https://ryanbey.github.io/portfolio' },
+      { GitHub: 'https://github.com/ryanbey/portfolio' },
     ],
     image: portfolioV1Logo.src,
     gallery: [portfolioV11.src, portfolioV12.src, portfolioV13.src, portfolioV14.src],
@@ -188,7 +185,6 @@ const projects = [
     description: 'May - Jul 2021',
     positions: [
       { description: "My first website! It simply displays information about all of the tracks that the top 3 NASCAR series visit every year." },
-      { description: "Later, I rewrote this site in Angular as a full-stack, CRUD app called Circle Tracks." },
     ],
     skills: [skills.html, skills.css, skills.xd],
     category: categories.web,
@@ -216,8 +212,7 @@ const projects = [
     title: 'Morssenger',
     description: 'Nov - Dec 2019',
     positions: [
-      { description: 'A team-built Android app that allows messaging with live input translation to and from Morse code with options for audio or haptic message playback.' },
-      { description: "Funny story, the logo is insanely similar to monday.com. I designed it with zero knowledge that company even existed, and basically made exact the same logo. Please don't sue me." },
+      { description: "Android app that allows messaging with live input translation to and from Morse code with options for audio or haptic message playback. I promise I didn't copy Monday.com's logo on purpose. Please don't sue me." },
     ],
     skills: [skills.java, skills.androidstudio, skills.photoshop, skills.xd],
     category: categories.mobile,

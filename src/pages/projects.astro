@@ -1,7 +1,7 @@
 ---
 // @ts-nocheck
 import { BaseLayout } from "../layouts";
-import { Button, CategoryHeading, ProjectsSection, Spacer } from "../components";
+import { Button, CategoryHeading, ProjectCard, Spacer } from "../components";
 import { projects, categories } from "../data";
 import filterIcon from '../assets/icons/filter.png'
 import sortIcon from '../assets/icons/sort.png'
@@ -22,7 +22,7 @@ import 'react-photo-view/dist/react-photo-view.css'
   <div class="projects-container">
     {projects.map((project) =>
       project.category === categories.web && (
-        <ProjectsSection
+        <ProjectCard
           id={project.title.toLowerCase().replace(/ /g, "-")}
           project={project}
         />
@@ -36,7 +36,7 @@ import 'react-photo-view/dist/react-photo-view.css'
   <div class="projects-container">
     {projects.map((project) =>
       project.category === categories.mobile && (
-        <ProjectsSection
+        <ProjectCard
           id={project.title.toLowerCase().replace(/ /g, "-")}
           project={project}
         />
@@ -66,7 +66,7 @@ import 'react-photo-view/dist/react-photo-view.css'
 
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
   }
 
@@ -83,10 +83,16 @@ import 'react-photo-view/dist/react-photo-view.css'
     margin: 0px;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 1000px) {
+    .projects-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+  }
+
+  @media (max-width: 650px) {
     .projects-container {
       grid-template-columns: 1fr;
-      gap: 12px;
     }
   }
 </style>
