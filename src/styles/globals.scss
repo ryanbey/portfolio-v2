@@ -79,6 +79,26 @@ button {
   }
 }
 
+.animated-text {
+  background-image: linear-gradient(
+			60deg,
+			#23a5d8,
+			#2596af,
+			#2176bb,
+			#16b3a1,
+			#30a7de,
+			#3b82f6,
+			#729be2,
+			#25aac2
+		);
+		color: transparent;
+		-webkit-background-clip: text; // Edge, Chrome
+		background-clip: text; // Safari, Firefox
+		animation: gradientAnimation 3s ease infinite;
+		animation-direction: alternate;
+		background-size: 300% 100%;
+}
+
 .mouse-glow {
   opacity: 20%;
   position: absolute;

@@ -3,7 +3,7 @@
 import { Bleed, HomeSection, SkillChipList, Social, Spacer } from ".";
 ---
 
-<h1>Hi, I'm <span>Ryan</span>.</h1>
+<h1>Hi, I'm <span class="animated-text">Ryan</span>.</h1>
 <p>
 	I'm a detail-oriented and UX-driven web developer passionate about creating
 	practical user experiences and writing beautiful code.
@@ -19,7 +19,7 @@ import { Bleed, HomeSection, SkillChipList, Social, Spacer } from ".";
 
 <style lang="scss">
 	h1 {
-		font-size: 60px !important;
+		font-size: 60px;
 		font-weight: 600;
 		margin-top: 0px;
 		margin-bottom: 4px;
@@ -29,26 +29,6 @@ import { Bleed, HomeSection, SkillChipList, Social, Spacer } from ".";
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 150%;
-	}
-
-	span {
-		background-image: linear-gradient(
-			60deg,
-			#23a5d8,
-			#2596af,
-			#2176bb,
-			#16b3a1,
-			#30a7de,
-			#3b82f6,
-			#729be2,
-			#25aac2
-		);
-		color: transparent;
-		-webkit-background-clip: text; // Edge, Chrome
-		background-clip: text; // Safari, Firefox
-		animation: gradientAnimation 3s ease infinite;
-		animation-direction: alternate;
-		background-size: 300% 100%;
 	}
 
 	@keyframes gradientAnimation {

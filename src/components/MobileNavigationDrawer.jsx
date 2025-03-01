@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { Bleed, SiteName } from '.'
+import { Bleed, SiteName, Spacer } from '.'
 import { Squeeze as Hamburger } from 'hamburger-react'
 import css from '../styles/MobileNavigationDrawer.module.scss'
 
@@ -31,9 +31,7 @@ export default function MobileNavigationDrawer({ pathname, buttonProps }) {
 
       <nav className={css.mobileNavList}>
         <MobileTab title="Home" url="/" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        <MobileTab title="Experience" url="/experience" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="Projects" url="/projects" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        <MobileTab title="Skills" url="/skills" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="About" url="/about" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </nav>
     </div>

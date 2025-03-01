@@ -19,16 +19,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 
 .mobileNavList {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .mobileNavLink {
   font-size: 20px;
+  font-weight: 500;
   padding: 16px 8px;
   border-radius: var(--border-rad);
   transition: 300ms;

@@ -3,9 +3,41 @@ import { BaseLayout } from "../layouts";
 ---
 
 <BaseLayout pageTitle="About">
-  <p>This is the about page</p>
+  <div class="about-container"></div>
+  <h1>A little about <span class="animated-text">me</span>.</h1>
   <p>
-    This page will have some fun information about me, my hobbies, and some
-    other stuff I don't know.
+    I unknowingly started my web development journey writing custom CSS for Reddit communities back in 2015. At the
+    time, I thought it was their own random way of styling their pages. Around that time I also got into some of my
+    hobbies I still enjoy today. I got my first computer and started getting into PC gaming, sim racing, graphic
+    design, and some very light programming.
+  </p>
+  <p>
+    I continued these hobbies and interests through high school and decided to study Comupter Science due to nerdy
+    nature of my hobbies. Makes sense, right? I ended up changing my major to Computer Engineering later thinking I
+    would enjoy more of a focus on hardware.
+  </p>
+  <p>
+    Soon after that I had decided to take an Intro to Web Development class to fill in some credits. I loved it so much
+    that I dropped all of my other classes and changed my major to Software Engineering to focus completely on web 
+    development for the rest of my time in college. It was the perfect balance of my love for design and programming.
   </p>
 </BaseLayout>
+
+<style lang="scss">
+  .about-container {
+    // padding-top: 51px;
+  }
+
+	h1 {
+		font-size: 60px;
+		font-weight: 600;
+		margin-top: 0px;
+		margin-bottom: 4px;
+	}
+
+  p {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+</style>
