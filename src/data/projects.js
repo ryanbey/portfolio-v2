@@ -75,7 +75,7 @@ const projects = [
     title: 'Nyoom',
     description: 'Jan 2023 - Present',
     positions: [
-      { description: 'A driver stats website for iRacing members offering a more performant and user-friendly alternative to the outdated profile pages of the old iRacing member site.' }],
+      { description: 'A racing stats website for iRacing members offering a more performant and user-friendly alternative to the outdated profile pages of the old iRacing member site.' }],
     image: nyoomLogo.src,
     skills: [skills.react, skills.nextjs, skills.javascript, skills.css, skills.cypress, skills.photoshop, skills.xd],
     category: categories.web,
@@ -154,33 +154,6 @@ const projects = [
     gallery: [circleTracks1.src, circleTracks2.src, circleTracks3.src, circleTracks4.src, circleTracks5.src],
   },
   {
-    title: 'Portfolio v1',
-    description: 'Oct - Nov 2021',
-    positions: [
-      { description: 'My first portfolio site I made from scratch using plain old HTML, CSS, and JavaScript. Made during college to showcase my favorite projects, classes, and skills to recruiters and friends.' },
-    ],
-    skills: [skills.html, skills.css, skills.javascript],
-    category: categories.web,
-    links: [
-      { Visit: 'https://ryanbey.github.io/portfolio' },
-      { GitHub: 'https://github.com/ryanbey/portfolio' },
-    ],
-    image: portfolioV1Logo.src,
-    gallery: [portfolioV11.src, portfolioV12.src, portfolioV13.src, portfolioV14.src],
-  },
-  {
-    title: 'Portfolio v2',
-    description: 'Aug 2024 - Present',
-    positions: [
-      { description: "You are here! My second, updated portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
-    ],
-    skills: [skills.astro, skills.react, skills.javascript, skills.css],
-    category: categories.web,
-    links: [
-      { GitHub: 'https://github.com/ryanbey/portfolio-v2' },
-    ],
-  },
-  {
     title: 'NASTRACKS',
     description: 'May - Jul 2021',
     positions: [
@@ -207,6 +180,32 @@ const projects = [
     ],
     image: chamberLogo.src,
     gallery: [chamber1.src, chamber2.src, chamber3.src],
+  },
+  {    title: 'Portfolio v1',
+    description: 'Oct - Nov 2021',
+    positions: [
+      { description: 'My first portfolio site I made from scratch using plain old HTML, CSS, and JavaScript. Made during college to showcase my favorite projects, classes, and skills to recruiters and friends.' },
+    ],
+    skills: [skills.html, skills.css, skills.javascript],
+    category: categories.web,
+    links: [
+      { Visit: 'https://ryanbey.github.io/portfolio' },
+      { GitHub: 'https://github.com/ryanbey/portfolio' },
+    ],
+    image: portfolioV1Logo.src,
+    gallery: [portfolioV11.src, portfolioV12.src, portfolioV13.src, portfolioV14.src],
+  },
+  {
+    title: 'Portfolio v2',
+    description: 'Aug 2024 - Present',
+    positions: [
+      { description: "You are here! My second, updated portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
+    ],
+    skills: [skills.astro, skills.react, skills.javascript, skills.css],
+    category: categories.web,
+    links: [
+      { GitHub: 'https://github.com/ryanbey/portfolio-v2' },
+    ],
   },
   {
     title: 'Morssenger',

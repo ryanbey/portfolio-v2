@@ -23,6 +23,7 @@
 .medium {
   @extend .button;
   @extend .low;
+  margin: 0px;
   background: transparent;
   border: 2px solid var(--foreground-hover);
 

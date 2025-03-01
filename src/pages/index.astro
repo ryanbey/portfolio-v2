@@ -16,21 +16,21 @@ import { allSkills, experience, projects, education } from "../data";
 		<div class="home-left">
 			<Greeting />
 			<Spacer size="lg"/>
-			<div class="skills-container-desktop">
+			<!-- <div class="skills-container-desktop">
 				<HomeSection title="Skills" url="/skills">
 					<SkillChipList skills={allSkills} />
 				</HomeSection>
-			</div>
+			</div> -->
 		</div>
 		<div class="home-right">
-			<HomeSection title="Experience" data={experience} url="/experience" />
-			<HomeSection title="Projects" data={projects.slice(0, 3)} url="/projects" />
-			<HomeSection title="Education" data={education} url="/education" />
-			<div class="skills-container-mobile">
+			<HomeSection title="Experience" data={experience} />
+			<HomeSection title="Projects" data={projects.slice(0, 3)} />
+			<HomeSection title="Education" data={education} />
+			<!-- <div class="skills-container-mobile">
 				<HomeSection title="Skills" url="/skills">
 					<SkillChipList skills={allSkills} />
 				</HomeSection>
-			</div>
+			</div> -->
 			<Spacer size="md" />
 		</div>
 	</div>
@@ -66,7 +66,7 @@ import { allSkills, experience, projects, education } from "../data";
 			display: flex;
 			justify-content: space-between;
 			flex-direction: row;
-			gap: 150px;
+			gap: 96px;
 			padding-top: 51px;
 		}
 

@@ -11,9 +11,10 @@
   padding: 6px 12px;
   transition: 150ms ease;
 
+  // Uncomment when clicking on these things actually does something
   &:hover {
-    background: var(--accent);
-    color: var(--text-primary);
+    // background: var(--accent);
+    // color: var(--text-primary);
   }
 }
 
