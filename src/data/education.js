@@ -8,7 +8,7 @@ const education = [
     image: byuiLogo.src,
     positions: [
       {
-        description: 'Changed my major a couple times until I took my first web development class as an elective. I fell in love with it, changed my major to Software Engineering, and the rest is history. 3.7 GPA.'
+        description: 'From Computer Science to Computer Engineering to Software Engineering, I found what I loved with a 3.7 GPA.'
       },
     ],
     skills: [skills.html, skills.css, skills.javascript, skills.typescript, skills.angular, skills.nodejs, skills.express, skills.php, skills.cpp, skills.photoshop, skills.xd]
