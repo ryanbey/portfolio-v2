@@ -1,23 +1,30 @@
 ---
 // @ts-nocheck
-import { Bleed, HomeSection, SkillChipList, Social, Spacer } from ".";
+import { Blob, HomeSection, BlobCanvas, SkillChipList, Social, Spacer } from ".";
 ---
 
-<h1>Hi, I'm <span class="animated-text">Ryan</span>.</h1>
-<p>
-	I'm a detail-oriented and UX-driven web developer passionate about creating
-	practical user experiences and writing beautiful code.
-</p>
-<p>
-	I have three years of professional, enterprise-level React experience crafting pages
-	viewed by millions.
-</p>
-<Spacer size="xxs" />
-<Bleed sides={8}>
-	<Social />
-</Bleed>
+<div class="greeting-container">
+	<div>
+		<h1>Hi, I'm <span class="animated-text">Ryan</span>.</h1>
+		<p>
+			I'm a detail-oriented and UX-driven web developer passionate about creating
+			practical user experiences and writing beautiful code.
+		</p>
+		<p>
+			I have three years of professional, enterprise-level React experience crafting pages
+			viewed by millions.
+		</p>
+		<Spacer size="xxs" />
+		<Social />
+	</div>
+	<BlobCanvas client:load>
+</div>
 
 <style lang="scss">
+	.greeting-container {
+		display: flex;
+	}
+
 	h1 {
 		font-size: 60px;
 		font-weight: 600;

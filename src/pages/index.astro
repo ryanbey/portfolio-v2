@@ -12,27 +12,15 @@ import { allSkills, experience, projects, education } from "../data";
 ---
 
 <BaseLayout pageTitle="Home">
-	<div class="home-container">
-		<div class="home-left">
-			<Greeting />
-			<Spacer size="lg"/>
-			<!-- <div class="skills-container-desktop">
-				<HomeSection title="Skills" url="/skills">
-					<SkillChipList skills={allSkills} />
-				</HomeSection>
-			</div> -->
-		</div>
-		<div class="home-right">
-			<HomeSection title="Experience" data={experience} />
-			<HomeSection title="Projects" data={projects.slice(0, 3)} />
-			<HomeSection title="Education" data={education} />
-			<!-- <div class="skills-container-mobile">
-				<HomeSection title="Skills" url="/skills">
-					<SkillChipList skills={allSkills} />
-				</HomeSection>
-			</div> -->
-			<Spacer size="md" />
-		</div>
+	<div class="home-left">
+		<Greeting />
+		<Spacer size="lg"/>
+	</div>
+	<div class="home-right">
+		<HomeSection title="Experience" data={experience} />
+		<HomeSection title="Projects" data={projects.slice(0, 3)} />
+		<HomeSection title="Education" data={education} />
+		<Spacer size="md" />
 	</div>
 </BaseLayout>
 
@@ -71,8 +59,8 @@ import { allSkills, experience, projects, education } from "../data";
 
 		@media (min-width: 850px) {
 			.home-left {
-				position: sticky;
-				top: 110px; // Keeps home-left in place when scrolling
+				// position: sticky;
+				// top: 110px; // Keeps home-left in place when scrolling
 				width: 100%;
 				height: 100%;
 			}
