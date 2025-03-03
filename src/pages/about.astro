@@ -1,28 +1,59 @@
 ---
+import type { GetStaticPaths } from "astro";
+import { CategoryHeading, SkillChipList, Spacer } from "../components";
 import { BaseLayout } from "../layouts";
+import skills from "../data/allSkills";
 ---
 
 <BaseLayout pageTitle="About">
   <h1>A little about <span class="animated-text">me</span>.</h1>
-  <p>
-    I unknowingly started my web development journey writing custom CSS for Reddit communities back in 2015. At the
-    time, I thought it was their own random way of styling their pages. Around that time I also got into some of my
-    hobbies I still enjoy today. I got my first computer and started getting into PC gaming, sim racing, graphic
-    design, and some very light programming.
+  <div class="about-container">
+    <div>
+      <p>
+        I unknowingly started my web development journey writing custom CSS for Reddit communities back in 2015. At the
+        time, I thought it was their own random way of styling their pages. Around that time I also got into some of my
+        hobbies I still enjoy today. I got my first computer and started getting into PC gaming, sim racing, graphic
+        design, and some very light programming.
+      </p>
+      <p>
+        I continued these hobbies and interests through high school and decided to study Comupter Science due to nerdy
+        nature of my hobbies. Makes sense, right? I ended up changing my major to Computer Engineering later thinking I
+        would enjoy more of a focus on hardware.
+      </p>
+      <p>
+        Soon after that I had decided to take an Intro to Web Development class to fill in some credits. I loved it so much
+        that I dropped all of my other classes and changed my major to Software Engineering to focus completely on web 
+        development for the rest of my time in college. It was the perfect balance of my love for design and programming.
+      </p>
+    </div>
+    <img src="https://dummyimage.com/300x300" alt="alt" class="portrait" />
+  </div>
+  <Spacer size="md" />
+
+  <CategoryHeading title="Hobbies" bigText />
+  <p class="dense">
+    Put cards here for Sim Racing, PC Building, 3D Printing, Web Development, Graphic Design, Motorsports
   </p>
-  <p>
-    I continued these hobbies and interests through high school and decided to study Comupter Science due to nerdy
-    nature of my hobbies. Makes sense, right? I ended up changing my major to Computer Engineering later thinking I
-    would enjoy more of a focus on hardware.
-  </p>
-  <p>
-    Soon after that I had decided to take an Intro to Web Development class to fill in some credits. I loved it so much
-    that I dropped all of my other classes and changed my major to Software Engineering to focus completely on web 
-    development for the rest of my time in college. It was the perfect balance of my love for design and programming.
-  </p>
+  <Spacer size="xs" />
+
+  <CategoryHeading title="Skills" bigText />
+  <SkillChipList skills={skills} />
 </BaseLayout>
 
 <style lang="scss">
+  .about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .portrait {
+    border-radius: 8px;
+    width: 300px;
+    height: 350px;
+  }
 
 	h1 {
 		font-size: 60px;
@@ -36,4 +67,15 @@ import { BaseLayout } from "../layouts";
 		font-weight: 400;
 		line-height: 150%;
 	}
+
+  .dense {
+    margin-top: 0px;
+  }
+
+  @media (min-width: 900px) {
+    .about-container {
+      flex-wrap: nowrap;
+      gap: 64px;
+    }
+  }
 </style>
