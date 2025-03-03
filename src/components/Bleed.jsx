@@ -1,6 +1,14 @@
-export default function Bleed({ sides, children, className }) {
+export default function Bleed({ all, sides, top, bottom, children, className }) {
   return (
-    <div style={{ marginLeft: `-${sides}px`, marginRight: `-${sides}px` }} className={className}>
+    <div
+      style={{
+        marginLeft: `-${all || sides}px`,
+        marginRight: `-${all || sides}px`,
+        marginTop: `-${all || top}px`,
+        marginBottom: `-${all || bottom}px`
+      }}
+      className={className}
+    >
       {children}
     </div>
   )

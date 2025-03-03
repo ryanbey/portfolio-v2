@@ -1,6 +1,6 @@
 ---
 // @ts-nocheck
-import { Blob, HomeSection, BlobCanvas, SkillChipList, Social, Spacer } from ".";
+import { Bleed, Blob, HomeSection, BlobCanvas, SkillChipList, Social, Spacer } from ".";
 ---
 
 <div class="greeting-container">
@@ -17,7 +17,9 @@ import { Blob, HomeSection, BlobCanvas, SkillChipList, Social, Spacer } from "."
 		<Spacer size="xxs" />
 		<Social />
 	</div>
-	<BlobCanvas client:load>
+	<Bleed top={125} bottom={75}>
+		<BlobCanvas client:load>
+	</Bleed>
 </div>
 
 <style lang="scss">
