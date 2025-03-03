@@ -17,13 +17,13 @@ import { Blob, HomeSection, BlobCanvas, SkillChipList, Social, Spacer } from "."
 		<Spacer size="xxs" />
 		<Social />
 	</div>
-		<BlobCanvas client:load>
+	<BlobCanvas client:load>
 </div>
 
 <style lang="scss">
-	// TODO: Move or hide blob for mobile
 	.greeting-container {
 		display: flex;
+		flex-direction: column;
 	}
 
 	h1 {
@@ -39,7 +39,11 @@ import { Blob, HomeSection, BlobCanvas, SkillChipList, Social, Spacer } from "."
 		line-height: 150%;
 	}
 
-	@media (min-width: 850px) {
-		// Show blob on desktop
+	@media (min-width: 790px) {
+		.greeting-container {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>

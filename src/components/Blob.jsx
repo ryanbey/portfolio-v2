@@ -13,15 +13,16 @@ export default function Blob() {
     u_intensity: { value: 0.35 },
   }))
 
-  const handlePointerOver = () => hover.current = true
-  const handlePointerOut = () => hover.current = false
+  const handleBlobHoverOn = () => hover.current = true
+  const handleBlobHoverOff = () => hover.current = false
+  const toggleBlobHover = () => hover.current = !hover.current
 
   useFrame((state) => {
     if (mesh.current) {
       mesh.current.material.uniforms.u_time.value = 0.4 * state.clock.getElapsedTime()
       mesh.current.material.uniforms.u_intensity.value = MathUtils.lerp(
         mesh.current.material.uniforms.u_intensity.value,
-        hover.current ? 0.7 : 0.25,
+        hover.current ? 0.8 : 0.25,
         0.04 // hover transition time
       )
     }
@@ -31,9 +32,10 @@ export default function Blob() {
     <mesh
       ref={mesh}
       scale={1.4}
-      position={[1, 0, 0]}
-      onPointerOver={handlePointerOver}
-      onPointerOut={handlePointerOut}
+      position={[0, 0, 0]}
+      onPointerOver={handleBlobHoverOn}
+      onPointerOut={handleBlobHoverOff}
+      onClick={toggleBlobHover}
     >
       <icosahedronGeometry args={[2, 25]} />
       <shaderMaterial
