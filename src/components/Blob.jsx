@@ -17,13 +17,12 @@ export default function Blob() {
   const handlePointerOut = () => hover.current = false
 
   useFrame((state) => {
-    const { clock } = state
     if (mesh.current) {
-      mesh.current.material.uniforms.u_time.value = 0.4 * clock.getElapsedTime()
+      mesh.current.material.uniforms.u_time.value = 0.4 * state.clock.getElapsedTime()
       mesh.current.material.uniforms.u_intensity.value = MathUtils.lerp(
         mesh.current.material.uniforms.u_intensity.value,
-        hover.current ? 0.75 : 0.25,
-        0.02
+        hover.current ? 0.7 : 0.25,
+        0.04 // hover transition time
       )
     }
   })

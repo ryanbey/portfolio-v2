@@ -1,7 +1,21 @@
 import { useCallback } from 'react'
 import css from '../styles/Button.module.scss'
 
-export default function Button({ icon = null, iconSize = "lg", emphasis = "low", onClick, to, target, children }) {
+function Icon({ icon, iconSize }) {
+  return (
+    <img
+      src={icon.src}
+      height={iconSize === 'sm' ? 16 : 22}
+      width={iconSize === 'sm' ? 16 : 22}
+      alt=""
+      aria-hidden
+    />
+  )
+}
+
+export default function Button({ icon = null, iconSize = "lg", emphasis = "low", iconRight = false, onClick, to, target, children }) {
+  const showIcon = icon?.src
+
   const handleClick = useCallback(() => {
     if (to) {
       target ? window.open(to, target) : window.location.href = to
@@ -12,16 +26,9 @@ export default function Button({ icon = null, iconSize = "lg", emphasis = "low",
 
   return (
     <button onClick={handleClick} className={css[emphasis]} >
-      {icon?.src && (
-        <img
-          src={icon.src}
-          height={iconSize === 'sm' ? 16 : 22}
-          width={iconSize === 'sm' ? 16 : 22}
-          alt=""
-          aria-hidden
-        />
-      )}
+      {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
       {children}
+      {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
     </button>
   )
 }

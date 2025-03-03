@@ -99,6 +99,15 @@ button {
 		background-size: 300% 100%;
 }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
 .mouse-glow {
   opacity: 20%;
   position: absolute;
