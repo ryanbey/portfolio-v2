@@ -18,28 +18,54 @@ import arrowRight from '../assets/icons/arrow-right.png'
 	<div class="desktop-layout">
 		<div class="desktop-left">
 			<HomeSection title="Experience" data={experience} />
-			<HomeSection title="Education" data={education} />
+			<div class="education-desktop">
+				<HomeSection title="Education" data={education} />
+			</div>
 		</div>
 		<div class="desktop-right">
 			<HomeSection title="Projects" data={projects.slice(0, 3)} />
 			<Button icon={arrowRight} emphasis="medium" to="/projects" iconRight client:load>
 				All Projects
 			</Button>
+			<div class="education-mobile">
+				<Spacer size="sm" />
+				<HomeSection title="Education" data={education} />
+			</div>
 		</div>
 	</div>
 	<Spacer size="xxl" />
 </BaseLayout>
 
 <style lang="scss">
+	.education {
+		&-mobile {
+			display: block;
+		}
+
+		&-desktop {
+			display: none;
+		}
+	}
+
 	@media (min-width: 850px) {
 		.desktop-layout {
 			display: flex;
 			flex-direction: row;
-			gap: 64px;
+			gap: 86px;
 		}
 
 		.desktop-left, .desktop-right {
 			width: 100%;
 		}
+
+		.education {
+		&-mobile {
+			display: none;
+		}
+		
+		&-desktop {
+			display: block;
+		}
+	}
 	}
 </style>
