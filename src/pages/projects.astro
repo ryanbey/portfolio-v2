@@ -9,16 +9,12 @@ import 'react-photo-view/dist/react-photo-view.css'
 ---
 
 <BaseLayout pageTitle="Projects">
-  <!-- <Spacer size="xs" /> -->
   <div class="page-heading-container">
     <h1 class="page-heading"><span class="animated-text">Stuff</span> I've made.</h1>
     <Spacer size="xl" />
-    <!-- <div class="filters-container">
-      <Button icon={filterIcon} iconSize="sm" emphasis="medium">Filter</Button>
-      <Button icon={sortIcon} iconSize="sm" emphasis="medium">Sort</Button>
-    </div> -->
   </div>
-  <CategoryHeading title="Web" />
+  <Spacer size="xxs" />
+  <CategoryHeading title="Web" bigText />
   <div class="projects-container">
     {projects.map((project) =>
       project.category === categories.web && (
@@ -32,7 +28,7 @@ import 'react-photo-view/dist/react-photo-view.css'
 
   <Spacer size="xl" />
 
-  <CategoryHeading title="Mobile" />
+  <CategoryHeading title="Mobile" bigText />
   <div class="projects-container">
     {projects.map((project) =>
       project.category === categories.mobile && (
@@ -46,7 +42,7 @@ import 'react-photo-view/dist/react-photo-view.css'
 
   <Spacer size="xl" />
 
-  <CategoryHeading title="Artwork" />
+  <CategoryHeading title="Artwork" bigText />
 
   <Spacer size="xxl" />
 </BaseLayout>

@@ -1,16 +1,15 @@
 ---
-const { title, dense } = Astro.props
+const { title, dense, bigText } = Astro.props
 import { Spacer } from '.'
 ---
 
 <div class="category-heading-container">
-  {!dense && <div class="category-heading-line" />}
-  <h2 class="category-heading">{title}</h2>
+  <h2 class=`category-heading ${bigText ? 'big-text' : ''}`>{title}</h2>
   <div class="category-heading-line" />
 </div>
 {!dense && <Spacer size="xs" />}
 
-<style>
+<style lang="scss">
   .category-heading-container {
     display: flex;
     justify-content: space-between;
@@ -29,5 +28,9 @@ import { Spacer } from '.'
     font-size: 28px;
     font-weight: 600;
     margin: 8px 0px;
+  }
+
+  .big-text {
+    font-size: 32px;
   }
 </style>

@@ -8,8 +8,7 @@ html {
   --foreground-hover: #113555; // Sky 4
   --text-primary: #EDEEF0; // Slate 12
   --text-secondary: #A9ADB4;
-  --accent: #1F6692; // Sky 7
-  --accent-bright: #197CAE; // Sky 8
+  --accent: #197CAE; // Sky 8
   --accent-transparent: #1f669275; // Sky 7 w/ alpha
   --accent-hover: #197CAE; // Sky 8
 
@@ -65,7 +64,7 @@ a {
   transition: 150ms ease;
 
   &:hover {
-    color: var(--accent-bright);
+    color: var(--accent);
   }
 }
 
@@ -85,18 +84,18 @@ button {
 			#23a5d8,
 			#2596af,
 			#2176bb,
-			#16b3a1,
+			#18bdaa,
 			#30a7de,
 			#3b82f6,
 			#729be2,
 			#25aac2
 		);
 		color: transparent;
-		-webkit-background-clip: text; // Edge, Chrome
 		background-clip: text; // Safari, Firefox
-		animation: gradientAnimation 3s ease infinite;
+		-webkit-background-clip: text; // Edge, Chrome
+		animation: gradientAnimation 4s ease infinite;
 		animation-direction: alternate;
-		background-size: 300% 100%;
+		background-size: 350% 100%;
 }
 
 @keyframes gradientAnimation {
