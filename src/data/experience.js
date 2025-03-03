@@ -10,7 +10,7 @@ const experience = [
       {
         title: 'Web Developer II',
         tenure: 'Jan 2023 - Present',
-        description: 'Building and maintaining robust React components and pages across the Memories product. Frequent contributor to our internal design system building reusable components used across the site. Closely mentored a web developer intern including onboarding, regular guidance, and fostering independent problem solving skills.'
+        description: 'Building and maintaining robust React components and pages across the Memories product. Frequent contributor to our internal design system building reusable components used across the site.'
       },
       {
         title: 'Web Developer Intern',
