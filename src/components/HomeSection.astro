@@ -39,16 +39,6 @@ import arrowRight from '../assets/icons/arrow-right.png'
     }
   }
 
-  .home-section-arrow {
-    position: relative;
-    left: 0px;
-    transition: 150ms ease;
-
-    &-hover {
-      left: 6px;
-    }
-  }
-
   .experience-container {
     padding: 16px;
     border-radius: var(--border-rad);
@@ -62,27 +52,21 @@ import arrowRight from '../assets/icons/arrow-right.png'
 </style>
 
 <script>
-  // Animate arrows in headings on hover
-  document.addEventListener("astro:page-load", () => {
-    const containers = document.querySelectorAll('.home-section-title-container');
-    const arrows = document.querySelectorAll('.home-section-arrow');
-    
-    containers.forEach((container, index) => {
-      const arrow = arrows[index];
-      container.addEventListener('mouseenter', () => arrow.classList.add('home-section-arrow-hover'));
-      container.addEventListener('mouseleave', () => arrow.classList.remove('home-section-arrow-hover'));
-    });
-  });
-
   // Navigate to projects or experience page on when clicking on a hovered item
   document.addEventListener("astro:page-load", () => {
-    const containers = document.querySelectorAll(".experience-container");
+    const containers = document.querySelectorAll(".experience-container")
 
     containers.forEach((container) => {
-      const containerId = container.getAttribute('id').toLowerCase().replace(/ /g, '-');
+      const containerId = container.getAttribute('id').toLowerCase().replace(/ /g, '-')
       container.addEventListener('click', () => {
-        window.location.href = `/projects#${containerId}`;
-      });
-    });
+        if (containerId === 'familysearch') {
+          window.open('https://familysearch.org')
+        } else if (containerId === 'byu-idaho') {
+          window.open('https://byui.edu')
+        } else {
+          window.location.href = `/projects#${containerId}`
+        }
+      })
+    })
   })
 </script>
