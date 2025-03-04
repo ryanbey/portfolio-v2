@@ -26,7 +26,7 @@ export default function Button({ icon = null, iconSize = "lg", emphasis = "low",
 
   return (
     <a href={to} target={target}>
-      <button className={css[emphasis]} >
+      <button className={css[emphasis]} icon-size={iconSize} >
         {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
         {children}
         {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
