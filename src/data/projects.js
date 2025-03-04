@@ -116,7 +116,7 @@ const projects = [
     title: 'Memory Viewer',
     description: 'Aug 2023 - May 2024',
     positions: [
-      { description: 'A complex file viewer, metadata editor, and person tagger for user-uploaded photos, stories, documents, and recordings of their ancestors.' },
+      { description: 'A complex file viewer, metadata editor, and person tagger for user-uploaded photos, stories, documents, and recordings.' },
     ],
     skills: [skills.react, skills.javascript, skills.css, skills.storybook, skills.jest,],
     category: categories.web,
@@ -212,7 +212,7 @@ const projects = [
     title: 'Morssenger',
     description: 'Nov - Dec 2019',
     positions: [
-      { description: "Android app that allows messaging with live input translation to and from Morse code with options for audio or haptic message playback. I promise I didn't copy Monday.com's logo on purpose. Please don't sue me." },
+      { description: "Android app that allows messaging with live input translation to and from Morse code with audio or haptic message playback. I promise I didn't copy Monday.com's logo on purpose. Please don't sue me." },
     ],
     skills: [skills.java, skills.xml, skills.androidstudio, skills.photoshop, skills.xd],
     category: categories.mobile,
@@ -224,7 +224,7 @@ const projects = [
   {
     title: 'Simple Trails',
     description: 'May - Jul 2021',
-    positions: [{ description: 'As the design lead for this college UX design project, I conducted user studies and designed a trail hiking app, which involved creating detailed personas, scenarios, storyboards, usability studies, and prototypes.' }],
+    positions: [{ description: 'I was the design lead of a team of 8 students for this college UX design project for a mobile hiking app. We conducted multiple user studies including creating detailed personas, scenarios, storyboards, usability studies, and prototypes.' }],
     skills: [skills.photoshop, skills.xd],
     category: categories.mobile,
     links: [
