@@ -68,7 +68,7 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
   }
 </style>
 
-<script define:vars={{ id }}>
+<script is:inline define:vars={{ id }}>
   const urlHash = window.location.hash.slice(1)
   if (urlHash === id) {
     const cardElement = document.getElementById(id)
