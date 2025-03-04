@@ -9,7 +9,7 @@
 const hobbies = [
   {
     title: 'Sim Racing',
-    description: 'Because pretend race cards are cheaper than real ones. Top 1% iRacing oval racer worldwide.',
+    description: 'Because pretend race cars are cheaper than real ones. Top 1% iRacing oval racer worldwide.',
     links: [
       { "My iRacing Stats": 'https://nyoom.app/search/292769' },
     ],
