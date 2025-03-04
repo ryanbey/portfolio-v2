@@ -1,0 +1,22 @@
+---
+const { images } = Astro.props
+import { ProjectGallery, Spacer } from '.'
+---
+
+<section class="card-container">
+  {images?.length && (
+    <ProjectGallery images={images} client:load />
+    <Spacer size="xs" />
+  )}
+  <slot />
+</section>
+
+<style lang="scss">
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--foreground-transparent);
+    padding: 16px;
+    border-radius: var(--border-rad);
+  }
+</style>

@@ -1,0 +1,23 @@
+---
+const { title, description, image } = Astro.props
+import { Card } from ".";
+---
+
+<Card>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</Card>
+
+<style lang="scss">
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+  }
+
+  p {
+    color: var(--text-secondary);
+    font-size: 17px;
+    margin-bottom: 0px;
+  }
+</style>
