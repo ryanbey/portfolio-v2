@@ -30,7 +30,7 @@ const hobbies = [
   },
   {
     title: 'Graphic/UX Design',
-    description: "Branding, websites, pretend race car paint designs, you name it.",
+    description: "Branding, websites, race car paint designs, you name it.",
     links: [
       { "My Artwork": '/projects#artwork' },
     ],
@@ -41,7 +41,7 @@ const hobbies = [
   },
   {
     title: 'Motorsports',
-    description: "I've watched NASCAR religiously since I was a kid, but I also enjoy watching IMSA and IndyCar.",
+    description: "I've watched NASCAR religiously since I was a kid. I also enjoy watching IMSA and IndyCar.",
   },
 ]
 
