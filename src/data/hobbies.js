@@ -23,14 +23,14 @@ const hobbies = [
   },
   {
     title: 'Web Development',
-    description: "I'm very fortunate to be doin what I love for work! I always have a side project in progress.",
+    description: "I'm very fortunate to be doing what I love for work! I always have a side project in progress.",
     links: [
       { "My GitHub": 'https://pcpartpicker.com/user/R3mix/saved/#view=WNNJwP' },
     ],
   },
   {
     title: 'Graphic/UX Design',
-    description: "Branding, websites, pretend race car paints, you name it.",
+    description: "Branding, websites, pretend race car paint designs, you name it.",
     links: [
       { "My Artwork": '/projects#artwork' },
     ],
@@ -41,7 +41,7 @@ const hobbies = [
   },
   {
     title: 'Motorsports',
-    description: "I've watched NASCAR religiously since I was a kid, but also love IMSA and IndyCar. I usually attend one NASCAR race per year.",
+    description: "I've watched NASCAR religiously since I was a kid, but I also enjoy watching IMSA and IndyCar.",
   },
 ]
 
