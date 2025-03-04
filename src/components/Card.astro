@@ -1,11 +1,11 @@
 ---
 const { images } = Astro.props
-import { ProjectGallery, Spacer } from '.'
+import { PhotoGallery, Spacer } from '.'
 ---
 
 <section class="card-container">
   {images?.length && (
-    <ProjectGallery images={images} client:load />
+    <PhotoGallery images={images} client:load />
     <Spacer size="xs" />
   )}
   <slot />
