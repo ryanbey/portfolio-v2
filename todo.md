@@ -1,0 +1,16 @@
+# To do:
+- [ ] Add portrait image to About page
+- [ ] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
+  - Not in main nav, add mail icon to Social, only when compacy (IconButtons in main nav)
+- [ ] Replace artwork with higher res images
+- [ ] Add hover tooltips to IconButtons (Social buttons)
+- [ ] Add scroll to top floating action button to Projects page
+- [ ] Add filters to Projects page
+  - Filter button on the top right of the page that opens an expander with all the skill chips and categories
+  - All chips are deselected by default, selecting one will start filtering by selected skills or categories
+  - Reset Filters button
+  - Ability to select multiple skills to filter by
+- [ ] Add functionality to SkillChips in ProjectCards and Skills section on About page
+  - Tooltip on hover ("View projects using {skill}")
+  - Takes you to Projects page filtered by that chip
+  - If there were existing chips, reset them and filter by the one that got clicked on in a ProjectCard
