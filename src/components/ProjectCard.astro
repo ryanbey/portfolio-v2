@@ -1,12 +1,12 @@
 ---
 // @ts-nocheck
-const { project } = Astro.props
+const { id, project } = Astro.props
 import { Button, Card, ListItem, Spacer, SkillChipList } from '.'
 import visitIcon from '../assets/icons/visit.png'
 import gitHubIcon from '../assets/icons/github-logo.svg'
 ---
 
-<Card images={project?.gallery} actions={project?.links}>
+<Card id={id} images={project?.gallery} actions={project?.links}>
   <ListItem title={project.title} description={project.description} imageUrl={project.image} />
   <Spacer size="xs" />
   <SkillChipList skills={project.skills} />

@@ -32,7 +32,7 @@ const hobbies = [
     title: 'Graphic/UX Design',
     description: "Branding, websites, pretend race car liveries, you name it.",
     links: [
-      { "My Artwork": '/projects#Artwork' },
+      { "My Artwork": '/projects#artwork' },
     ],
   },
   {

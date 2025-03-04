@@ -1,12 +1,12 @@
 ---
 // @ts-nocheck
-const { images, actions } = Astro.props
+const { id, images, actions } = Astro.props
 import { Button, PhotoGallery, Spacer } from '.'
 import visitIcon from '../assets/icons/visit.png'
 import gitHubIcon from '../assets/icons/github-logo.svg'
 ---
 
-<section class="card-container">
+<section id={id} class="card-container">
   {images?.length && (
     <PhotoGallery images={images} alignImages="top" client:load />
     <Spacer size="xs" />
@@ -41,6 +41,7 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
     background: var(--foreground-transparent);
     padding: 16px;
     border-radius: var(--border-rad);
+    scroll-margin-top: 150px;
   }
 
   .card-actions {
@@ -48,4 +49,29 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
     flex-direction: row;
     gap: 8px;
   }
+
+  .linked-card {
+    outline: 2px solid var(--accent);
+    box-shadow: 0px 4px 10px var(--accent);
+    animation: flash 600ms ease-in-out 2;
+  }
+
+  @keyframes flash {
+    0%, 100% {
+      outline: 2px solid var(--accent);
+      box-shadow: 0px 4px 10px var(--accent);
+    }
+    50% {
+      outline: none;
+      box-shadow: none;
+    }
+  }
 </style>
+
+<script define:vars={{ id }}>
+  const urlHash = window.location.hash.slice(1)
+  if (urlHash === id) {
+    const cardElement = document.getElementById(id)
+    cardElement.classList.add('linked-card')
+  }
+</script>
