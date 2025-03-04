@@ -1,6 +1,9 @@
 ---
-const { images } = Astro.props
-import { PhotoGallery, Spacer } from '.'
+// @ts-nocheck
+const { images, actions } = Astro.props
+import { Button, PhotoGallery, Spacer } from '.'
+import visitIcon from '../assets/icons/visit.png'
+import gitHubIcon from '../assets/icons/github-logo.svg'
 ---
 
 <section class="card-container">
@@ -8,7 +11,27 @@ import { PhotoGallery, Spacer } from '.'
     <PhotoGallery images={images} alignImages="top" client:load />
     <Spacer size="xs" />
   )}
+  
   <slot />
+
+  {actions?.length && (
+    <Spacer size="xs" />
+    <div style={{ flexGrow: 1 }} />
+    <div class="card-actions">
+      {actions?.map((action) => (
+        <Button
+          emphasis="medium"
+          icon={Object.keys(action) == 'GitHub' ? gitHubIcon : visitIcon}
+          iconSize="sm"
+          to={Object.values(action)}
+          target={Object.values(action).toString().startsWith('/') ? '_self' : '_blank'}
+          client:load
+        >
+          {Object.keys(action)}
+        </Button>
+      ))}
+    </div>
+  )}
 </section>
 
 <style lang="scss">
@@ -18,5 +41,11 @@ import { PhotoGallery, Spacer } from '.'
     background: var(--foreground-transparent);
     padding: 16px;
     border-radius: var(--border-rad);
+  }
+
+  .card-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
   }
 </style>

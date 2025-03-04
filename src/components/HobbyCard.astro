@@ -1,11 +1,11 @@
 ---
-const { title, description } = Astro.props
+const { hobby } = Astro.props
 import { Card } from ".";
 ---
 
-<Card>
-  <h3>{title}</h3>
-  <p>{description}</p>
+<Card actions={hobby.links}>
+  <h3>{hobby.title}</h3>
+  <p>{hobby.description}</p>
 </Card>
 
 <style lang="scss">

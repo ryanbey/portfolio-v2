@@ -1,5 +1,6 @@
 export { default as allSkills } from './allSkills'
+export { default as education } from './education'
 export { default as experience } from './experience'
+export { default as hobbies } from './hobbies'
 export { default as projects } from './projects'
 export { categories } from './projects'
-export { default as education } from './education'

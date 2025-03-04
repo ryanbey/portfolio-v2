@@ -1,4 +1,4 @@
-import { useCallback } from 'react'
+// import { useCallback } from 'react'
 import css from '../styles/Button.module.scss'
 
 function Icon({ icon, iconSize }) {
@@ -16,19 +16,21 @@ function Icon({ icon, iconSize }) {
 export default function Button({ icon = null, iconSize = "lg", emphasis = "low", iconRight = false, onClick, to, target, children }) {
   const showIcon = icon?.src
 
-  const handleClick = useCallback(() => {
-    if (to) {
-      target ? window.open(to, target) : window.location.href = to
-    } else if (onClick) {
-      onClick()
-    }
-  }, [onClick, to])
+  // const handleClick = useCallback(() => {
+  //   if (to) {
+  //     target ? window.open(to, target) : window.location.href = to
+  //   } else if (onClick) {
+  //     onClick()
+  //   }
+  // }, [onClick, to])
 
   return (
-    <button onClick={handleClick} className={css[emphasis]} >
-      {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
-      {children}
-      {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
-    </button>
+    <a href={to} target={target}>
+      <button className={css[emphasis]} >
+        {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
+        {children}
+        {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
+      </button>
+    </a>
   )
 }
