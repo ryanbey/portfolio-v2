@@ -8,7 +8,7 @@ import skills from "../data/allSkills";
   <h1>A little about <span class="animated-text">me</span>.</h1>
   <div class="about-container">
     <div>
-      <p>
+      <p class="no-top-margin">
         I unknowingly started my web development journey writing custom CSS for Reddit communities back in 2015. At the
         time, I thought it was their own random way of styling their pages. Around that time I also got into some of my
         hobbies I still enjoy today. I got my first computer and started getting into PC gaming, sim racing, graphic
@@ -26,7 +26,7 @@ import skills from "../data/allSkills";
         passion for both design and programming.
       </p>
     </div>
-    <img src="https://dummyimage.com/300x300" alt="alt" class="portrait" />
+    <img src="https://dummyimage.com/300x350" alt="alt" class="portrait" />
   </div>
   <Spacer size="md" />
 
@@ -39,12 +39,10 @@ import skills from "../data/allSkills";
     <HobbyCard title="Graphic/UX Design" description="Branding, websites, pretend race car liveries, you name it."/>
     <HobbyCard title="Motorsports" description="Real life race cars! Especially the ones that go in circles."/>
   </div>
-  
   <Spacer size="lg" />
 
   <CategoryHeading title="Skills" bigText />
   <SkillChipList skills={skills} />
-
   <Spacer size="xxl" />
 </BaseLayout>
 
@@ -61,6 +59,7 @@ import skills from "../data/allSkills";
     border-radius: 8px;
     width: 300px;
     height: 350px;
+    margin-top: 20px;
   }
 
   .hobby-cards-container {
@@ -94,7 +93,7 @@ import skills from "../data/allSkills";
   @media (min-width: 900px) {
     .about-container {
       flex-wrap: nowrap;
-      gap: 64px;
+      gap: 100px;
     }
   }
 </style>

@@ -68,6 +68,7 @@ export const skills = {
   storybook: 'Storybook',
   typescript: 'TypeScript',
   xd: 'XD',
+  xml: 'XML',
 }
 
 const projects = [
@@ -213,7 +214,7 @@ const projects = [
     positions: [
       { description: "Android app that allows messaging with live input translation to and from Morse code with options for audio or haptic message playback. I promise I didn't copy Monday.com's logo on purpose. Please don't sue me." },
     ],
-    skills: [skills.java, skills.androidstudio, skills.photoshop, skills.xd],
+    skills: [skills.java, skills.xml, skills.androidstudio, skills.photoshop, skills.xd],
     category: categories.mobile,
     links: [
       { GitHub: 'https://github.com/ryanbey/Morssenger' }

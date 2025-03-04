@@ -20,7 +20,7 @@ export default function Blob() {
     hover.current = true
     setTimeout(() => {
       hover.current = false
-    }, 3000);
+    }, 2000);
   }
 
   useFrame((state) => {
