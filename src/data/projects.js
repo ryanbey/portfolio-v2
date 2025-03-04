@@ -83,7 +83,7 @@ const projects = [
     links: [
       { Visit: 'https://nyoom.app' },
     ],
-    gallery: [nyoom1.src, nyoom2.src, nyoom3.src, nyoom4.src],
+    gallery: [nyoom3.src, nyoom1.src, nyoom2.src, nyoom4.src],
   },
   {
     title: 'Just Pick Something',
@@ -96,7 +96,7 @@ const projects = [
       { Visit: 'https://ryanbey.github.io/just-pick-something/' },
       { GitHub: 'https://github.com/ryanbey/just-pick-something' },
     ],
-    gallery: [justPickSomething1.src, justPickSomething2.src, justPickSomething3.src, justPickSomething4.src],
+    gallery: [justPickSomething2.src, justPickSomething3.src, justPickSomething4.src, justPickSomething1.src],
   },
   {
     title: 'Memory Card',

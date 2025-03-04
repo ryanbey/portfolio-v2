@@ -1,7 +1,7 @@
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import css from '../styles/PhotoGallery.module.scss'
 
-export default function PhotoGallery({ images, showAll = false }) {
+export default function PhotoGallery({ images, alignImages = 'auto', showAll = false }) {
   const numPhotosToDisplay = showAll ? 100 : 1
   const showAllAttr = showAll.toString()
 
@@ -15,7 +15,8 @@ export default function PhotoGallery({ images, showAll = false }) {
                 src={item}
                 alt=""
                 className={css.imageElement}
-                show-all={showAllAttr} 
+                show-all={showAllAttr}
+                align-images={alignImages}
                 draggable="false"
               />
             )}
