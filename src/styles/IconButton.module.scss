@@ -30,9 +30,11 @@
 .high {
   @extend .icon-button;
   background: var(--accent);
+  filter: drop-shadow(0px 2px 5px #00000099);
 
   &:hover {
-    scale: 1.03;
+    scale: 1.05;
     background: var(--accent-hover);
+    filter: drop-shadow(0px 10px 5px #00000099);
   }
 }

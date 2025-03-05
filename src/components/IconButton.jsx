@@ -12,7 +12,7 @@ export default function IconButton({ icon, title, emphasis = 'low', to, target, 
 
   return (
     <button title={title} onClick={handleClick} className={css[emphasis]}>
-      <img src={icon.src} alt="" aria-hidden />
+      <img src={icon.src} alt="" aria-hidden draggable="false" />
     </button>
   )
 }

@@ -1,0 +1,20 @@
+.floatingActionButton {
+  position: fixed;
+  bottom: -100px;
+  opacity: 0%;
+  right: 30px;
+  pointer-events: auto;
+  transition: 150ms ease-out;
+  
+  &[show-fab="true"] {
+    bottom: 30px;
+    opacity: 100%;
+    pointer-events: auto;
+  }
+  
+  &[show-fab="false"] {
+    bottom: 0px;
+    opacity: 0%;
+    pointer-events: none;
+  }
+}
