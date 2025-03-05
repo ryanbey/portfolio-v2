@@ -3,12 +3,20 @@
 import { Button, IconButton } from ".";
 import gitHubIcon from "../assets/icons/github-logo.svg";
 import linkedInIcon from "../assets/icons/linkedin-logo.svg";
+import contactIcon from "../assets/icons/mail.svg";
 
 const { compact } = Astro.props;
 ---
 
 <div class={compact ? 'social-container' : 'social-container gap'}>
   {compact ? (
+    <IconButton 
+      icon={contactIcon}
+      title="Contact"
+      emphasis="low"
+      to="/contact"
+      client:load
+    />
     <IconButton 
       icon={gitHubIcon}
       title="GitHub"
@@ -50,6 +58,7 @@ const { compact } = Astro.props;
 <style>
   .social-container {
     display: flex;
+    gap: 6px;
   }
 
   .gap {

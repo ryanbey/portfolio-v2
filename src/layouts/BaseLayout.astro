@@ -1,6 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import { FloatingActionButton, Header, Spacer } from "../components";
+import { FloatingActionButton, Footer, Header, Spacer } from "../components";
 const { pageTitle, showFAB } = Astro.props;
 import "../styles/globals.scss";
 ---
@@ -27,6 +27,7 @@ import "../styles/globals.scss";
         </div>
       )}
     </main>
+    <Footer />
   </body>
 </html>
 

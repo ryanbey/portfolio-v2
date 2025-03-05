@@ -1,6 +1,7 @@
 # To do:
 - [ ] Add favicon
 - [ ] Basic SEO stuff
+- [x] Add copyright to footer
 - [ ] Add portrait image to About page
 - [ ] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
   - Not in main nav, add mail icon to Social, only when compacy (IconButtons in main nav)
