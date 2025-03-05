@@ -4,7 +4,7 @@ import { Squeeze as Hamburger } from 'hamburger-react'
 import css from '../styles/MobileNavigationDrawer.module.scss'
 
 function MobileTab({ selectedTab, setSelectedTab, title, url }) {
-  const style = useMemo(() => url === selectedTab ? { background: 'var(--foreground)', color: 'var(--text-primary) !important' } : {}, [selectedTab, title])
+  const style = useMemo(() => url === selectedTab ? { background: 'var(--foreground)', color: 'var(--text-primary)' } : {}, [selectedTab, title])
   const handleClick = useCallback(() => setSelectedTab(url), [setSelectedTab, title])
 
   return (
@@ -21,7 +21,7 @@ export default function MobileNavigationDrawer({ pathname, buttonProps }) {
   }, [pathname])
 
   return (
-    <div className={css.mobileNavContainer} style={{ left: toggled ? '0px' : '-500px', transition: '300ms ease' }}>
+    <div className={css.mobileNavContainer} style={{ left: toggled ? '0px' : '-500px', transition: '250ms ease' }}>
       <div className={css.mobileNavHeader}>
         <SiteName />
         <Bleed sides={11}>
@@ -33,6 +33,7 @@ export default function MobileNavigationDrawer({ pathname, buttonProps }) {
         <MobileTab title="Home" url="/" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="Projects" url="/projects" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
         <MobileTab title="About" url="/about" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+        <MobileTab title="Contact" url="/contact" selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       </nav>
     </div>
   )

@@ -58,9 +58,15 @@ const { compact } = Astro.props;
 <style>
   .social-container {
     display: flex;
-    gap: 6px;
+    gap: 7px;
   }
 
+  @media(max-width: 350px) {
+    .social-container {
+      gap: 0px;
+    }
+  }
+  
   .gap {
     gap: 12px;
   }
