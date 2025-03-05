@@ -1,9 +1,11 @@
 # To do:
+- [ ] Add favicon
 - [ ] Basic SEO stuff
 - [ ] Add portrait image to About page
 - [ ] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
   - Not in main nav, add mail icon to Social, only when compacy (IconButtons in main nav)
 - [ ] Replace artwork with higher res images
+- [ ] Try to add some padding to photo viewer so it large images don't get so big
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [x] Add scroll to top floating action button to Projects page
 - [ ] Add filters to Projects page
