@@ -15,7 +15,9 @@ export default function FloatingActionButton() {
     }
   }
 
-  const handleClick = () => window.scrollTo({ top: 0, behavior: 'smooth'})
+  const handleClick = () => {
+    console.log('clicked')
+    window.scrollTo({ top: 0, behavior: 'smooth'})}
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
