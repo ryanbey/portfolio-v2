@@ -5,6 +5,8 @@
 - [ ] Add portrait image to About page
 - [ ] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
   - Not in main nav, add mail icon to Social, only when compacy (IconButtons in main nav)
+- [ ] Configure page slide animations to go the correct direction based on where the pages are in the pain nav
+- [ ] Prevent page slide animation when clicking on the nav item for the page we're already on
 - [ ] Replace artwork with higher res images
 - [ ] Try to add some padding to photo viewer so it large images don't get so big
 - [ ] Add hover tooltips to IconButtons (Social buttons)

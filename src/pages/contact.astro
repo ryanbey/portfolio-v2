@@ -1,0 +1,46 @@
+---
+//@ts-nocheck
+import { BaseLayout } from "../layouts";
+import { Button, Spacer } from "../components";
+import sendIcon from '../assets/icons/send.svg'
+---
+
+<BaseLayout pageTitle="Contact">
+  <h1>Let's <span class="animated-text">chat</span>.</h1>
+  <p>Shoot me an email. Not really sure what we'd talk about to be completely honest. But here ya go.</p>
+  <Spacer size="sm" />
+
+  <form name="contact-form" netlify>
+    <label>Name</label>
+    <input type="text" name="name" />
+
+    <label>Email</label>
+    <input type="email" name="email" />
+
+    <label>Message</label>
+    <textarea />
+
+    <Spacer size="sm" />
+
+    <Button icon={sendIcon} iconSize="sm" emphasis="medium">Send</Button>
+  </form>
+</BaseLayout>
+
+<style>
+  h1 {  
+		font-size: 60px;
+		font-weight: 600;
+		margin-top: 0px;
+		margin-bottom: 4px;
+	}
+
+  p {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+
+  label {
+
+  }
+</style>

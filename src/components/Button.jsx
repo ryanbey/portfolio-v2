@@ -1,4 +1,3 @@
-// import { useCallback } from 'react'
 import css from '../styles/Button.module.scss'
 
 function Icon({ icon, iconSize }) {
@@ -13,20 +12,22 @@ function Icon({ icon, iconSize }) {
   )
 }
 
-export default function Button({ icon = null, iconSize = "lg", emphasis = "low", iconRight = false, onClick, to, target, children }) {
+export default function Button({
+  children,
+  emphasis = "low",
+  icon = null,
+  iconRight = false,
+  iconSize = "lg",
+  onClick,
+  target,
+  to,
+  type = "submit",
+}) {
   const showIcon = icon?.src
-
-  // const handleClick = useCallback(() => {
-  //   if (to) {
-  //     target ? window.open(to, target) : window.location.href = to
-  //   } else if (onClick) {
-  //     onClick()
-  //   }
-  // }, [onClick, to])
 
   return (
     <a href={to} target={target}>
-      <button className={css[emphasis]} icon-size={iconSize} >
+      <button className={css[emphasis]} type={type} icon-size={iconSize} >
         {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
         {children}
         {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
