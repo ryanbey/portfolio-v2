@@ -2,14 +2,11 @@
 - [ ] Add favicon
 - [ ] Basic SEO stuff
 - [x] Add copyright to footer
-- [ ] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
+- [x] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
 - [ ] Add portrait image to About page
-- [ ] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
-  - Not in main nav, add mail icon to Social, only when compacy (IconButtons in main nav)
-- [ ] Configure page slide animations to go the correct direction based on where the pages are in the pain nav
-- [ ] Prevent page slide animation when clicking on the nav item for the page we're already on
+- [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
 - [ ] Replace artwork with higher res images
-- [ ] Try to add some padding to photo viewer so it large images don't get so big
+- [ ] Try to add some padding to photo viewer so it large images reach the edges of the screen
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [x] Add scroll to top floating action button to Projects page
 - [ ] Add filters to Projects page
