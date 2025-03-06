@@ -11,22 +11,35 @@ import sendIcon from '../../assets/icons/send.svg'
   <Spacer size="sm" />
 
   <form name="contact-form" action="/contact/success" netlify>
-    <label>Name</label>
-    <input type="text" name="name" />
-
-    <label>Email</label>
-    <input type="email" name="email" />
-
-    <label>Message</label>
-    <textarea name="message" />
+    <div class="form-container">
+      <div>
+        <div class="input-container">
+          <label>Name</label>
+          <input type="text" name="Name" />
+        </div>
+        <div class="input-container">
+          <label>Email</label>
+          <input type="email" name="Email" />
+        </div>
+        <div class="input-container">
+          <label>Favorite Color</label>
+          <input type="text" name="Favorite Color" />
+        </div>
+      </div>
+  
+      <div class="input-container">
+        <label>Message</label>
+        <textarea name="message" rows="7" />
+      </div>
+    </div>
 
     <Spacer size="sm" />
 
-    <Button icon={sendIcon} iconSize="sm" emphasis="medium">Send</Button>
+    <Button icon={sendIcon} size="lg" iconSize="sm" emphasis="high">Send</Button>
   </form>
 </BaseLayout>
 
-<style>
+<style lang="scss">
   h1 {  
 		font-size: 60px;
 		font-weight: 600;
@@ -40,7 +53,65 @@ import sendIcon from '../../assets/icons/send.svg'
 		line-height: 150%;
 	}
 
-  label {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
 
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 4px;
+    color: var(--text-secondary);
+  }
+
+  input {
+    height: 40px;
+    max-width: 100%;
+    background: var(--foreground-transparent);
+    border: 2px solid var(--foreground);
+    border-radius: var(--border-rad);
+    outline: none;
+    margin-bottom: 16px;
+    padding: 0px 10px;
+    transition: 150ms ease;
+
+    font-family: Figtree, sans-serif;
+    font-size: 18px;
+    color: var(--text-primary);
+
+    // Autofill
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus, 
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px var(--background) inset;
+    }
+
+    &:focus {
+      border: 2px solid var(--accent);
+    }
+  }
+
+  textarea {
+    background: var(--foreground-transparent);
+    border: 2px solid var(--foreground);
+    border-radius: var(--border-rad);
+    outline: none;
+    padding: 9px 10px;
+    transition: 150ms ease;
+
+    font-family: Figtree, sans-serif;
+    font-size: 18px;
+    color: var(--text-primary);
+    line-height: 150%;
+
+    &:focus {
+      border: 2px solid var(--accent);
+    }
   }
 </style>
