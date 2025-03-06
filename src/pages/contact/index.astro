@@ -1,8 +1,8 @@
 ---
 //@ts-nocheck
-import { BaseLayout } from "../layouts";
-import { Button, Spacer } from "../components";
-import sendIcon from '../assets/icons/send.svg'
+import { BaseLayout } from "../../layouts";
+import { Button, Spacer } from "../../components";
+import sendIcon from '../../assets/icons/send.svg'
 ---
 
 <BaseLayout pageTitle="Contact">
@@ -10,7 +10,7 @@ import sendIcon from '../assets/icons/send.svg'
   <p>Shoot me an email. Not really sure what we'd talk about to be completely honest. But here ya go.</p>
   <Spacer size="sm" />
 
-  <form name="contact-form" netlify>
+  <form name="contact-form" action="/contact/success" netlify>
     <label>Name</label>
     <input type="text" name="name" />
 

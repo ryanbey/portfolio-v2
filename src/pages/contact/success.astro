@@ -1,0 +1,35 @@
+---
+//@ts-nocheck
+import { Button } from "../../components";
+import { BaseLayout } from "../../layouts";
+import leftArrow from '../../assets/icons/arrow-left.png'
+---
+
+<BaseLayout pageTitle="Successful Submission">
+  <div class="success-container">
+    <h1><span class="animated-text">Thanks</span> for reaching out!</h1>
+    <p>I'll get back to you soon. In the meantime, feel free to continue exploring.</p>
+    <Button
+      icon={leftArrow}
+      emphasis="medium"
+      to="/"
+    >
+      Back to Site
+    </Button>
+  </div>
+</BaseLayout>
+
+<style>
+  h1 {  
+		font-size: 60px;
+		font-weight: 600;
+		margin-top: 0px;
+		margin-bottom: 4px;
+	}
+
+  p {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 150%;
+	}
+</style>
