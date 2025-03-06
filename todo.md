@@ -2,6 +2,7 @@
 - [ ] Add favicon
 - [ ] Basic SEO stuff
 - [x] Add copyright to footer
+- [ ] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
 - [ ] Add portrait image to About page
 - [ ] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
   - Not in main nav, add mail icon to Social, only when compacy (IconButtons in main nav)
