@@ -7,15 +7,15 @@ import sendIcon from '../../assets/icons/send.svg'
 
 <BaseLayout pageTitle="Contact">
   <h1>Let's <span class="animated-text">chat</span>.</h1>
-  <p>Shoot me an email. Not really sure what we'd talk about to be completely honest. But here ya go.</p>
+  <p>Shoot me an message. Include your email if you'd like a response.</p>
   <Spacer size="sm" />
 
   <form name="contact-form" action="/contact/success" netlify>
     <div class="form-container">
       <div>
         <div class="input-container">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="Name" />
+          <label for="name">Name <span class="required-asterisk">*</span></label>
+          <input type="text" id="name" name="Name" required />
         </div>
         <div class="input-container">
           <label for="email">Email</label>
@@ -23,14 +23,13 @@ import sendIcon from '../../assets/icons/send.svg'
         </div>
         <div class="input-container">
           <label for="favorite-color">Favorite Color</label>
-          <input type="text" id="favorite-color" name="Favorite Color" />
+          <input type="color" value="#ffffff" id="favorite-color" name="Favorite Color" />
         </div>
       </div>
       
-  
       <div class="input-container">
-        <label>Message</label>
-        <textarea name="message" rows="7" />
+        <label>Message <span class="required-asterisk">*</span></label>
+        <textarea name="message" rows="7" required />
       </div>
     </div>
 
@@ -84,18 +83,27 @@ import sendIcon from '../../assets/icons/send.svg'
     outline: none;
     margin-bottom: 16px;
     padding: 0px 10px;
-    transition: 250ms ease;
+    transition: border 250ms ease;
 
     font-family: Figtree, sans-serif;
     font-size: 18px;
     color: var(--text-primary);
+
+    &[type="color"] {
+      width: 100%;
+    }
 
     // Autofill
     &:-webkit-autofill,
     &:-webkit-autofill:hover, 
     &:-webkit-autofill:focus, 
     &:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px var(--background) inset;
+      font-family: Figtree, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      -webkit-box-shadow: 0 0 0 30px var(--foreground) inset;
+      -webkit-text-fill-color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
     }
 
     &:focus {
@@ -109,7 +117,7 @@ import sendIcon from '../../assets/icons/send.svg'
     border-radius: var(--border-rad);
     outline: none;
     padding: 9px 10px;
-    transition: 150ms ease;
+    transition: border 150ms ease;
 
     font-family: Figtree, sans-serif;
     font-size: 18px;
@@ -119,5 +127,9 @@ import sendIcon from '../../assets/icons/send.svg'
     &:focus {
       border: 2px solid var(--accent);
     }
+  }
+
+  .required-asterisk {
+    color: var(--accent-hover);
   }
 </style>
