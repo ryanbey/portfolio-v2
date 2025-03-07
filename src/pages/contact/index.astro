@@ -56,8 +56,13 @@ import sendIcon from '../../assets/icons/send.svg'
 
   .form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 36px;
+    grid-template-columns: 1fr;
+    gap: 0px;
+
+    @media (min-width: 750px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+    }
   }
 
   .input-container {
