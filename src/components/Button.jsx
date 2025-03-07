@@ -25,9 +25,18 @@ export default function Button({
 }) {
   const showIcon = icon?.src
 
+  const handleClick = () => {
+    if (onClick) onClick()
+  }
+
   return (
     <a href={to} target={target}>
-      <button className={css[emphasis]} type={type} icon-size={iconSize} >
+      <button
+        type={type}
+        icon-size={iconSize}
+        onClick={handleClick}
+        className={css[emphasis]}
+      >
         {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
         {children}
         {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}

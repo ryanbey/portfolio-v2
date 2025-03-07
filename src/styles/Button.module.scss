@@ -35,6 +35,10 @@
     background: var(--foreground-hover);
     scale: 1.06;
   }
+
+  &:active {
+    scale: 1;
+  }
 }
 
 .high {
@@ -45,5 +49,9 @@
   &:hover {
     scale: 1.06;
     background: var(--accent-hover);
+  }
+
+  &:active {
+    scale: 1;
   }
 }

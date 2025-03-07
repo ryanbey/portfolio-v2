@@ -9,6 +9,7 @@
 - [x] Try to add some padding to photo viewer so it large images reach the edges of the screen
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [x] Add scroll to top floating action button
+- [x] Add click animation to buttons
 - [ ] Add filters to Projects page
   - Filter button on the top right of the page that opens an expander with all the skill chips and categories
   - All chips are deselected by default, selecting one will start filtering by selected skills or categories
