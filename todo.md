@@ -6,7 +6,7 @@
 - [ ] Add portrait image to About page
 - [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
 - [ ] Replace artwork with higher res images
-- [ ] Try to add some padding to photo viewer so it large images reach the edges of the screen
+- [x] Try to add some padding to photo viewer so it large images reach the edges of the screen
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [x] Add scroll to top floating action button
 - [ ] Add filters to Projects page
