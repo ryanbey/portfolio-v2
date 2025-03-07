@@ -6,10 +6,10 @@ export default function PhotoGallery({ images, alignImages = 'auto', showAll = f
   const showAllAttr = showAll.toString()
 
   return (
-    <PhotoProvider maskOpacity={0.8} className={css.galleryContainer} maskClassName={css.mask}>
+    <PhotoProvider maskOpacity={0.8} className={css.galleryContainer} maskClassName={css.mask} photoClassName={css.photo}>
       <div className={css.galleryLayout} show-all={showAllAttr}>
         {images?.map((item, index) => (
-          <PhotoView key={index} src={item}>
+          <PhotoView key={index} src={item} height={50}>
             {index < numPhotosToDisplay && (
               <img
                 src={item}

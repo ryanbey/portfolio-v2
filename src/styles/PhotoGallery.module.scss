@@ -31,7 +31,7 @@
   width: 100%;
   min-width: 0px;
   border: 2px solid var(--foreground-hover);
-  transition: 110ms ease;
+  transition: 150ms ease;
   object-position: auto;
 
   &[align-images="top"] {
@@ -46,4 +46,8 @@
     transform: scale(1.04);
     cursor: pointer;
   }
+}
+
+.photo {
+  scale: 90%;
 }
