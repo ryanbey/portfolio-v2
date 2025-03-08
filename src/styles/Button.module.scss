@@ -54,4 +54,14 @@
   &:active {
     scale: 1;
   }
+
+  &:disabled {
+    background: var(--foreground);
+    color: var(--text-secondary);
+
+    &:hover {
+      scale: 1;
+      cursor: not-allowed;
+    }
+  }
 }

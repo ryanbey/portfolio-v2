@@ -14,6 +14,7 @@ function Icon({ icon, iconSize }) {
 
 export default function Button({
   children,
+  disabled,
   emphasis = "low",
   icon = null,
   iconRight = false,
@@ -36,6 +37,7 @@ export default function Button({
         icon-size={iconSize}
         onClick={handleClick}
         className={css[emphasis]}
+        disabled={disabled}
       >
         {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
         {children}

@@ -8,6 +8,7 @@ import sendIcon from '../../assets/icons/send.svg'
 <BaseLayout pageTitle="Contact">
   <h1>Let's <span class="animated-text">chat</span>.</h1>
   <p>Shoot me an message. Include your email if you'd like a response.</p>
+
   <Spacer size="sm" />
 
   <form name="contact-form" action="/contact/success" netlify>
@@ -35,7 +36,9 @@ import sendIcon from '../../assets/icons/send.svg'
 
     <Spacer size="sm" />
 
-    <Button icon={sendIcon} size="lg" iconSize="sm" emphasis="high">Send</Button>
+    <Button id="submit-button" icon={sendIcon} size="lg" iconSize="sm" emphasis="high">
+      Send
+    </Button>
   </form>
 </BaseLayout>
 
