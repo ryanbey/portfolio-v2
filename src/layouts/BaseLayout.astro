@@ -1,18 +1,17 @@
 ---
 import { ClientRouter, fade } from "astro:transitions";
-import { FloatingActionButton, Footer, Header, Spacer } from "../components";
-const { pageTitle, showFAB } = Astro.props;
+import { FloatingActionButton, Footer, Header, PageHead, Spacer } from "../components";
+import ogImage from '../assets/seo/ogimage.jpg'
+const { pageTitle, pageDescription, noSuffix, showFAB } = Astro.props;
 import "../styles/globals.scss";
+
+const socialTitle = `${pageTitle}${noSuffix ? '' : ' | Ryan Bey'}`
+const socialDescription = pageDescription || 'Detail oriented, UX-driven web developer.'
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle} | ryanbey.dev</title>
-    <!-- TODO: Add SEO basics -->
+    <PageHead title={socialTitle} description={socialDescription} image={ogImage.src} />
     <ClientRouter />
   </head>
   
