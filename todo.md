@@ -2,9 +2,6 @@
 
 - [ ] Replace artwork with higher res images
 - [ ] Add hover tooltips to IconButtons (Social buttons)
-- [ ] Disable Send button unless required fields are filled in
-- [ ] Check for JavaScript injection
-- [ ] Add Clear All or Start Over button once something is typed in (md emphasis button next to Send button?)
 - [ ] Add filters to Projects page
   - Filter button on the top right of the page that opens an expander with all the skill chips and categories
   - All chips are deselected by default, selecting one will start filtering by selected skills or categories
