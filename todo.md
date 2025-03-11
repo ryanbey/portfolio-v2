@@ -1,6 +1,5 @@
 # To do:
 
-- [ ] Fix footer drawing underneath the mouse glow
 - [ ] Replace artwork with higher res images
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [ ] Disable Send button unless required fields are filled in
