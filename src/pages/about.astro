@@ -3,6 +3,7 @@ import { CategoryHeading, HobbyCard, SkillChipList, Spacer } from "../components
 import { BaseLayout } from "../layouts";
 import skills from "../data/allSkills";
 import { hobbies } from "../data";
+import portrait from '../assets/images/portrait.png'
 ---
 
 <BaseLayout
@@ -31,7 +32,7 @@ import { hobbies } from "../data";
         passion for both design and programming.
       </p>
     </div>
-    <img src="https://dummyimage.com/300x350" alt="alt" class="portrait" />
+    <img class="portrait" src={portrait.src} alt="Portrait image of Ryan" draggable="false" />
   </div>
   <Spacer size="md" />
 
@@ -57,10 +58,13 @@ import { hobbies } from "../data";
   }
 
   .portrait {
-    border-radius: 8px;
-    width: 300px;
-    height: 350px;
-    margin-top: 20px;
+    background: linear-gradient(to top, var(--foreground) 0%, #ffffff00);
+    border: 6px solid var(--foreground);
+    border-radius: 50%;
+    min-width: 0px;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover;
   }
 
   .hobby-cards-container {
