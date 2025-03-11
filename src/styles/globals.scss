@@ -68,6 +68,12 @@ a {
   }
 }
 
+h1 {
+  @media(max-width: 850px) {
+    line-height: 100%;
+  }
+}
+
 button {
   font-family: Figtree, sans-serif;
   font-weight: 500;

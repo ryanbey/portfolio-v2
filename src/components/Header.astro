@@ -11,9 +11,11 @@ const { pathname } = Astro.url
       <SiteName />
     </div>
     <Navigation pathname={pathname} client:load transition:persist />
-    <Bleed sides={8}>
-      <Social compact />
-    </Bleed>
+    <div class="right-nav">
+      <Bleed sides={8}>
+        <Social compact />
+      </Bleed>
+    </div>
   </div>
 </header>
 
@@ -41,8 +43,18 @@ const { pathname } = Astro.url
     gap: 24px;
   }
 
+  .right-nav {
+    display: none;
+  }
+
   p {
     font-size: 20px;
     font-weight: 700;
+  }
+
+  @media(min-width: 330px) {
+    .right-nav {
+      display: block;
+    }
   }
 </style>
