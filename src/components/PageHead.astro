@@ -22,7 +22,7 @@ const { title, description, image } = Astro.props
 <meta property="twitter:domain" content="ryanbey.dev">
 
 <!-- Google Analytics Integration -->
-<script is:inline type="text/partytown" src=`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.GOOGLE_ANALYTICS_TRACKING_ID}`></script>
+<script is:inline type="text/partytown" async src=`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.GOOGLE_ANALYTICS_TRACKING_ID}`></script>
 <script is:inline type="text/partytown">
   window.dataLayer = window.dataLayer || []
   const gtag = () => dataLayer.push(arguments)
