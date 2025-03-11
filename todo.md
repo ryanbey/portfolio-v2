@@ -1,8 +1,6 @@
 # To do:
 
-- [ ] Fix gradient text disappearing when highlighted
 - [ ] Fix footer drawing underneath the mouse glow
-- [ ] Add portrait image to About page
 - [ ] Replace artwork with higher res images
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [ ] Disable Send button unless required fields are filled in
@@ -23,6 +21,8 @@
 - [x] Add favicon
 - [x] Basic SEO stuff
 - [x] Add copyright to footer
+- [x] Add portrait image to About page
+- [x] Fix gradient text disappearing when highlighted
 - [x] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
 - [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
 - [x] Try to add some padding to photo viewer so it large images reach the edges of the screen

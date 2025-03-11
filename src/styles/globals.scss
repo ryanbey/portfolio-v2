@@ -96,6 +96,10 @@ button {
 		animation: gradientAnimation 4s ease infinite;
 		animation-direction: alternate;
 		background-size: 350% 100%;
+
+  &::selection {
+    color: var(--accent-hover);
+  }
 }
 
 @keyframes gradientAnimation {
