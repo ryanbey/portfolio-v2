@@ -3,6 +3,8 @@
 - [x] Basic SEO stuff
 - [x] Add copyright to footer
 - [x] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
+- [ ] Fix gradient text disappearing when highlighted
+- [ ] Fix footer drawing underneath the mouse glow
 - [ ] Add portrait image to About page
 - [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
 - [ ] Replace artwork with higher res images
