@@ -1,22 +1,13 @@
 # To do:
-- [x] Add favicon
-- [x] Basic SEO stuff
-- [x] Add copyright to footer
-- [x] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
+
 - [ ] Fix gradient text disappearing when highlighted
 - [ ] Fix footer drawing underneath the mouse glow
 - [ ] Add portrait image to About page
-- [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
 - [ ] Replace artwork with higher res images
-- [x] Try to add some padding to photo viewer so it large images reach the edges of the screen
 - [ ] Add hover tooltips to IconButtons (Social buttons)
-- [x] Add scroll to top floating action button
-- [x] Add click animation to buttons
-- [x] Add validation to contact form
-  - [x] Decide on required fields
-  - [ ] Disable Send button unless required fields are filled in
-  - [ ] Check for JavaScript injection
-  - [ ] Add Clear All or Start Over button once something is typed in (md emphasis button next to Send button?)
+- [ ] Disable Send button unless required fields are filled in
+- [ ] Check for JavaScript injection
+- [ ] Add Clear All or Start Over button once something is typed in (md emphasis button next to Send button?)
 - [ ] Add filters to Projects page
   - Filter button on the top right of the page that opens an expander with all the skill chips and categories
   - All chips are deselected by default, selecting one will start filtering by selected skills or categories
@@ -26,3 +17,16 @@
   - Tooltip on hover ("View projects using {skill}")
   - Takes you to Projects page filtered by that chip
   - If there were existing chips, reset them and filter by the one that got clicked on in a ProjectCard
+     
+## Done:
+
+- [x] Add favicon
+- [x] Basic SEO stuff
+- [x] Add copyright to footer
+- [x] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
+- [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
+- [x] Try to add some padding to photo viewer so it large images reach the edges of the screen
+- [x] Add scroll to top floating action button
+- [x] Add click animation to buttons
+- [x] Add validation to contact form
+- [x] Decide on required fields
