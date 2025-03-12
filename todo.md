@@ -1,6 +1,7 @@
 # To do:
 
 - [ ] Replace artwork with higher res images
+- [ ] Fix link to memory on MemoryViewer project, remove link to MemoryCard, no one is going to sign in
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [ ] Add filters to Projects page
   - Filter button on the top right of the page that opens an expander with all the skill chips and categories
