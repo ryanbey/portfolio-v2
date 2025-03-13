@@ -108,7 +108,7 @@ const projects = [
     category: categories.web,
     image: fsLogo.src,
     links: [
-      { Visit: 'https://www.familysearch.org/tree/person/memories/KNDX-MKG' }
+      { Visit: 'https://beta.familysearch.org/frontier/zion/iframe.html?args=&id=shared-components-memorycard--all-types&viewMode=story' }
     ],
     gallery: [memoryCard1.src, memoryCard2.src, memoryCard3.src, memoryCard4.src],
   },
@@ -122,7 +122,7 @@ const projects = [
     category: categories.web,
     image: fsLogo.src,
     links: [
-      { Visit: 'https://www.familysearch.org/memories/memory/172126330?a=1349257' }
+      { Visit: 'https://www.familysearch.org/en/memories/memory/53694167' }
     ],
     gallery: [memoryViewer1.src, memoryViewer2.src, memoryViewer3.src, memoryViewer4.src],
   },

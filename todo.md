@@ -1,7 +1,6 @@
 # To do:
 
 - [ ] Replace artwork with higher res images
-- [ ] Fix link to memory on MemoryViewer project, remove link to MemoryCard, no one is going to sign in
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [ ] Add filters to Projects page
   - Filter button on the top right of the page that opens an expander with all the skill chips and categories
@@ -20,6 +19,7 @@
 - [x] Add copyright to footer
 - [x] Add portrait image to About page
 - [x] Fix gradient text disappearing when highlighted
+- [x] Fix link to memory on MemoryViewer project, remove link to MemoryCard, no one is going to sign in
 - [x] Replace netlify form submission confiirmation with my own page https://answers.netlify.com/t/wording-on-form-submission-message/78290
 - [x] Add contact page with form using Netlify's form detection: https://app.netlify.com/sites/ryanbey/forms
 - [x] Try to add some padding to photo viewer so it large images reach the edges of the screen
