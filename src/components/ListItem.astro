@@ -1,6 +1,7 @@
 ---
 // @ts-nocheck
 const { actions, description, imageUrl, title } = Astro.props;
+import { Image } from 'astro:assets';
 import { Button } from '.' 
 import visitIcon from '../assets/icons/visit.png'
 import gitHubIcon from '../assets/icons/github-logo.svg'
@@ -10,7 +11,14 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
   {
     imageUrl && (
       <div class="list-item-image-container">
-        <img class="list-item-image" src={imageUrl} alt={`${title} logo`} draggable="false" />
+        <img
+          class="list-item-image"
+          src={imageUrl}
+          alt={`${title} logo`}
+          draggable="false"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     )
   }

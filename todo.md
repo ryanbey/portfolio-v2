@@ -1,6 +1,5 @@
 # To do:
 
-- [ ] Replace artwork with higher res images
 - [ ] Add hover tooltips to IconButtons (Social buttons)
 - [ ] Add filters to Projects page
   - Filter button on the top right of the page that opens an expander with all the skill chips and categories
@@ -27,3 +26,4 @@
 - [x] Add click animation to buttons
 - [x] Add validation to contact form
 - [x] Decide on required fields
+- [x] Replace artwork with higher res images

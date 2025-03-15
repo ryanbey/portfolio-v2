@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { CategoryHeading, HobbyCard, SkillChipList, Spacer } from "../components";
 import { BaseLayout } from "../layouts";
 import skills from "../data/allSkills";
@@ -32,7 +33,7 @@ import portrait from '../assets/images/portrait.png'
         passion for both design and programming.
       </p>
     </div>
-    <img class="portrait" src={portrait.src} alt="Portrait image of Ryan" draggable="false" />
+    <Image class="portrait" src={portrait} alt="Portrait image of Ryan" draggable="false" />
   </div>
   <Spacer size="md" />
 
@@ -60,7 +61,7 @@ import portrait from '../assets/images/portrait.png'
   .portrait {
     background: linear-gradient(to top, var(--foreground) 0%, #ffffff00);
     border: 6px solid var(--foreground);
-    border-radius: 50%;
+    border-radius: 350px;
     min-width: 0px;
     max-width: 350px;
     max-height: 350px;

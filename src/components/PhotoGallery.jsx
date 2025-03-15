@@ -17,6 +17,7 @@ export default function PhotoGallery({ images, alignImages = 'auto', showAll = f
                 className={css.imageElement}
                 show-all={showAllAttr}
                 align-images={alignImages}
+                loading="lazy"
                 draggable="false"
               />
             )}
