@@ -13,6 +13,15 @@ const socialDescription = pageDescription || 'Detail oriented, UX-driven web dev
   <head>
     <PageHead title={socialTitle} description={socialDescription} image={ogImage.src} />
     <ClientRouter />
+
+    <!-- Google Analytics Integration -->
+    <script is:inline type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-W50BK6YG8J"></script>
+    <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || []
+      const gtag = () => dataLayer.push(arguments)
+      gtag('js', new Date())
+      gtag('config', 'G-W50BK6YG8J')
+    </script>
   </head>
   
   <body>
