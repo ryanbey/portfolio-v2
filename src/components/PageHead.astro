@@ -27,7 +27,5 @@ const { title, description, image } = Astro.props
   window.dataLayer = window.dataLayer || []
   const gtag = () => dataLayer.push(arguments)
   gtag('js', new Date())
-  // Only collect anonymous data for GDPR compliance and because I don't need all that heat man
-  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' })
   gtag('config', 'G-W50BK6YG8J')
 </script>
