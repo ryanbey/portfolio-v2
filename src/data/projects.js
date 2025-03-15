@@ -198,7 +198,7 @@ const projects = [
   },
   {
     title: 'Portfolio v2',
-    description: 'Aug 2024 - Present',
+    description: 'Aug 2024 - Mar 2025',
     positions: [
       { description: "You are here! My second, updated portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
     ],
