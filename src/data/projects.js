@@ -76,7 +76,7 @@ const projects = [
     title: 'Nyoom',
     description: 'Jan 2023 - Present',
     positions: [
-      { description: 'An iRacing stats website visited by over 1,000 iRacers per month offering a more user-friendly, performant, and focused experience.' }],
+      { description: 'An iRacing stats website visited by over 1,500 iRacers per month offering a more user-friendly, performant, and focused experience.' }],
     image: nyoomLogo.src,
     skills: [skills.react, skills.nextjs, skills.javascript, skills.css, skills.cypress, skills.photoshop, skills.xd],
     category: categories.web,
