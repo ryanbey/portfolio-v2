@@ -25,7 +25,7 @@ const hobbies = [
     title: 'Web Development',
     description: "I'm very fortunate to be doing what I love for work! I always have a side project in progress.",
     links: [
-      { "My GitHub": 'https://pcpartpicker.com/user/R3mix/saved/#view=WNNJwP' },
+      { "My GitHub": 'https://github.com/ryanbey' },
     ],
   },
   {
