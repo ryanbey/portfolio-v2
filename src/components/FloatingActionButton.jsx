@@ -16,7 +16,6 @@ export default function FloatingActionButton() {
   }
 
   const handleClick = () => {
-    console.log('clicked')
     window.scrollTo({ top: 0, behavior: 'smooth'})}
 
   useEffect(() => {
@@ -28,7 +27,7 @@ export default function FloatingActionButton() {
 
   return (
     <div className={css.floatingActionButton} show-fab={showFAB.toString()}>
-      <IconButton icon={arrowUp} emphasis="high" title="Scroll to top" onClick={handleClick} />
+      <IconButton icon={arrowUp.src} emphasis="high" title="Scroll to top" onClick={handleClick} />
     </div>
   )
 }

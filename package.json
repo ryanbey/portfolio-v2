@@ -10,18 +10,18 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^6.2.2",
-    "@astrojs/react": "^4.2.1",
-    "@react-three/fiber": "^8.17.12",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@astrojs/netlify": "^6.6.1",
+    "@astrojs/react": "^4.4.2",
+    "@react-three/fiber": "^8.18.0",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
     "@types/three": "^0.174.0",
-    "astro": "^5.4.1",
-    "hamburger-react": "^2.5.1",
+    "astro": "^5.15.9",
+    "hamburger-react": "^2.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-photo-view": "^1.2.6",
-    "sass": "^1.77.8",
+    "react-photo-view": "^1.2.7",
+    "sass": "^1.94.1",
     "three": "^0.174.0"
   }
 }
