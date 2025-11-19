@@ -14,23 +14,30 @@ import gitHubIcon from '../assets/icons/github-logo.svg'
   
   <slot />
 
-  {actions?.length && (
-    <Spacer size="xs" />
-    <div style={{ flexGrow: 1 }} />
-    <div class="card-actions">
-      {actions?.map((action) => (
-        <Button
-          emphasis="medium"
-          icon={Object.keys(action) == 'GitHub' ? gitHubIcon : visitIcon}
-          iconSize="sm"
-          to={Object.values(action)}
-          target={Object.values(action).toString().startsWith('/') ? '_self' : '_blank'}
-          client:load
-        >
-          {Object.keys(action)}
-        </Button>
-      ))}
-    </div>
+  {Array.isArray(actions) && actions.length > 0 && (
+    <>
+      <Spacer size="xs" />
+      <div style={{ flexGrow: 1 }} />
+      <div class="card-actions">
+        {actions.map((action) => {
+          const key = Object.keys(action)[0]
+          const value = Object.values(action)[0]
+          const targetAttr = typeof value === 'string' && value.startsWith('/') ? '_self' : '_blank'
+          return (
+            <Button
+              emphasis="medium"
+              icon={(key === 'GitHub' ? gitHubIcon : visitIcon) && (key === 'GitHub' ? gitHubIcon.src : visitIcon.src) ? (key === 'GitHub' ? gitHubIcon.src : visitIcon.src) : (key === 'GitHub' ? gitHubIcon : visitIcon)}
+              iconSize="sm"
+              to={value}
+              target={targetAttr}
+              client:load
+            >
+              {key}
+            </Button>
+          )
+        })}
+      </div>
+    </>
   )}
 </section>
 

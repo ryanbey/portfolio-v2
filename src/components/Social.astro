@@ -11,14 +11,14 @@ const { compact } = Astro.props;
 <div class={compact ? 'social-container' : 'social-container gap'}>
   {compact ? (
     <IconButton 
-      icon={contactIcon}
+      icon={contactIcon.src}
       title="Contact"
       emphasis="low"
       to="/contact"
       client:load
     />
     <IconButton 
-      icon={gitHubIcon}
+      icon={gitHubIcon.src}
       title="GitHub"
       emphasis="low"
       to="https://github.com/ryanbey"
@@ -26,7 +26,7 @@ const { compact } = Astro.props;
       client:load
     />
     <IconButton
-      icon={linkedInIcon}
+      icon={linkedInIcon.src}
       title="LinkedIn"
       emphasis="low"
       to="https://linkedin.com/in/ryanbey"
@@ -35,7 +35,7 @@ const { compact } = Astro.props;
     />
   ) : (
     <Button
-      icon={gitHubIcon}
+      icon={gitHubIcon.src}
       emphasis="medium"
       to="https://github.com/ryanbey"
       target="_blank"
@@ -44,7 +44,7 @@ const { compact } = Astro.props;
       GitHub
     </Button>
     <Button
-      icon={linkedInIcon}
+      icon={linkedInIcon.src}
       emphasis="medium"
       to="https://linkedin.com/in/ryanbey"
       target="_blank"

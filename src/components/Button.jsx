@@ -1,9 +1,9 @@
 import css from '../styles/Button.module.scss'
 
-function Icon({ icon, iconSize }) {
+function Icon({ icon = null, iconSize }) {
   return (
     <img
-      src={icon.src}
+      src={icon}
       height={iconSize === 'sm' ? 16 : 22}
       width={iconSize === 'sm' ? 16 : 22}
       alt=""
@@ -24,8 +24,6 @@ export default function Button({
   to,
   type = "submit",
 }) {
-  const showIcon = icon?.src
-
   const handleClick = () => {
     if (onClick) onClick()
   }
@@ -39,9 +37,9 @@ export default function Button({
         className={css[emphasis]}
         disabled={disabled}
       >
-        {showIcon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
+        {icon && !iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
         {children}
-        {showIcon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
+        {icon && iconRight && (<Icon icon={icon} iconSize={iconSize} />)}
       </button>
     </a>
   )
