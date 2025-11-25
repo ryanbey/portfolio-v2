@@ -136,7 +136,7 @@ const projects = [
     category: categories.web,
     image: fsLogo.src,
     links: [
-      { Visit: 'https://www.familysearch.org/es' },
+      { Visit: 'https://www.familysearch.org/en/global' },
     ],
     gallery: [internationalHomePage1.src, internationalHomePage2.src]
   },
