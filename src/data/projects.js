@@ -76,7 +76,7 @@ const projects = [
     title: 'Nyoom',
     description: 'Jan 2023 - Present',
     positions: [
-      { description: 'An iRacing stats website visited by over 4,000 iRacers per month offering a more user-friendly, performant, and focused experience.' }],
+      { description: 'An iRacing stats website visited by 2,000 iRacers per month offering a more user-friendly, performant, and focused experience.' }],
     image: nyoomLogo.src,
     skills: [skills.react, skills.nextjs, skills.javascript, skills.css, skills.cypress, skills.photoshop, skills.xd],
     category: categories.web,
@@ -182,7 +182,8 @@ const projects = [
     image: chamberLogo.src,
     gallery: [chamber1.src, chamber2.src, chamber3.src],
   },
-  {    title: 'Portfolio v1',
+  {
+    title: 'Portfolio v1',
     description: 'Oct - Nov 2021',
     positions: [
       { description: 'My first portfolio site I made from scratch using plain old HTML, CSS, and JavaScript. Made during college to showcase my favorite projects, classes, and skills to recruiters and friends.' },
