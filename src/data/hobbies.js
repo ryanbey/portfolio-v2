@@ -8,21 +8,17 @@
 
 const hobbies = [
   {
-    title: 'Sim Racing',
-    description: 'Because pretend race cars are cheaper than real ones. Top 1% oval driver in iRacing.',
+    title: 'Web Development',
+    description: "I'm very fortunate to be doing what I love for work! I always have a side project in progress.",
+    links: [
+      { "My GitHub": 'https://github.com/ryanbey' },
+    ],
   },
   {
     title: 'PC Building',
     description: "It's like legos but even more expensive. I'm especially into small form factor builds.",
     links: [
       { "My PC Specs": 'https://pcpartpicker.com/user/R3mix/saved/#view=WNNJwP' },
-    ],
-  },
-  {
-    title: 'Web Development',
-    description: "I'm very fortunate to be doing what I love for work! I always have a side project in progress.",
-    links: [
-      { "My GitHub": 'https://github.com/ryanbey' },
     ],
   },
   {
@@ -33,12 +29,16 @@ const hobbies = [
     ],
   },
   {
-    title: '3D Printing',
-    description: "Accessories for my sim racing setup and house decorations for my wife. Someday we'll break even on the printer purchase.",
+    title: 'Sim Racing',
+    description: 'Because pretend race cars are cheaper than real ones. Top 1% oval driver in iRacing.',
   },
   {
     title: 'Motorsports',
-    description: "I've watched NASCAR religiously since I was a kid. I also enjoy watching IMSA and IndyCar.",
+    description: "I've watched NASCAR religiously since I was a kid. I also enjoy IMSA and IndyCar.",
+  },
+  {
+    title: '3D Printing',
+    description: "Attachments for my sim rig, household items for my wife, and toys for my kids.",
   },
 ]
 
