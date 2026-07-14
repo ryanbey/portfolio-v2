@@ -8,12 +8,12 @@ const experience = [
     image: fsLogo.src,
     positions: [
       {
-        title: 'Web Developer II',
+        title: 'Software Engineer II',
         tenure: 'Jan 2023 - Present',
         description: 'Building and maintaining robust React components and pages across the Memories product. Frequent contributor to our internal design system building reusable components used across the site.'
       },
       {
-        title: 'Web Developer Intern',
+        title: 'Software Engineer Intern',
         tenure: 'Aug - Dec 2022',
         description: "Converted the site's worldwide home page from Polymer to React with support for 40 languages. Discovered and improved accessibility issues across our team's product. Contributed to our internal design system.",
       }
