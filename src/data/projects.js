@@ -1,4 +1,4 @@
-import nyoomLogo from '../assets/images/nyoom-logo.webp'
+import nyoomLogo from '../assets/images/nyoom-lettermark.svg'
 import nyoom1 from '../assets/images/projects/nyoom/nyoom-1.jpg'
 import nyoom2 from '../assets/images/projects/nyoom/nyoom-2.jpg'
 import nyoom3 from '../assets/images/projects/nyoom/nyoom-3.jpg'

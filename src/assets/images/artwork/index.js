@@ -15,7 +15,9 @@ import iracingNyoom from './iracing-nyoom.jpg'
 import iracingPoly from './iracing-poly.jpg'
 import iracingShootout from './iracing-shootout.jpg'
 import morssenger from './morssenger.jpg'
-import nyoomLogo from './nyoom-logo.jpg'
+import nyoomLettermark from './nyoom-lettermark.svg'
+import nyoomLogoOld from './nyoom-logo.jpg'
+import nyoomWordmark from './nyoom-wordmark.svg'
 import polyscapeForest from './polyscape-forest.jpg'
 import polyscapeSunset from './polyscape-sunset.jpg'
 import prerunnerTwitch from './prerunner-twitch.jpg'
@@ -46,7 +48,9 @@ const artwork = {
   iracingPoly,
   iracingShootout,
   morssenger,
-  nyoomLogo,
+  nyoomLettermark,
+  nyoomLogoOld,
+  nyoomWordmark,
   polyscapeForest,
   polyscapeSunset,
   prerunnerTwitch,
