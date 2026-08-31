@@ -88,7 +88,7 @@ const projects = [
   {
     title: 'Just Pick Something',
     description: 'Mar - Jun 2022',
-    positions: [{ description: 'A fun web app to help your friends and family make decisions on activites using a tournament style bracket system.' }],
+    positions: [{ description: 'A fun web app to help your friends and family make decisions on activities using a tournament style bracket system.' }],
     image: justpicksomethingLogo.src,
     skills: [skills.html, skills.css, skills.javascript, skills.photoshop, skills.xd],
     category: categories.web,
@@ -201,7 +201,7 @@ const projects = [
     title: 'Portfolio v2',
     description: 'Aug 2024 - Mar 2025',
     positions: [
-      { description: "You are here! My second, updated portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript frameowrk, Astro." },
+      { description: "You are here! My second, updated portfolio site to try to convince you that I'm at least sort of cool. Made in part to explore a new JavaScript framework, Astro." },
     ],
     skills: [skills.astro, skills.react, skills.javascript, skills.css],
     category: categories.web,
